@@ -275,9 +275,6 @@
 								<string>C76EB75A0F76DFF400EF8398</string>
 								<string>1AB674ADFE9D54B511CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>C76EB6390F745B7000EF8398</string>
-								<string>C76EB63A0F745B7000EF8398</string>
-								<string>C76EB63B0F745B7000EF8398</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
@@ -330,10 +327,6 @@
 										<string>C76EB63D0F745B7000EF8398</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>UISpec_Prefix.pch</string>
-										<key>_historyCapacity</key>
-										<integer>10</integer>
-										<key>bookmark</key>
-										<string>C76EB7F40F76FA1200EF8398</string>
 										<key>history</key>
 										<array>
 											<string>C76EB7C90F76FA1200EF8398</string>
@@ -350,37 +343,13 @@
 										<key>prevStack</key>
 										<array>
 											<string>C76EB7D30F76FA1200EF8398</string>
-											<string>C76EB7D40F76FA1200EF8398</string>
 											<string>C76EB7D50F76FA1200EF8398</string>
-											<string>C76EB7D60F76FA1200EF8398</string>
-											<string>C76EB7D70F76FA1200EF8398</string>
-											<string>C76EB7D80F76FA1200EF8398</string>
 											<string>C76EB7D90F76FA1200EF8398</string>
-											<string>C76EB7DA0F76FA1200EF8398</string>
-											<string>C76EB7DB0F76FA1200EF8398</string>
-											<string>C76EB7DC0F76FA1200EF8398</string>
-											<string>C76EB7DD0F76FA1200EF8398</string>
-											<string>C76EB7DE0F76FA1200EF8398</string>
-											<string>C76EB7DF0F76FA1200EF8398</string>
-											<string>C76EB7E00F76FA1200EF8398</string>
-											<string>C76EB7E10F76FA1200EF8398</string>
-											<string>C76EB7E20F76FA1200EF8398</string>
-											<string>C76EB7E30F76FA1200EF8398</string>
-											<string>C76EB7E40F76FA1200EF8398</string>
 											<string>C76EB7E50F76FA1200EF8398</string>
 											<string>C76EB7E60F76FA1200EF8398</string>
-											<string>C76EB7E70F76FA1200EF8398</string>
-											<string>C76EB7E80F76FA1200EF8398</string>
-											<string>C76EB7E90F76FA1200EF8398</string>
-											<string>C76EB7EA0F76FA1200EF8398</string>
-											<string>C76EB7EB0F76FA1200EF8398</string>
-											<string>C76EB7EC0F76FA1200EF8398</string>
 											<string>C76EB7ED0F76FA1200EF8398</string>
 											<string>C76EB7EE0F76FA1200EF8398</string>
-											<string>C76EB7EF0F76FA1200EF8398</string>
-											<string>C76EB7F00F76FA1200EF8398</string>
 											<string>C76EB7F10F76FA1200EF8398</string>
-											<string>C76EB7F20F76FA1200EF8398</string>
 											<string>C76EB7F30F76FA1200EF8398</string>
 										</array>
 									</dict>
@@ -421,6 +390,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1198, 441}}</string>
+										<key>RubberWindowFrame</key>
+										<string>43 149 1473 898 0 0 1920 1058 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -437,8 +408,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1198, 441}}</string>
-										<key>RubberWindowFrame</key>
-										<string>43 149 1473 898 0 0 1920 1058 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -504,11 +473,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C76EB6440F745B7000EF8398</string>
+				<string>C76EB8110F77023D00EF8398</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>C76EB6450F745B7000EF8398</string>
+				<string>C76EB8120F77023D00EF8398</string>
 				<string>C76EB63C0F745B7000EF8398</string>
-				<string>C76EB6460F745B7000EF8398</string>
+				<string>C76EB8130F77023D00EF8398</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>

@@ -230,6 +230,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -272,8 +274,6 @@
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>C76EB6650F745C9D00EF8398</string>
-								<string>C76EB6660F745C9D00EF8398</string>
 								<string>1C77FABC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -313,8 +313,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -329,10 +327,6 @@
 										<string>C76EB6680F745C9D00EF8398</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>SpecMain.m</string>
-										<key>_historyCapacity</key>
-										<integer>10</integer>
-										<key>bookmark</key>
-										<string>C76EB7C30F76F28B00EF8398</string>
 										<key>history</key>
 										<array>
 											<string>C76EB7900F76EF5100EF8398</string>
@@ -346,24 +340,8 @@
 											<string>C76EB70B0F745F8E00EF8398</string>
 											<string>C76EB70C0F745F8E00EF8398</string>
 											<string>C76EB70D0F745F8E00EF8398</string>
-											<string>C76EB70E0F745F8E00EF8398</string>
-											<string>C76EB70F0F745F8E00EF8398</string>
-											<string>C76EB71B0F7542A900EF8398</string>
-											<string>C76EB71C0F7542A900EF8398</string>
 											<string>C76EB7940F76EF5100EF8398</string>
 											<string>C76EB7950F76EF5100EF8398</string>
-											<string>C76EB7960F76EF5100EF8398</string>
-											<string>C76EB7970F76EF5100EF8398</string>
-											<string>C76EB7980F76EF5100EF8398</string>
-											<string>C76EB7990F76EF5100EF8398</string>
-											<string>C76EB79A0F76EF5100EF8398</string>
-											<string>C76EB79B0F76EF5100EF8398</string>
-											<string>C76EB79C0F76EF5100EF8398</string>
-											<string>C76EB7B10F76F20900EF8398</string>
-											<string>C76EB7B20F76F20900EF8398</string>
-											<string>C76EB7BA0F76F25500EF8398</string>
-											<string>C76EB7BB0F76F25500EF8398</string>
-											<string>C76EB7C20F76F28B00EF8398</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -486,11 +464,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C76EB6690F745C9D00EF8398</string>
+				<string>C76EB8020F77021A00EF8398</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>C76EB66A0F745C9D00EF8398</string>
+				<string>C76EB8030F77021A00EF8398</string>
 				<string>C76EB6670F745C9D00EF8398</string>
-				<string>C76EB66B0F745C9D00EF8398</string>
+				<string>C76EB8040F77021A00EF8398</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>

@@ -44,21 +44,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = C76EB5D20F74586B00EF8398 /* UISpec_Simulator.a */;
+			remoteGlobalIDString = C76EB5D20F74586B00EF8398;
 			remoteInfo = UISpec_Simulator;
 		};
 		C76EB68D0F745D5F00EF8398 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = C76EB5DA0F7458C100EF8398 /* UISpec_Device.a */;
+			remoteGlobalIDString = C76EB5DA0F7458C100EF8398;
 			remoteInfo = UISpec_Device;
 		};
 		C76EB7160F75412E00EF8398 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = C76EB5D10F74586B00EF8398 /* UISpec_Simulator */;
+			remoteGlobalIDString = C76EB5D10F74586B00EF8398;
 			remoteInfo = UISpec_Simulator;
 		};
 /* End PBXContainerItemProxy section */
