@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* UISpecDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* UISpecDemoAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* SpecMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* SpecMain.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		C76EB6930F745DEA00EF8398 /* UISpec_Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EB68C0F745D5F00EF8398 /* UISpec_Simulator.a */; };
+		C76EB6ED0F745EE900EF8398 /* DescribeEmployeeAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6980F745EE800EF8398 /* DescribeEmployeeAdmin.m */; };
+		C76EB6EE0F745EE900EF8398 /* PureMVC_ObjectiveC_1_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EB6B20F745EE800EF8398 /* PureMVC_ObjectiveC_1_0.a */; };
+		C76EB6EF0F745EE900EF8398 /* ApplicationFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6BB0F745EE800EF8398 /* ApplicationFacade.m */; };
+		C76EB6F00F745EE900EF8398 /* CreateUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6BE0F745EE800EF8398 /* CreateUserCommand.m */; };
+		C76EB6F10F745EE900EF8398 /* DeleteUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6C00F745EE800EF8398 /* DeleteUserCommand.m */; };
+		C76EB6F20F745EE900EF8398 /* GetUserRolesCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6C20F745EE800EF8398 /* GetUserRolesCommand.m */; };
+		C76EB6F30F745EE900EF8398 /* GetUsersCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6C40F745EE800EF8398 /* GetUsersCommand.m */; };
+		C76EB6F40F745EE900EF8398 /* StartupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6C60F745EE800EF8398 /* StartupCommand.m */; };
+		C76EB6F50F745EE900EF8398 /* UpdateUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6C80F745EE800EF8398 /* UpdateUserCommand.m */; };
+		C76EB6F60F745EE900EF8398 /* UpdateUserRolesCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6CA0F745EE800EF8398 /* UpdateUserRolesCommand.m */; };
+		C76EB6F70F745EE900EF8398 /* UserRolesEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6CE0F745EE800EF8398 /* UserRolesEnum.m */; };
+		C76EB6F80F745EE900EF8398 /* UserProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6D00F745EE800EF8398 /* UserProxy.m */; };
+		C76EB6F90F745EE900EF8398 /* UserRolesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6D20F745EE800EF8398 /* UserRolesProxy.m */; };
+		C76EB6FA0F745EE900EF8398 /* UserRolesVO.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6D50F745EE800EF8398 /* UserRolesVO.m */; };
+		C76EB6FB0F745EE900EF8398 /* UserVO.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6D70F745EE800EF8398 /* UserVO.m */; };
+		C76EB6FC0F745EE900EF8398 /* EmployeeAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6DB0F745EE800EF8398 /* EmployeeAdmin.m */; };
+		C76EB6FD0F745EE900EF8398 /* UserForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6DD0F745EE800EF8398 /* UserForm.m */; };
+		C76EB6FE0F745EE900EF8398 /* UserList.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6DF0F745EE800EF8398 /* UserList.m */; };
+		C76EB6FF0F745EE900EF8398 /* UserRoles.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6E10F745EE800EF8398 /* UserRoles.m */; };
+		C76EB7000F745EE900EF8398 /* EmployeeAdminMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6E30F745EE800EF8398 /* EmployeeAdminMediator.m */; };
+		C76EB7010F745EE900EF8398 /* UserFormMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6E50F745EE800EF8398 /* UserFormMediator.m */; };
+		C76EB7020F745EE900EF8398 /* UserListMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6E70F745EE800EF8398 /* UserListMediator.m */; };
+		C76EB7030F745EE900EF8398 /* UserRolesMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6E90F745EE800EF8398 /* UserRolesMediator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C76EB68B0F745D5F00EF8398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C76EB5D20F74586B00EF8398 /* UISpec_Simulator.a */;
+			remoteInfo = UISpec_Simulator;
+		};
+		C76EB68D0F745D5F00EF8398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C76EB5DA0F7458C100EF8398 /* UISpec_Device.a */;
+			remoteInfo = UISpec_Device;
+		};
+		C76EB7160F75412E00EF8398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C76EB5D10F74586B00EF8398 /* UISpec_Simulator */;
+			remoteInfo = UISpec_Simulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* UISpecDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpecDemoAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* UISpecDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISpecDemoAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* UISpecDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISpecDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* SpecMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecMain.m; path = ../SpecMain.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* UISpecDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpecDemo_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
+		C76EB6970F745EE800EF8398 /* DescribeEmployeeAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DescribeEmployeeAdmin.h; path = Classes/DescribeEmployeeAdmin.h; sourceTree = SOURCE_ROOT; };
+		C76EB6980F745EE800EF8398 /* DescribeEmployeeAdmin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DescribeEmployeeAdmin.m; path = Classes/DescribeEmployeeAdmin.m; sourceTree = SOURCE_ROOT; };
+		C76EB69D0F745EE800EF8398 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Controller.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Controller.h; sourceTree = SOURCE_ROOT; };
+		C76EB69E0F745EE800EF8398 /* Facade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Facade.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Facade.h; sourceTree = SOURCE_ROOT; };
+		C76EB69F0F745EE800EF8398 /* ICommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICommand.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/ICommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A00F745EE800EF8398 /* IController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IController.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IController.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A10F745EE800EF8398 /* IFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFacade.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IFacade.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A20F745EE800EF8398 /* IMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMediator.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IMediator.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A30F745EE800EF8398 /* IModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IModel.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IModel.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A40F745EE800EF8398 /* INotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INotification.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/INotification.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A50F745EE800EF8398 /* INotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INotifier.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/INotifier.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A60F745EE800EF8398 /* IObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IObserver.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IObserver.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A70F745EE800EF8398 /* IProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IProxy.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IProxy.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A80F745EE800EF8398 /* IView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IView.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IView.h; sourceTree = SOURCE_ROOT; };
+		C76EB6A90F745EE800EF8398 /* MacroCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroCommand.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/MacroCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6AA0F745EE800EF8398 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mediator.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Mediator.h; sourceTree = SOURCE_ROOT; };
+		C76EB6AB0F745EE800EF8398 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Model.h; sourceTree = SOURCE_ROOT; };
+		C76EB6AC0F745EE800EF8398 /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notification.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Notification.h; sourceTree = SOURCE_ROOT; };
+		C76EB6AD0F745EE800EF8398 /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notifier.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Notifier.h; sourceTree = SOURCE_ROOT; };
+		C76EB6AE0F745EE800EF8398 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Observer.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Observer.h; sourceTree = SOURCE_ROOT; };
+		C76EB6AF0F745EE800EF8398 /* Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Proxy.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Proxy.h; sourceTree = SOURCE_ROOT; };
+		C76EB6B00F745EE800EF8398 /* SimpleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleCommand.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/SimpleCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6B10F745EE800EF8398 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = View.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/View.h; sourceTree = SOURCE_ROOT; };
+		C76EB6B20F745EE800EF8398 /* PureMVC_ObjectiveC_1_0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = PureMVC_ObjectiveC_1_0.a; path = Classes/EmployeeAdmin/lib/PureMVC/PureMVC_ObjectiveC_1_0.a; sourceTree = SOURCE_ROOT; };
+		C76EB6BA0F745EE800EF8398 /* ApplicationFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationFacade.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.h; sourceTree = SOURCE_ROOT; };
+		C76EB6BB0F745EE800EF8398 /* ApplicationFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationFacade.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m; sourceTree = SOURCE_ROOT; };
+		C76EB6BD0F745EE800EF8398 /* CreateUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateUserCommand.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6BE0F745EE800EF8398 /* CreateUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateUserCommand.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.m; sourceTree = SOURCE_ROOT; };
+		C76EB6BF0F745EE800EF8398 /* DeleteUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteUserCommand.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6C00F745EE800EF8398 /* DeleteUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteUserCommand.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.m; sourceTree = SOURCE_ROOT; };
+		C76EB6C10F745EE800EF8398 /* GetUserRolesCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetUserRolesCommand.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6C20F745EE800EF8398 /* GetUserRolesCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetUserRolesCommand.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.m; sourceTree = SOURCE_ROOT; };
+		C76EB6C30F745EE800EF8398 /* GetUsersCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetUsersCommand.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6C40F745EE800EF8398 /* GetUsersCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetUsersCommand.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.m; sourceTree = SOURCE_ROOT; };
+		C76EB6C50F745EE800EF8398 /* StartupCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartupCommand.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6C60F745EE800EF8398 /* StartupCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartupCommand.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.m; sourceTree = SOURCE_ROOT; };
+		C76EB6C70F745EE800EF8398 /* UpdateUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateUserCommand.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6C80F745EE800EF8398 /* UpdateUserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UpdateUserCommand.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.m; sourceTree = SOURCE_ROOT; };
+		C76EB6C90F745EE800EF8398 /* UpdateUserRolesCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateUserRolesCommand.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.h; sourceTree = SOURCE_ROOT; };
+		C76EB6CA0F745EE800EF8398 /* UpdateUserRolesCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UpdateUserRolesCommand.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.m; sourceTree = SOURCE_ROOT; };
+		C76EB6CD0F745EE800EF8398 /* UserRolesEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRolesEnum.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.h; sourceTree = SOURCE_ROOT; };
+		C76EB6CE0F745EE800EF8398 /* UserRolesEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRolesEnum.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.m; sourceTree = SOURCE_ROOT; };
+		C76EB6CF0F745EE800EF8398 /* UserProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserProxy.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.h; sourceTree = SOURCE_ROOT; };
+		C76EB6D00F745EE800EF8398 /* UserProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserProxy.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.m; sourceTree = SOURCE_ROOT; };
+		C76EB6D10F745EE800EF8398 /* UserRolesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRolesProxy.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.h; sourceTree = SOURCE_ROOT; };
+		C76EB6D20F745EE800EF8398 /* UserRolesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRolesProxy.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.m; sourceTree = SOURCE_ROOT; };
+		C76EB6D40F745EE800EF8398 /* UserRolesVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRolesVO.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.h; sourceTree = SOURCE_ROOT; };
+		C76EB6D50F745EE800EF8398 /* UserRolesVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRolesVO.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.m; sourceTree = SOURCE_ROOT; };
+		C76EB6D60F745EE800EF8398 /* UserVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserVO.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.h; sourceTree = SOURCE_ROOT; };
+		C76EB6D70F745EE800EF8398 /* UserVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserVO.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.m; sourceTree = SOURCE_ROOT; };
+		C76EB6DA0F745EE800EF8398 /* EmployeeAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmployeeAdmin.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.h; sourceTree = SOURCE_ROOT; };
+		C76EB6DB0F745EE800EF8398 /* EmployeeAdmin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmployeeAdmin.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.m; sourceTree = SOURCE_ROOT; };
+		C76EB6DC0F745EE800EF8398 /* UserForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserForm.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.h; sourceTree = SOURCE_ROOT; };
+		C76EB6DD0F745EE800EF8398 /* UserForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserForm.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m; sourceTree = SOURCE_ROOT; };
+		C76EB6DE0F745EE800EF8398 /* UserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserList.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.h; sourceTree = SOURCE_ROOT; };
+		C76EB6DF0F745EE800EF8398 /* UserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserList.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m; sourceTree = SOURCE_ROOT; };
+		C76EB6E00F745EE800EF8398 /* UserRoles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRoles.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.h; sourceTree = SOURCE_ROOT; };
+		C76EB6E10F745EE800EF8398 /* UserRoles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRoles.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m; sourceTree = SOURCE_ROOT; };
+		C76EB6E20F745EE800EF8398 /* EmployeeAdminMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmployeeAdminMediator.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.h; sourceTree = SOURCE_ROOT; };
+		C76EB6E30F745EE800EF8398 /* EmployeeAdminMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmployeeAdminMediator.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.m; sourceTree = SOURCE_ROOT; };
+		C76EB6E40F745EE800EF8398 /* UserFormMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserFormMediator.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.h; sourceTree = SOURCE_ROOT; };
+		C76EB6E50F745EE800EF8398 /* UserFormMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserFormMediator.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.m; sourceTree = SOURCE_ROOT; };
+		C76EB6E60F745EE800EF8398 /* UserListMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserListMediator.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.h; sourceTree = SOURCE_ROOT; };
+		C76EB6E70F745EE800EF8398 /* UserListMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserListMediator.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m; sourceTree = SOURCE_ROOT; };
+		C76EB6E80F745EE800EF8398 /* UserRolesMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRolesMediator.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.h; sourceTree = SOURCE_ROOT; };
+		C76EB6E90F745EE800EF8398 /* UserRolesMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRolesMediator.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				C76EB6930F745DEA00EF8398 /* UISpec_Simulator.a in Frameworks */,
+				C76EB6EE0F745EE900EF8398 /* PureMVC_ObjectiveC_1_0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6970F745EE800EF8398 /* DescribeEmployeeAdmin.h */,
+				C76EB6980F745EE800EF8398 /* DescribeEmployeeAdmin.m */,
+				1D3623240D0F684500981E51 /* UISpecDemoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* UISpecDemoAppDelegate.m */,
+				29B97316FDCFA39411CA2CEA /* SpecMain.m */,
+				C76EB6990F745EE800EF8398 /* EmployeeAdmin */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* UISpecDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* UISpecDemo_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C76EB6860F745D5F00EF8398 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB68C0F745D5F00EF8398 /* UISpec_Simulator.a */,
+				C76EB68E0F745D5F00EF8398 /* UISpec_Device.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C76EB6990F745EE800EF8398 /* EmployeeAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB69A0F745EE800EF8398 /* lib */,
+				C76EB6B30F745EE800EF8398 /* src */,
+			);
+			name = EmployeeAdmin;
+			path = Classes/EmployeeAdmin;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB69A0F745EE800EF8398 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB69B0F745EE800EF8398 /* PureMVC */,
+			);
+			name = lib;
+			path = Classes/EmployeeAdmin/lib;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB69B0F745EE800EF8398 /* PureMVC */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB69C0F745EE800EF8398 /* headers */,
+				C76EB6B20F745EE800EF8398 /* PureMVC_ObjectiveC_1_0.a */,
+			);
+			name = PureMVC;
+			path = Classes/EmployeeAdmin/lib/PureMVC;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB69C0F745EE800EF8398 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB69D0F745EE800EF8398 /* Controller.h */,
+				C76EB69E0F745EE800EF8398 /* Facade.h */,
+				C76EB69F0F745EE800EF8398 /* ICommand.h */,
+				C76EB6A00F745EE800EF8398 /* IController.h */,
+				C76EB6A10F745EE800EF8398 /* IFacade.h */,
+				C76EB6A20F745EE800EF8398 /* IMediator.h */,
+				C76EB6A30F745EE800EF8398 /* IModel.h */,
+				C76EB6A40F745EE800EF8398 /* INotification.h */,
+				C76EB6A50F745EE800EF8398 /* INotifier.h */,
+				C76EB6A60F745EE800EF8398 /* IObserver.h */,
+				C76EB6A70F745EE800EF8398 /* IProxy.h */,
+				C76EB6A80F745EE800EF8398 /* IView.h */,
+				C76EB6A90F745EE800EF8398 /* MacroCommand.h */,
+				C76EB6AA0F745EE800EF8398 /* Mediator.h */,
+				C76EB6AB0F745EE800EF8398 /* Model.h */,
+				C76EB6AC0F745EE800EF8398 /* Notification.h */,
+				C76EB6AD0F745EE800EF8398 /* Notifier.h */,
+				C76EB6AE0F745EE800EF8398 /* Observer.h */,
+				C76EB6AF0F745EE800EF8398 /* Proxy.h */,
+				C76EB6B00F745EE800EF8398 /* SimpleCommand.h */,
+				C76EB6B10F745EE800EF8398 /* View.h */,
+			);
+			name = headers;
+			path = Classes/EmployeeAdmin/lib/PureMVC/headers;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6B30F745EE800EF8398 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6B40F745EE800EF8398 /* org */,
+			);
+			name = src;
+			path = Classes/EmployeeAdmin/src;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6B40F745EE800EF8398 /* org */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6B50F745EE800EF8398 /* puremvc */,
+			);
+			name = org;
+			path = Classes/EmployeeAdmin/src/org;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6B50F745EE800EF8398 /* puremvc */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6B60F745EE800EF8398 /* objectivec */,
+			);
+			name = puremvc;
+			path = Classes/EmployeeAdmin/src/org/puremvc;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6B60F745EE800EF8398 /* objectivec */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6B70F745EE800EF8398 /* demos */,
+			);
+			name = objectivec;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6B70F745EE800EF8398 /* demos */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6B80F745EE800EF8398 /* uikit */,
+			);
+			name = demos;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6B80F745EE800EF8398 /* uikit */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6B90F745EE800EF8398 /* employeeadmin */,
+			);
+			name = uikit;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6B90F745EE800EF8398 /* employeeadmin */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6BA0F745EE800EF8398 /* ApplicationFacade.h */,
+				C76EB6BB0F745EE800EF8398 /* ApplicationFacade.m */,
+				C76EB6BC0F745EE800EF8398 /* controller */,
+				C76EB6CB0F745EE800EF8398 /* model */,
+				C76EB6D80F745EE800EF8398 /* view */,
+			);
+			name = employeeadmin;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6BC0F745EE800EF8398 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6BD0F745EE800EF8398 /* CreateUserCommand.h */,
+				C76EB6BE0F745EE800EF8398 /* CreateUserCommand.m */,
+				C76EB6BF0F745EE800EF8398 /* DeleteUserCommand.h */,
+				C76EB6C00F745EE800EF8398 /* DeleteUserCommand.m */,
+				C76EB6C10F745EE800EF8398 /* GetUserRolesCommand.h */,
+				C76EB6C20F745EE800EF8398 /* GetUserRolesCommand.m */,
+				C76EB6C30F745EE800EF8398 /* GetUsersCommand.h */,
+				C76EB6C40F745EE800EF8398 /* GetUsersCommand.m */,
+				C76EB6C50F745EE800EF8398 /* StartupCommand.h */,
+				C76EB6C60F745EE800EF8398 /* StartupCommand.m */,
+				C76EB6C70F745EE800EF8398 /* UpdateUserCommand.h */,
+				C76EB6C80F745EE800EF8398 /* UpdateUserCommand.m */,
+				C76EB6C90F745EE800EF8398 /* UpdateUserRolesCommand.h */,
+				C76EB6CA0F745EE800EF8398 /* UpdateUserRolesCommand.m */,
+			);
+			name = controller;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6CB0F745EE800EF8398 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6CC0F745EE800EF8398 /* enum */,
+				C76EB6CF0F745EE800EF8398 /* UserProxy.h */,
+				C76EB6D00F745EE800EF8398 /* UserProxy.m */,
+				C76EB6D10F745EE800EF8398 /* UserRolesProxy.h */,
+				C76EB6D20F745EE800EF8398 /* UserRolesProxy.m */,
+				C76EB6D30F745EE800EF8398 /* vo */,
+			);
+			name = model;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6CC0F745EE800EF8398 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6CD0F745EE800EF8398 /* UserRolesEnum.h */,
+				C76EB6CE0F745EE800EF8398 /* UserRolesEnum.m */,
+			);
+			name = enum;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6D30F745EE800EF8398 /* vo */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6D40F745EE800EF8398 /* UserRolesVO.h */,
+				C76EB6D50F745EE800EF8398 /* UserRolesVO.m */,
+				C76EB6D60F745EE800EF8398 /* UserVO.h */,
+				C76EB6D70F745EE800EF8398 /* UserVO.m */,
+			);
+			name = vo;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6D80F745EE800EF8398 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6D90F745EE800EF8398 /* components */,
+				C76EB6E20F745EE800EF8398 /* EmployeeAdminMediator.h */,
+				C76EB6E30F745EE800EF8398 /* EmployeeAdminMediator.m */,
+				C76EB6E40F745EE800EF8398 /* UserFormMediator.h */,
+				C76EB6E50F745EE800EF8398 /* UserFormMediator.m */,
+				C76EB6E60F745EE800EF8398 /* UserListMediator.h */,
+				C76EB6E70F745EE800EF8398 /* UserListMediator.m */,
+				C76EB6E80F745EE800EF8398 /* UserRolesMediator.h */,
+				C76EB6E90F745EE800EF8398 /* UserRolesMediator.m */,
+			);
+			name = view;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view;
+			sourceTree = SOURCE_ROOT;
+		};
+		C76EB6D90F745EE800EF8398 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				C76EB6DA0F745EE800EF8398 /* EmployeeAdmin.h */,
+				C76EB6DB0F745EE800EF8398 /* EmployeeAdmin.m */,
+				C76EB6DC0F745EE800EF8398 /* UserForm.h */,
+				C76EB6DD0F745EE800EF8398 /* UserForm.m */,
+				C76EB6DE0F745EE800EF8398 /* UserList.h */,
+				C76EB6DF0F745EE800EF8398 /* UserList.m */,
+				C76EB6E00F745EE800EF8398 /* UserRoles.h */,
+				C76EB6E10F745EE800EF8398 /* UserRoles.m */,
+			);
+			name = components;
+			path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* UISpecDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "UISpecDemo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C76EB7170F75412E00EF8398 /* PBXTargetDependency */,
+			);
+			name = UISpecDemo;
+			productName = UISpecDemo;
+			productReference = 1D6058910D05DD3D006BFB54 /* UISpecDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UISpecDemo" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C76EB6860F745D5F00EF8398 /* Products */;
+					ProjectRef = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* UISpecDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C76EB68C0F745D5F00EF8398 /* UISpec_Simulator.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = UISpec_Simulator.a;
+			remoteRef = C76EB68B0F745D5F00EF8398 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C76EB68E0F745D5F00EF8398 /* UISpec_Device.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = UISpec_Device.a;
+			remoteRef = C76EB68D0F745D5F00EF8398 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* SpecMain.m in Sources */,
+				1D3623260D0F684500981E51 /* UISpecDemoAppDelegate.m in Sources */,
+				C76EB6ED0F745EE900EF8398 /* DescribeEmployeeAdmin.m in Sources */,
+				C76EB6EF0F745EE900EF8398 /* ApplicationFacade.m in Sources */,
+				C76EB6F00F745EE900EF8398 /* CreateUserCommand.m in Sources */,
+				C76EB6F10F745EE900EF8398 /* DeleteUserCommand.m in Sources */,
+				C76EB6F20F745EE900EF8398 /* GetUserRolesCommand.m in Sources */,
+				C76EB6F30F745EE900EF8398 /* GetUsersCommand.m in Sources */,
+				C76EB6F40F745EE900EF8398 /* StartupCommand.m in Sources */,
+				C76EB6F50F745EE900EF8398 /* UpdateUserCommand.m in Sources */,
+				C76EB6F60F745EE900EF8398 /* UpdateUserRolesCommand.m in Sources */,
+				C76EB6F70F745EE900EF8398 /* UserRolesEnum.m in Sources */,
+				C76EB6F80F745EE900EF8398 /* UserProxy.m in Sources */,
+				C76EB6F90F745EE900EF8398 /* UserRolesProxy.m in Sources */,
+				C76EB6FA0F745EE900EF8398 /* UserRolesVO.m in Sources */,
+				C76EB6FB0F745EE900EF8398 /* UserVO.m in Sources */,
+				C76EB6FC0F745EE900EF8398 /* EmployeeAdmin.m in Sources */,
+				C76EB6FD0F745EE900EF8398 /* UserForm.m in Sources */,
+				C76EB6FE0F745EE900EF8398 /* UserList.m in Sources */,
+				C76EB6FF0F745EE900EF8398 /* UserRoles.m in Sources */,
+				C76EB7000F745EE900EF8398 /* EmployeeAdminMediator.m in Sources */,
+				C76EB7010F745EE900EF8398 /* UserFormMediator.m in Sources */,
+				C76EB7020F745EE900EF8398 /* UserListMediator.m in Sources */,
+				C76EB7030F745EE900EF8398 /* UserRolesMediator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C76EB7170F75412E00EF8398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UISpec_Simulator;
+			targetProxy = C76EB7160F75412E00EF8398 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UISpecDemo_Prefix.pch;
+				HEADER_SEARCH_PATHS = "../UISpec/**";
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../UISpec/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/Classes/EmployeeAdmin/lib/PureMVC\"",
+				);
+				PRODUCT_NAME = UISpecDemo;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UISpecDemo_Prefix.pch;
+				HEADER_SEARCH_PATHS = "../UISpec/**";
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../UISpec/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/Classes/EmployeeAdmin/lib/PureMVC\"",
+				);
+				PRODUCT_NAME = UISpecDemo;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "UISpecDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UISpecDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
