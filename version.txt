@@ -1,0 +1,11 @@
+UISpec by Brian Knorr <btknorr@gmail.com>
+Copyright(c) 2009 StarterStep, Inc., Some rights reserved.
+--------------------------------------------------------------------------
+Release Date: 3/22/09
+    Platform: iPhone 
+     Version: 1 
+    Revision: 0
+      Author: Brian Knorr <btknorr@gmail.com>
+     License: GNU General Public License v3
+--------------------------------------------------------------------------
+1.0 - This is the first release of UISpec - BTK
