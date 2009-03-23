@@ -1,14 +1,14 @@
 
-#import "UIShould.h"
+#import "UIExpectation.h"
 #import "UIQuery.h"
 #import "CallCache.h"
 
-@implementation UIShould
+@implementation UIExpectation
 
 @synthesize query;
 
 +(id)withQuery:(UIQuery *)query {
-	return [[[UIShould alloc] initWithQuery:query] autorelease];
+	return [[[UIExpectation alloc] initWithQuery:query] autorelease];
 }
 
 -(id)initWithQuery:(UIQuery *)_query {
@@ -19,7 +19,7 @@
 	return self;
 }
 
--(UIShould *)not {
+-(UIExpectation *)not {
 	isNot = YES;
 	return self;
 }
@@ -33,7 +33,7 @@
 	return YES;
 }
 
--(UIShould *)have {
+-(UIExpectation *)have {
 	isHave = YES;
 	return self;
 }

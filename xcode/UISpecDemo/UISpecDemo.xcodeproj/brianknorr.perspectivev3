@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -275,7 +275,6 @@
 								<string>C76EB6850F745D5F00EF8398</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>C76EB82C0F7704FD00EF8398</string>
 								<string>1C77FABC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -306,6 +305,8 @@
 							<string>MainColumn</string>
 							<real>285</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>527 163 1375 691 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -316,6 +317,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -333,14 +336,14 @@
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>C76EB82D0F7704FD00EF8398</string>
+										<string>C7C6D2AF0F770A2400D3C065</string>
 										<key>history</key>
 										<array>
 											<string>C76EB7910F76EF5100EF8398</string>
 											<string>C76EB7B80F76F25500EF8398</string>
 											<string>C76EB7C00F76F28B00EF8398</string>
 											<string>C76EB7C10F76F28B00EF8398</string>
-											<string>C76EB82A0F7704FC00EF8398</string>
+											<string>C76EB8650F77067100EF8398</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -362,12 +365,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1068, 452}}</string>
+								<string>{{0, 0}, {1068, 451}}</string>
+								<key>RubberWindowFrame</key>
+								<string>527 163 1375 691 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>452pt</string>
+							<string>451pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
@@ -386,6 +391,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1068, 167}}</string>
+										<key>RubberWindowFrame</key>
+										<string>527 163 1375 691 0 0 1920 1058 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -467,11 +474,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C76EB82E0F7704FD00EF8398</string>
+				<string>C7C6D2B00F770A2400D3C065</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>C76EB82F0F7704FD00EF8398</string>
+				<string>C7C6D2B10F770A2400D3C065</string>
 				<string>C76EB6670F745C9D00EF8398</string>
-				<string>C76EB8300F7704FD00EF8398</string>
+				<string>C7C6D2B20F770A2400D3C065</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -510,8 +517,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
@@ -523,8 +528,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1375, 336}}</string>
-						<key>RubberWindowFrame</key>
-						<string>32 153 1375 691 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -599,11 +602,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{670, 0}, {705, 150}}</string>
-							<key>RubberWindowFrame</key>
-							<string>32 153 1375 691 0 0 1920 1058 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>32 153 1375 691 0 0 1920 1058 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -666,7 +665,7 @@
 		<string>/Users/brianknorr/Dev/UISpec/UISpec/xcode/UISpecDemo/UISpecDemo.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>32 153 1375 691 0 0 1920 1058 </string>
+	<string>527 163 1375 691 0 0 1920 1058 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

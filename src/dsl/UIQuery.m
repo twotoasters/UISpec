@@ -99,12 +99,12 @@ static BOOL swizzleFiltersCalled;
 	return [callCache set:query forSelector:_cmd];
 }
 
--(UIShould *)should {
+-(UIExpectation *)should {
 	id cachedResult = [callCache getForSelector:_cmd];
 	if(cachedResult != nil) return cachedResult;
 	
 	//NSLog(@"calling should");
-	return [callCache set:[UIShould withQuery:self] forSelector:_cmd];
+	return [callCache set:[UIExpectation withQuery:self] forSelector:_cmd];
 }
 
 -(UIFilter *)with {

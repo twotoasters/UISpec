@@ -35,8 +35,8 @@
 		C76EB7620F76DFF400EF8398 /* UIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7550F76DFF400EF8398 /* UIFilter.m */; };
 		C76EB7630F76DFF400EF8398 /* UIQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EB7640F76DFF400EF8398 /* UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */; };
-		C76EB7650F76DFF400EF8398 /* UIShould.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7580F76DFF400EF8398 /* UIShould.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C76EB7660F76DFF400EF8398 /* UIShould.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7590F76DFF400EF8398 /* UIShould.m */; };
+		C76EB7650F76DFF400EF8398 /* UIExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7580F76DFF400EF8398 /* UIExpectation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C76EB7660F76DFF400EF8398 /* UIExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7590F76DFF400EF8398 /* UIExpectation.m */; };
 		C76EB7670F76DFF400EF8398 /* CallCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB75B0F76DFF400EF8398 /* CallCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EB7680F76DFF400EF8398 /* CallCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB75C0F76DFF400EF8398 /* CallCache.m */; };
 		C76EB7690F76DFF400EF8398 /* NSNumberCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB75D0F76DFF400EF8398 /* NSNumberCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,8 +47,8 @@
 		C76EB76E0F76DFF400EF8398 /* UIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7550F76DFF400EF8398 /* UIFilter.m */; };
 		C76EB76F0F76DFF400EF8398 /* UIQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EB7700F76DFF400EF8398 /* UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */; };
-		C76EB7710F76DFF400EF8398 /* UIShould.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7580F76DFF400EF8398 /* UIShould.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C76EB7720F76DFF400EF8398 /* UIShould.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7590F76DFF400EF8398 /* UIShould.m */; };
+		C76EB7710F76DFF400EF8398 /* UIExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7580F76DFF400EF8398 /* UIExpectation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C76EB7720F76DFF400EF8398 /* UIExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7590F76DFF400EF8398 /* UIExpectation.m */; };
 		C76EB7730F76DFF400EF8398 /* CallCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB75B0F76DFF400EF8398 /* CallCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EB7740F76DFF400EF8398 /* CallCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB75C0F76DFF400EF8398 /* CallCache.m */; };
 		C76EB7750F76DFF400EF8398 /* NSNumberCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB75D0F76DFF400EF8398 /* NSNumberCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,8 +88,8 @@
 		C76EB7550F76DFF400EF8398 /* UIFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFilter.m; path = ../../src/dsl/UIFilter.m; sourceTree = SOURCE_ROOT; };
 		C76EB7560F76DFF400EF8398 /* UIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIQuery.h; path = ../../src/dsl/UIQuery.h; sourceTree = SOURCE_ROOT; };
 		C76EB7570F76DFF400EF8398 /* UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIQuery.m; path = ../../src/dsl/UIQuery.m; sourceTree = SOURCE_ROOT; };
-		C76EB7580F76DFF400EF8398 /* UIShould.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIShould.h; path = ../../src/dsl/UIShould.h; sourceTree = SOURCE_ROOT; };
-		C76EB7590F76DFF400EF8398 /* UIShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIShould.m; path = ../../src/dsl/UIShould.m; sourceTree = SOURCE_ROOT; };
+		C76EB7580F76DFF400EF8398 /* UIExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExpectation.h; sourceTree = "<group>"; };
+		C76EB7590F76DFF400EF8398 /* UIExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExpectation.m; sourceTree = "<group>"; };
 		C76EB75B0F76DFF400EF8398 /* CallCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallCache.h; path = ../../src/utils/CallCache.h; sourceTree = SOURCE_ROOT; };
 		C76EB75C0F76DFF400EF8398 /* CallCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallCache.m; path = ../../src/utils/CallCache.m; sourceTree = SOURCE_ROOT; };
 		C76EB75D0F76DFF400EF8398 /* NSNumberCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSNumberCreator.h; path = ../../src/utils/NSNumberCreator.h; sourceTree = SOURCE_ROOT; };
@@ -166,8 +166,8 @@
 				C76EB7570F76DFF400EF8398 /* UIQuery.m */,
 				C76EB7540F76DFF400EF8398 /* UIFilter.h */,
 				C76EB7550F76DFF400EF8398 /* UIFilter.m */,
-				C76EB7580F76DFF400EF8398 /* UIShould.h */,
-				C76EB7590F76DFF400EF8398 /* UIShould.m */,
+				C76EB7580F76DFF400EF8398 /* UIExpectation.h */,
+				C76EB7590F76DFF400EF8398 /* UIExpectation.m */,
 			);
 			name = dsl;
 			path = ../../src/dsl;
@@ -197,7 +197,7 @@
 				C76EB76B0F76DFF400EF8398 /* UIQueryTableViewCell.h in Headers */,
 				C76EB76D0F76DFF400EF8398 /* UIFilter.h in Headers */,
 				C76EB76F0F76DFF400EF8398 /* UIQuery.h in Headers */,
-				C76EB7710F76DFF400EF8398 /* UIShould.h in Headers */,
+				C76EB7710F76DFF400EF8398 /* UIExpectation.h in Headers */,
 				C76EB7730F76DFF400EF8398 /* CallCache.h in Headers */,
 				C76EB7750F76DFF400EF8398 /* NSNumberCreator.h in Headers */,
 				C76EB7A50F76F03F00EF8398 /* UIQueryTableView.h in Headers */,
@@ -213,7 +213,7 @@
 				C76EB75F0F76DFF400EF8398 /* UIQueryTableViewCell.h in Headers */,
 				C76EB7610F76DFF400EF8398 /* UIFilter.h in Headers */,
 				C76EB7630F76DFF400EF8398 /* UIQuery.h in Headers */,
-				C76EB7650F76DFF400EF8398 /* UIShould.h in Headers */,
+				C76EB7650F76DFF400EF8398 /* UIExpectation.h in Headers */,
 				C76EB7670F76DFF400EF8398 /* CallCache.h in Headers */,
 				C76EB7690F76DFF400EF8398 /* NSNumberCreator.h in Headers */,
 				C76EB7A30F76F03F00EF8398 /* UIQueryTableView.h in Headers */,
@@ -301,7 +301,7 @@
 				C76EB76C0F76DFF400EF8398 /* UIQueryTableViewCell.m in Sources */,
 				C76EB76E0F76DFF400EF8398 /* UIFilter.m in Sources */,
 				C76EB7700F76DFF400EF8398 /* UIQuery.m in Sources */,
-				C76EB7720F76DFF400EF8398 /* UIShould.m in Sources */,
+				C76EB7720F76DFF400EF8398 /* UIExpectation.m in Sources */,
 				C76EB7740F76DFF400EF8398 /* CallCache.m in Sources */,
 				C76EB7760F76DFF400EF8398 /* NSNumberCreator.m in Sources */,
 				C76EB7A60F76F03F00EF8398 /* UIQueryTableView.m in Sources */,
@@ -316,7 +316,7 @@
 				C76EB7600F76DFF400EF8398 /* UIQueryTableViewCell.m in Sources */,
 				C76EB7620F76DFF400EF8398 /* UIFilter.m in Sources */,
 				C76EB7640F76DFF400EF8398 /* UIQuery.m in Sources */,
-				C76EB7660F76DFF400EF8398 /* UIShould.m in Sources */,
+				C76EB7660F76DFF400EF8398 /* UIExpectation.m in Sources */,
 				C76EB7680F76DFF400EF8398 /* CallCache.m in Sources */,
 				C76EB76A0F76DFF400EF8398 /* NSNumberCreator.m in Sources */,
 				C76EB7A40F76F03F00EF8398 /* UIQueryTableView.m in Sources */,

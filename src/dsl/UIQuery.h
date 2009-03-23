@@ -7,7 +7,7 @@
 //
 
 #import "UIFilter.h"
-#import "UIShould.h"
+#import "UIExpectation.h"
 #import "CallCache.h"
 
 @interface UIQuery : NSObject {
@@ -19,7 +19,7 @@
 	int timeout;
 	
 	UIFilter *with;
-	UIShould *should;
+	UIExpectation *should;
 	UIQuery *touch, *parents;
 	UIQuery *textField, *navigationBar, *label, *button, *navigationButton, *alertView, *textView, *tableView, *tableViewCell;
 }
@@ -32,7 +32,7 @@
 @property(nonatomic, retain) NSMutableArray *views;
 
 @property(nonatomic, readonly) UIFilter *with;
-@property(nonatomic, readonly) UIShould *should;
+@property(nonatomic, readonly) UIExpectation *should;
 @property(nonatomic, readonly) UIQuery *touch, *parents;
 @property(nonatomic, readonly) UIQuery *textField, *navigationBar, *label, *button, *navigationButton, *alertView, *textView, *tableView, *tableViewCell;
 

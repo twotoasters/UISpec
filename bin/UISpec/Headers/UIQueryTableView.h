@@ -1,5 +1,5 @@
 //
-//  UIQueryTableViewCell.h
+//  UIQueryTableView.h
 //  UISpec
 //
 //  Created by Brian Knorr <btknorr@gmail.com>
@@ -8,10 +8,8 @@
 
 #import "UIQuery.h"
 
-@interface UIQueryTableViewCell : UIQuery {
+@interface UIQueryTableView : UIQuery {
 
 }
-
--(void)delete;
 
 @end

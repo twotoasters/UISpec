@@ -2,24 +2,24 @@
 //  UIQuery.h
 //  UISpec
 //
-//  Created by Brian Knorr <brian.knorr@gmail.com>
+//  Created by Brian Knorr <btknorr@gmail.com>
 //  Copyright(c) 2009 StarterStep, Inc., Some rights reserved.
 //
 
 #import "UIFilter.h"
-#import "UIShould.h"
+#import "UIExpectation.h"
 #import "CallCache.h"
 
 @interface UIQuery : NSObject {
 	CallCache *callCache;
-	UIView *parentView, *view;
+	NSArray *previousViews;
 	NSString *viewFilterApplied;
 	NSMutableArray *views;
 	BOOL parentsMode;
 	int timeout;
 	
 	UIFilter *with;
-	UIShould *should;
+	UIExpectation *should;
 	UIQuery *touch, *parents;
 	UIQuery *textField, *navigationBar, *label, *button, *navigationButton, *alertView, *textView, *tableView, *tableViewCell;
 }
@@ -28,12 +28,11 @@
 @property int timeout;
 @property(nonatomic, retain) CallCache *callCache;
 @property(nonatomic, retain) NSString *viewFilterApplied;
-@property(nonatomic, retain) UIView *parentView;
+@property(nonatomic, retain) NSArray *previousViews;
 @property(nonatomic, retain) NSMutableArray *views;
 
-@property(nonatomic, readonly) UIView *view;
 @property(nonatomic, readonly) UIFilter *with;
-@property(nonatomic, readonly) UIShould *should;
+@property(nonatomic, readonly) UIExpectation *should;
 @property(nonatomic, readonly) UIQuery *touch, *parents;
 @property(nonatomic, readonly) UIQuery *textField, *navigationBar, *label, *button, *navigationButton, *alertView, *textView, *tableView, *tableViewCell;
 

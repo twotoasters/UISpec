@@ -1,19 +1,19 @@
 //
-//  UIShould.h
+//  UIExpection.h
 //  UISpec
 //
-//  Created by Brian Knorr <brian.knorr@gmail.com>
+//  Created by Brian Knorr <btknorr@gmail.com>
 //  Copyright(c) 2009 StarterStep, Inc., Some rights reserved.
 //
 
-@interface UIShould : NSObject {
+@interface UIExpectation : NSObject {
 	id query;
 	BOOL isNot, exist, isHave;
-	UIShould *not, *have;
+	UIExpectation *not, *have;
 }
 
 @property(nonatomic, retain) id query;
-@property(nonatomic, readonly) UIShould *not, *have;
+@property(nonatomic, readonly) UIExpectation *not, *have;
 @property(nonatomic, readonly) BOOL exist;
 
 -(void)have:(BOOL)condition;

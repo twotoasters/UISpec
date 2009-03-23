@@ -2,7 +2,7 @@
 //  CallCache.h
 //  UISpec
 //
-//  Created by Brian Knorr <brian.knorr@gmail.com>
+//  Created by Brian Knorr <btknorr@gmail.com>
 //  Copyright(c) 2009 StarterStep, Inc., Some rights reserved.
 //
 
