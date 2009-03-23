@@ -12,6 +12,7 @@
 			buildConfigurationList = C76EB5E60F74592800EF8398 /* Build configuration list for PBXAggregateTarget "UISpec_Universal" */;
 			buildPhases = (
 				C76EB5DE0F7458EF00EF8398 /* ShellScript */,
+				C7FE1AEB0F783C3D0047857B /* CopyFiles */,
 			);
 			dependencies = (
 				C76EB5E50F74590E00EF8398 /* PBXTargetDependency */,
@@ -57,6 +58,14 @@
 		C76EB7A40F76F03F00EF8398 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7A20F76F03F00EF8398 /* UIQueryTableView.m */; };
 		C76EB7A50F76F03F00EF8398 /* UIQueryTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7A10F76F03F00EF8398 /* UIQueryTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EB7A60F76F03F00EF8398 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7A20F76F03F00EF8398 /* UIQueryTableView.m */; };
+		C7FE1AED0F783CD10047857B /* UISpec.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB5F40F74594900EF8398 /* UISpec.h */; };
+		C7FE1AEE0F783CD10047857B /* UIQueryTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB7510F76DFF400EF8398 /* UIQueryTableViewCell.h */; };
+		C7FE1AEF0F783CD10047857B /* UIFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB7540F76DFF400EF8398 /* UIFilter.h */; };
+		C7FE1AF00F783CD10047857B /* UIQuery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */; };
+		C7FE1AF10F783CD10047857B /* UIExpectation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB7580F76DFF400EF8398 /* UIExpectation.h */; };
+		C7FE1AF20F783CD10047857B /* CallCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB75B0F76DFF400EF8398 /* CallCache.h */; };
+		C7FE1AF30F783CD10047857B /* NSNumberCreator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB75D0F76DFF400EF8398 /* NSNumberCreator.h */; };
+		C7FE1AF40F783CD10047857B /* UIQueryTableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB7A10F76F03F00EF8398 /* UIQueryTableView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +84,26 @@
 			remoteInfo = UISpec_Device;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7FE1AEB0F783C3D0047857B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = ../../../../bin/UISpec/Headers;
+			dstSubfolderSpec = 16;
+			files = (
+				C7FE1AED0F783CD10047857B /* UISpec.h in CopyFiles */,
+				C7FE1AEE0F783CD10047857B /* UIQueryTableViewCell.h in CopyFiles */,
+				C7FE1AEF0F783CD10047857B /* UIFilter.h in CopyFiles */,
+				C7FE1AF00F783CD10047857B /* UIQuery.h in CopyFiles */,
+				C7FE1AF10F783CD10047857B /* UIExpectation.h in CopyFiles */,
+				C7FE1AF20F783CD10047857B /* CallCache.h in CopyFiles */,
+				C7FE1AF30F783CD10047857B /* NSNumberCreator.h in CopyFiles */,
+				C7FE1AF40F783CD10047857B /* UIQueryTableView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C76EB5D20F74586B00EF8398 /* UISpec_Simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = UISpec_Simulator.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,7 +317,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# remove existing product lib file, just in case\nrm -rf build/${BUILD_STYLE}-iphoneos/UISpec_${BUILD_STYLE}.a\n\n# combine lib files for various platforms into one\nlipo -create \"build/${BUILD_STYLE}-iphoneos/UISpec_Device.a\" \"build/${BUILD_STYLE}-iphonesimulator/UISpec_Simulator.a\" -output build/${BUILD_STYLE}-iphoneos/UISpec_${BUILD_STYLE}.a";
+			shellScript = "# remove existing product lib file, just in case\nrm -rf build/${BUILD_STYLE}-iphoneos/UISpec_${BUILD_STYLE}.a\n\n# combine lib files for various platforms into one\nlipo -create \"build/${BUILD_STYLE}-iphoneos/UISpec_Device.a\" \"build/${BUILD_STYLE}-iphonesimulator/UISpec_Simulator.a\" -output ../../bin/UISpec/UISpec_1_0.a";
 		};
 /* End PBXShellScriptBuildPhase section */
 

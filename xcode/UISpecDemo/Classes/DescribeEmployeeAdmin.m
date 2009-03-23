@@ -80,8 +80,8 @@
 	[[app.label.with text:@"Returns"] touch];
 	[[[app.label.with text:@"Returns"] parents].tableViewCell.should.have accessoryType:UITableViewCellAccessoryCheckmark];
 	
-	[[app.tableView.tableViewCell index:0] touch];
-	[[app.tableView.tableViewCell index:0].should.have accessoryType:UITableViewCellAccessoryNone];
+	[[app.label.with text:@"Returns"] touch];
+	[[[app.label.with text:@"Returns"] parents].tableViewCell.should.have accessoryType:UITableViewCellAccessoryNone];
 	
 	[[app view:@"UINavigationItemButtonView"] touch];
 	[[app view:@"UINavigationItemButtonView"] touch];

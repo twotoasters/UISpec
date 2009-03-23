@@ -15,7 +15,7 @@
 
 static BOOL swizzleFiltersCalled;
 
-@synthesize views, previousViews, viewFilterApplied, callCache, parentsMode, timeout;
+@synthesize views, previousViews, viewFilterApplied, callCache, parentsMode, allMode, timeout;
 
 
 +(id)withApplicaton {
@@ -43,7 +43,7 @@ static BOOL swizzleFiltersCalled;
 	if (!swizzleFiltersCalled) {
 		//NSLog(@"swizzling filters");
 		swizzleFiltersCalled = YES;
-		NSArray *excludeKeys = [NSArray arrayWithObjects:@"timeout", @"parentsMode", @"parents", @"views", @"with", @"touch", @"previousViews", @"viewFilterApplied", @"should", @"callCache", nil];
+		NSArray *excludeKeys = [NSArray arrayWithObjects:@"allMode", @"show", @"flash", @"all", @"last", @"first", @"timeout", @"parentsMode", @"parents", @"views", @"with", @"touch", @"previousViews", @"viewFilterApplied", @"should", @"callCache", nil];
 		int i, propertyCount = 0;
 		objc_property_t *propertyList = class_copyPropertyList([self class], &propertyCount);
 		for (i=0; i<propertyCount; i++) {
@@ -66,10 +66,22 @@ static BOOL swizzleFiltersCalled;
 		
 -(UIQuery *)find {
 	NSMutableArray *array = [NSMutableArray array];
-	for (UIView *view in views) {
+	
+	for (UIView *view in [self firstOrAllViews]) {
 		[self doFindOnView:view inToArray:array];
 	}
 	return [UIQuery withPreviousViews:views viewFilterApplied:nil resultViews:array];
+}
+
+-(NSArray *)firstOrAllViews {
+	NSArray *array = nil;
+	if (allMode) {
+		array = views;
+	} else {
+		array = (views.count == 0) ? [NSArray array] : [NSArray arrayWithObject:[views objectAtIndex:0]];
+	}
+	//NSLog(@"firstOrAllViews = %@", array);
+	return array;
 }
 
 -(void)doFindOnView:(UIView *)view inToArray:(NSMutableArray *)array {
@@ -87,14 +99,14 @@ static BOOL swizzleFiltersCalled;
 	if(cachedResult != nil) return cachedResult;
 	
 	NSMutableArray *array = [NSMutableArray array];
-	for (UIView *v in views) {
+	for (UIView *v in [self firstOrAllViews]) {
 		UIView *sv = v.superview;
 		while (sv != nil) {
 			[array addObject:sv];
 			sv = sv.superview;
 		}
 	}
-	UIQuery *query = [UIQuery withPreviousViews:views viewFilterApplied:nil resultViews:array];
+	UIQuery *query = [UIQuery withPreviousViews:views viewFilterApplied:viewFilterApplied resultViews:array];
 	query.parentsMode = YES;
 	return [callCache set:query forSelector:_cmd];
 }
@@ -131,10 +143,11 @@ static BOOL swizzleFiltersCalled;
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+	[self.should exist:[NSString stringWithFormat:@"before you can call %@", NSStringFromSelector(aSelector)]];
 	NSString *selector = NSStringFromSelector(aSelector);
 	//NSLog(@"uiquery method missing selector = %@", selector);
 	
-	for (UIView *target in views) {
+	for (UIView *target in [self firstOrAllViews]) {
 		//NSLog(@"target = %@", target);
 		if ([target respondsToSelector:aSelector]) {
 			//NSLog(@"target view %@ reponds to = %@", target, selector);
@@ -146,7 +159,7 @@ static BOOL swizzleFiltersCalled;
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
 	[self clearCache];
 	//NSLog(@"uiquery forwardInvocation");
-	for (UIView *target in views) {
+	for (UIView *target in [self firstOrAllViews]) {
 		if ([target respondsToSelector:[anInvocation selector]]) {
 			[anInvocation invokeWithTarget:target];
 		}
@@ -161,21 +174,31 @@ static BOOL swizzleFiltersCalled;
 }
 
 -(UIQuery *)index:(int)index {
-	id cachedResult = [callCache get:[NSString stringWithFormat:@"%@", NSStringFromSelector(_cmd)]];
+	id cachedResult = [callCache get:[NSString stringWithFormat:@"%@%i", NSStringFromSelector(_cmd), index]];
 	if(cachedResult != nil) return cachedResult;
 	
 	if (index >= views.count) {
-		[NSException raise:nil format:@"%@ was not found at index %i", viewFilterApplied, index];
+		NSLog(@"UISPEC WARNING: %@ doesn't exist at index %i", viewFilterApplied, index);
 	}
-	UIQuery *result = [UIQuery withPreviousViews:views viewFilterApplied:nil resultViews:[NSArray arrayWithObject:[views objectAtIndex:index]]];
-	return [callCache set:result for:[NSString stringWithFormat:@"%@", NSStringFromSelector(_cmd)]];
+	NSArray *resultViews = (index >= views.count) ? [NSArray array] : [NSArray arrayWithObject:[views objectAtIndex:index]];
+	UIQuery *result = [UIQuery withPreviousViews:views viewFilterApplied:viewFilterApplied resultViews:resultViews];
+	return [callCache set:result for:[NSString stringWithFormat:@"%@%i", NSStringFromSelector(_cmd), index]];
 }
 
--(UIView *)view {
-	if (views.count == 0) {
-		[NSException raise:nil format:@"%@ was not found", viewFilterApplied];
-	}
-	return [views objectAtIndex:0];
+-(UIQuery *)first {
+	return [self index:0];
+}
+
+-(UIQuery *)last {
+	return [self index:views.count - 1];
+}
+
+-(UIQuery *)all {
+	id cachedResult = [callCache getForSelector:_cmd];
+	if(cachedResult != nil) return cachedResult;
+	UIQuery *query = [UIQuery withPreviousViews:views viewFilterApplied:viewFilterApplied resultViews:views];
+	query.allMode = YES;
+	return [callCache set:query forSelector:_cmd];
 }
 
 -(UIQuery *)view:(NSString *)className {
@@ -235,7 +258,8 @@ static BOOL swizzleFiltersCalled;
 }
 
 -(UIQuery *)flash {
-	for (UIView *view in views) {
+	[self.should exist:@"before you can flash it"];
+	for (UIView *view in [self firstOrAllViews]) {
 		UIColor *tempColor = view.backgroundColor;
 		for (int i=0; i<5; i++) {
 			view.backgroundColor = [UIColor yellowColor];
@@ -249,7 +273,8 @@ static BOOL swizzleFiltersCalled;
 }
 
 -(UIQuery *)show {
-	for (UIView *view in views) {
+	[self.should exist:@"before you can show it"];
+	for (UIView *view in [self firstOrAllViews]) {
 		NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 		//NSLog(@"Class = %@", [view className]);
 		int i, propertyCount = 0;
@@ -285,9 +310,10 @@ static BOOL swizzleFiltersCalled;
 }
 
 - (UIQuery *)touch {
+	[self.should exist:@"before you can touch it"];
 	[self clearCache];
 	
-	for (UIView *view in views) {
+	for (UIView *view in [self firstOrAllViews]) {
 		UITouch *touch = [[UITouch alloc] initInView:view];
 		UIEvent *eventDown = [[UIEvent alloc] initWithTouch:touch];
 		NSSet *touches = [[NSMutableSet alloc] initWithObjects:&touch count:1];
@@ -303,6 +329,7 @@ static BOOL swizzleFiltersCalled;
 		[eventUp release];
 		[touches release];
 		[touch release];
+		if (allMode) [self wait:.25];
 	}
 	return self;
 }
