@@ -15,10 +15,10 @@ Inside you will find
     * The API documentation: doc/html/index.html
     * The source code: src/
     * The static library for use with iphone XCode projects: bin/UISpec/UISpec_X_Y.a
-    * The header files for use with the static library in your iphone XCode projects: bin/UISpec/headers
+    * The header files for use with the static library in your iphone XCode projects: bin/UISpec/Headers
 
 
-To add the PureMVC static library and headers to your XCode project:
+To add the UISpec static library and headers to your XCode project:
 
 From the Groups & Files pane, right click on the Frameworks (if it exists) folder or the Link Binary With Libraries folder and select
 
@@ -32,7 +32,7 @@ For each target you added it too, you should see the static library (.a) listed 
 
 From the Groups & Files pane, double click the respective target or right click and select, Get Info, and then click on the Build tab.
 
-Under the setting, Header Search Paths, add "~/Dev/UISpec_X_Y/bin/UISpec/headers"
+Under the setting, Header Search Paths, add "~/Dev/UISpec_X_Y/bin/UISpec/Headers"
 
 
 Note: The static library has been compiled for the both the simulator and the device.
