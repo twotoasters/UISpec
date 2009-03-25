@@ -43,7 +43,7 @@ static BOOL swizzleFiltersCalled;
 	if (!swizzleFiltersCalled) {
 		//NSLog(@"swizzling filters");
 		swizzleFiltersCalled = YES;
-		NSArray *excludeKeys = [NSArray arrayWithObjects:@"allMode", @"show", @"flash", @"all", @"last", @"first", @"timeout", @"parentsMode", @"parents", @"views", @"with", @"touch", @"previousViews", @"viewFilterApplied", @"should", @"callCache", nil];
+		NSArray *excludeKeys = [NSArray arrayWithObjects:@"descendants", @"allMode", @"show", @"flash", @"all", @"last", @"first", @"timeout", @"parentsMode", @"parents", @"views", @"with", @"touch", @"previousViews", @"viewFilterApplied", @"should", @"callCache", nil];
 		int i, propertyCount = 0;
 		objc_property_t *propertyList = class_copyPropertyList([self class], &propertyCount);
 		for (i=0; i<propertyCount; i++) {
@@ -65,6 +65,10 @@ static BOOL swizzleFiltersCalled;
 }
 		
 -(UIQuery *)find {
+	return [self descendants];
+}
+
+-(UIQuery *)descendants {
 	NSMutableArray *array = [NSMutableArray array];
 	
 	for (UIView *view in [self firstOrAllViews]) {
@@ -289,7 +293,7 @@ static BOOL swizzleFiltersCalled;
 	[self.should exist:@"before you can show it"];
 	for (UIView *view in [self firstOrAllViews]) {
 		NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-		//NSLog(@"Class = %@", [view className]);
+		NSLog(@"Class = %@", [view className]);
 		int i, propertyCount = 0;
 		objc_property_t *propertyList = class_copyPropertyList([view class], &propertyCount);
 		for (i=0; i<propertyCount; i++) {

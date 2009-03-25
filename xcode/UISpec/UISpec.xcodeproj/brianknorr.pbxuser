@@ -14,7 +14,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					750,
+					661,
 					20,
 					48,
 					43,
@@ -36,7 +36,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					710,
+					621,
 					60,
 					20,
 					48,
@@ -170,6 +170,34 @@
 			C7FE1B090F783EFA0047857B /* PBXTextBookmark */ = C7FE1B090F783EFA0047857B /* PBXTextBookmark */;
 			C7FE1B0B0F783F290047857B /* PBXTextBookmark */ = C7FE1B0B0F783F290047857B /* PBXTextBookmark */;
 			C7FE1B120F783FCF0047857B /* PBXTextBookmark */ = C7FE1B120F783FCF0047857B /* PBXTextBookmark */;
+			C7FE1B980F7ABB440047857B /* PBXTextBookmark */ = C7FE1B980F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1B990F7ABB440047857B /* PBXTextBookmark */ = C7FE1B990F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1B9A0F7ABB440047857B /* PBXTextBookmark */ = C7FE1B9A0F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1B9B0F7ABB440047857B /* PBXTextBookmark */ = C7FE1B9B0F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1B9C0F7ABB440047857B /* PBXTextBookmark */ = C7FE1B9C0F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1B9D0F7ABB440047857B /* PBXTextBookmark */ = C7FE1B9D0F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1B9E0F7ABB440047857B /* PBXTextBookmark */ = C7FE1B9E0F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1B9F0F7ABB440047857B /* PBXTextBookmark */ = C7FE1B9F0F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1BA00F7ABB440047857B /* PBXTextBookmark */ = C7FE1BA00F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1BA10F7ABB440047857B /* PBXTextBookmark */ = C7FE1BA10F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1BA20F7ABB440047857B /* PBXTextBookmark */ = C7FE1BA20F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1BA30F7ABB440047857B /* PBXTextBookmark */ = C7FE1BA30F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1BA40F7ABB440047857B /* PBXTextBookmark */ = C7FE1BA40F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1BA50F7ABB440047857B /* PBXTextBookmark */ = C7FE1BA50F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1BA60F7ABB440047857B /* PBXTextBookmark */ = C7FE1BA60F7ABB440047857B /* PBXTextBookmark */;
+			C7FE1BB00F7ABDAD0047857B /* PBXTextBookmark */ = C7FE1BB00F7ABDAD0047857B /* PBXTextBookmark */;
+			C7FE1BB10F7ABDAD0047857B /* PBXTextBookmark */ = C7FE1BB10F7ABDAD0047857B /* PBXTextBookmark */;
+			C7FE1BB20F7ABDAD0047857B /* PBXTextBookmark */ = C7FE1BB20F7ABDAD0047857B /* PBXTextBookmark */;
+			C7FE1BB30F7ABDAD0047857B /* PBXTextBookmark */ = C7FE1BB30F7ABDAD0047857B /* PBXTextBookmark */;
+			C7FE1BB40F7ABDAD0047857B /* PBXTextBookmark */ = C7FE1BB40F7ABDAD0047857B /* PBXTextBookmark */;
+			C7FE1BB50F7ABDAD0047857B /* PBXTextBookmark */ = C7FE1BB50F7ABDAD0047857B /* PBXTextBookmark */;
+			C7FE1BB70F7ACCCA0047857B /* PBXTextBookmark */ = C7FE1BB70F7ACCCA0047857B /* PBXTextBookmark */;
+			C7FE1BB80F7ACCCA0047857B /* PBXTextBookmark */ = C7FE1BB80F7ACCCA0047857B /* PBXTextBookmark */;
+			C7FE1BBA0F7ACEF00047857B /* PBXTextBookmark */ = C7FE1BBA0F7ACEF00047857B /* PBXTextBookmark */;
+			C7FE1C270F7AFAFB0047857B /* PBXTextBookmark */ = C7FE1C270F7AFAFB0047857B /* PBXTextBookmark */;
+			C7FE1C280F7AFAFB0047857B /* PBXTextBookmark */ = C7FE1C280F7AFAFB0047857B /* PBXTextBookmark */;
+			C7FE1C290F7AFAFB0047857B /* PBXTextBookmark */ = C7FE1C290F7AFAFB0047857B /* PBXTextBookmark */;
+			C7FE1C2A0F7AFAFB0047857B /* PBXTextBookmark */ = C7FE1C2A0F7AFAFB0047857B /* PBXTextBookmark */;
 		};
 		sourceControlManager = C76EB5CC0F74584800EF8398 /* Source Control */;
 		userBuildSettings = {
@@ -246,16 +274,17 @@
 	};
 	C76EB7560F76DFF400EF8398 /* UIQuery.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 852}}";
-			sepNavSelRange = "{501, 0}";
-			sepNavVisRange = "{0, 1420}";
+			sepNavIntBoundsRect = "{{0, 0}, {936, 784}}";
+			sepNavSelRange = "{976, 0}";
+			sepNavVisRange = "{0, 2112}";
 		};
 	};
 	C76EB7570F76DFF400EF8398 /* UIQuery.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1536, 6734}}";
-			sepNavSelRange = "{5749, 227}";
-			sepNavVisRange = "{4062, 2408}";
+			sepNavIntBoundsRect = "{{0, 0}, {1632, 7166}}";
+			sepNavSelRange = "{1124, 0}";
+			sepNavVisRange = "{395, 1717}";
+			sepNavWindowFrame = "{{15, 113}, {1250, 884}}";
 		};
 	};
 	C76EB7580F76DFF400EF8398 /* UIExpectation.h */ = {
@@ -639,7 +668,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 36";
 		rLen = 0;
-		rLoc = 1097;
+		rLoc = 1450;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 0;
@@ -659,7 +688,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 154";
 		rLen = 0;
-		rLoc = 6152;
+		rLoc = 6225;
 		rType = 0;
 		vrLen = 2226;
 		vrLoc = 3913;
@@ -679,7 +708,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 36";
 		rLen = 0;
-		rLoc = 1097;
+		rLoc = 1450;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 0;
@@ -689,7 +718,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 36";
 		rLen = 0;
-		rLoc = 1097;
+		rLoc = 1450;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 0;
@@ -759,7 +788,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6870;
+		rLoc = 6943;
 		rType = 0;
 		vrLen = 1979;
 		vrLoc = 4759;
@@ -799,7 +828,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6870;
+		rLoc = 6943;
 		rType = 0;
 		vrLen = 1977;
 		vrLoc = 4761;
@@ -809,7 +838,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6870;
+		rLoc = 6943;
 		rType = 0;
 		vrLen = 1979;
 		vrLoc = 4759;
@@ -879,7 +908,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6870;
+		rLoc = 6943;
 		rType = 0;
 		vrLen = 1977;
 		vrLoc = 4761;
@@ -899,7 +928,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6870;
+		rLoc = 6943;
 		rType = 0;
 		vrLen = 1977;
 		vrLoc = 4761;
@@ -919,7 +948,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6870;
+		rLoc = 6943;
 		rType = 0;
 		vrLen = 1977;
 		vrLoc = 4761;
@@ -939,7 +968,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 119";
 		rLen = 0;
-		rLoc = 4386;
+		rLoc = 4459;
 		rType = 0;
 		vrLen = 2035;
 		vrLoc = 3534;
@@ -949,7 +978,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 134";
 		rLen = 5;
-		rLoc = 5013;
+		rLoc = 5086;
 		rType = 0;
 		vrLen = 2063;
 		vrLoc = 3534;
@@ -966,7 +995,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 119";
 		rLen = 0;
-		rLoc = 4386;
+		rLoc = 4459;
 		rType = 0;
 		vrLen = 2035;
 		vrLoc = 3534;
@@ -986,7 +1015,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 134";
 		rLen = 5;
-		rLoc = 5013;
+		rLoc = 5086;
 		rType = 0;
 		vrLen = 2063;
 		vrLoc = 3534;
@@ -1036,7 +1065,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 79";
 		rLen = 0;
-		rLoc = 2834;
+		rLoc = 2907;
 		rType = 0;
 		vrLen = 2131;
 		vrLoc = 1276;
@@ -1046,7 +1075,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 28";
 		rLen = 0;
-		rLoc = 665;
+		rLoc = 1016;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 0;
@@ -1066,7 +1095,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 119";
 		rLen = 0;
-		rLoc = 4386;
+		rLoc = 4459;
 		rType = 0;
 		vrLen = 2063;
 		vrLoc = 3534;
@@ -1076,7 +1105,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 36";
 		rLen = 0;
-		rLoc = 1097;
+		rLoc = 1450;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 0;
@@ -1086,7 +1115,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 119";
 		rLen = 0;
-		rLoc = 4386;
+		rLoc = 4459;
 		rType = 0;
 		vrLen = 2063;
 		vrLoc = 3534;
@@ -1096,7 +1125,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 27";
 		rLen = 0;
-		rLoc = 666;
+		rLoc = 1017;
 		rType = 0;
 		vrLen = 1418;
 		vrLoc = 0;
@@ -1106,7 +1135,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 119";
 		rLen = 0;
-		rLoc = 4386;
+		rLoc = 4459;
 		rType = 0;
 		vrLen = 2409;
 		vrLoc = 130;
@@ -1116,7 +1145,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 36";
 		rLen = 0;
-		rLoc = 1097;
+		rLoc = 1450;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 0;
@@ -1126,7 +1155,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 119";
 		rLen = 0;
-		rLoc = 4386;
+		rLoc = 4459;
 		rType = 0;
 		vrLen = 2408;
 		vrLoc = 131;
@@ -1146,7 +1175,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 193";
 		rLen = 0;
-		rLoc = 7351;
+		rLoc = 7424;
 		rType = 0;
 		vrLen = 1975;
 		vrLoc = 5187;
@@ -1156,7 +1185,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 28";
 		rLen = 0;
-		rLoc = 665;
+		rLoc = 1016;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 0;
@@ -1176,7 +1205,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 28";
 		rLen = 0;
-		rLoc = 665;
+		rLoc = 1016;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 0;
@@ -1186,7 +1215,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 79";
 		rLen = 0;
-		rLoc = 2834;
+		rLoc = 2907;
 		rType = 0;
 		vrLen = 2131;
 		vrLoc = 1276;
@@ -1246,7 +1275,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 79";
 		rLen = 0;
-		rLoc = 2834;
+		rLoc = 2907;
 		rType = 0;
 		vrLen = 2131;
 		vrLoc = 1276;
@@ -1256,7 +1285,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 24";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 515;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 0;
@@ -1266,7 +1295,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 24";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 515;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 0;
@@ -1276,7 +1305,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 79";
 		rLen = 0;
-		rLoc = 2834;
+		rLoc = 2907;
 		rType = 0;
 		vrLen = 2131;
 		vrLoc = 1276;
@@ -1286,7 +1315,7 @@
 		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
 		name = "UIQuery.h: 24";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 515;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 0;
@@ -1296,7 +1325,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 54";
 		rLen = 0;
-		rLoc = 2031;
+		rLoc = 2047;
 		rType = 0;
 		vrLen = 2129;
 		vrLoc = 1276;
@@ -1306,7 +1335,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 54";
 		rLen = 0;
-		rLoc = 2031;
+		rLoc = 2047;
 		rType = 0;
 		vrLen = 2129;
 		vrLoc = 1276;
@@ -1316,7 +1345,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 46";
 		rLen = 0;
-		rLoc = 1465;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 2480;
 		vrLoc = 560;
@@ -1326,7 +1355,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 46";
 		rLen = 0;
-		rLoc = 1506;
+		rLoc = 1522;
 		rType = 0;
 		vrLen = 2481;
 		vrLoc = 560;
@@ -1336,7 +1365,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 46";
 		rLen = 0;
-		rLoc = 1456;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 2493;
 		vrLoc = 560;
@@ -1346,7 +1375,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 246";
 		rLen = 0;
-		rLoc = 8892;
+		rLoc = 8965;
 		rType = 0;
 		vrLen = 2339;
 		vrLoc = 6992;
@@ -1356,7 +1385,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 83";
 		rLen = 0;
-		rLoc = 2998;
+		rLoc = 3071;
 		rType = 0;
 		vrLen = 2297;
 		vrLoc = 1279;
@@ -1366,7 +1395,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 81";
 		rLen = 0;
-		rLoc = 2856;
+		rLoc = 2929;
 		rType = 0;
 		vrLen = 2288;
 		vrLoc = 1279;
@@ -1376,7 +1405,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 332";
 		rLen = 0;
-		rLoc = 11943;
+		rLoc = 12014;
 		rType = 0;
 		vrLen = 1591;
 		vrLoc = 10165;
@@ -1386,7 +1415,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 332";
 		rLen = 0;
-		rLoc = 11927;
+		rLoc = 11998;
 		rType = 0;
 		vrLen = 1604;
 		vrLoc = 10165;
@@ -1396,7 +1425,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 299";
 		rLen = 0;
-		rLoc = 11096;
+		rLoc = 11167;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 10165;
@@ -1406,7 +1435,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 299";
 		rLen = 0;
-		rLoc = 11096;
+		rLoc = 11167;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 10165;
@@ -1416,7 +1445,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 299";
 		rLen = 0;
-		rLoc = 11096;
+		rLoc = 11167;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 10165;
@@ -1430,7 +1459,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 299";
 		rLen = 0;
-		rLoc = 11096;
+		rLoc = 11167;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 10165;
@@ -1503,6 +1532,286 @@
 		rLoc = 379;
 		rType = 0;
 		vrLen = 403;
+		vrLoc = 0;
+	};
+	C7FE1B980F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB5F40F74594900EF8398 /* UISpec.h */;
+		name = "UISpec.h: 18";
+		rLen = 0;
+		rLoc = 379;
+		rType = 0;
+		vrLen = 403;
+		vrLoc = 0;
+	};
+	C7FE1B990F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7540F76DFF400EF8398 /* UIFilter.h */;
+		name = "UIFilter.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 240;
+		vrLoc = 0;
+	};
+	C7FE1B9A0F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7550F76DFF400EF8398 /* UIFilter.m */;
+		name = "UIFilter.m: 41";
+		rLen = 0;
+		rLoc = 1295;
+		rType = 0;
+		vrLen = 2219;
+		vrLoc = 0;
+	};
+	C7FE1B9B0F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 20";
+		rLen = 0;
+		rLoc = 396;
+		rType = 0;
+		vrLen = 1448;
+		vrLoc = 0;
+	};
+	C7FE1B9C0F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 292";
+		rLen = 0;
+		rLoc = 10236;
+		rType = 0;
+		vrLen = 1884;
+		vrLoc = 7656;
+	};
+	C7FE1B9D0F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB5F40F74594900EF8398 /* UISpec.h */;
+		name = "UISpec.h: 18";
+		rLen = 0;
+		rLoc = 379;
+		rType = 0;
+		vrLen = 403;
+		vrLoc = 0;
+	};
+	C7FE1B9E0F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7540F76DFF400EF8398 /* UIFilter.h */;
+		name = "UIFilter.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 240;
+		vrLoc = 0;
+	};
+	C7FE1B9F0F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7550F76DFF400EF8398 /* UIFilter.m */;
+		name = "UIFilter.m: 41";
+		rLen = 0;
+		rLoc = 1295;
+		rType = 0;
+		vrLen = 2099;
+		vrLoc = 515;
+	};
+	C7FE1BA00F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 163";
+		rLen = 0;
+		rLoc = 5777;
+		rType = 0;
+		vrLen = 2408;
+		vrLoc = 4062;
+	};
+	C7FE1BA10F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7550F76DFF400EF8398 /* UIFilter.m */;
+		name = "UIFilter.m: 41";
+		rLen = 0;
+		rLoc = 1295;
+		rType = 0;
+		vrLen = 2219;
+		vrLoc = 0;
+	};
+	C7FE1BA20F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 178";
+		rLen = 0;
+		rLoc = 6220;
+		rType = 0;
+		vrLen = 2198;
+		vrLoc = 557;
+	};
+	C7FE1BA30F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 24";
+		rLen = 0;
+		rLoc = 515;
+		rType = 0;
+		vrLen = 1420;
+		vrLoc = 0;
+	};
+	C7FE1BA40F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 292";
+		rLen = 0;
+		rLoc = 10236;
+		rType = 0;
+		vrLen = 1884;
+		vrLoc = 7656;
+	};
+	C7FE1BA50F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 20";
+		rLen = 0;
+		rLoc = 396;
+		rType = 0;
+		vrLen = 1448;
+		vrLoc = 0;
+	};
+	C7FE1BA60F7ABB440047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 68";
+		rLen = 0;
+		rLoc = 2569;
+		rType = 0;
+		vrLen = 1609;
+		vrLoc = 1813;
+	};
+	C7FE1BB00F7ABDAD0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 34";
+		rLen = 0;
+		rLoc = 1124;
+		rType = 0;
+		vrLen = 1929;
+		vrLoc = 0;
+	};
+	C7FE1BB10F7ABDAD0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 38";
+		rLen = 0;
+		rLoc = 1619;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 0;
+	};
+	C7FE1BB20F7ABDAD0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 68";
+		rLen = 0;
+		rLoc = 2569;
+		rType = 0;
+		vrLen = 1609;
+		vrLoc = 1813;
+	};
+	C7FE1BB30F7ABDAD0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 38";
+		rLen = 0;
+		rLoc = 1619;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 0;
+	};
+	C7FE1BB40F7ABDAD0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 34";
+		rLen = 0;
+		rLoc = 1124;
+		rType = 0;
+		vrLen = 1929;
+		vrLoc = 0;
+	};
+	C7FE1BB50F7ABDAD0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 38";
+		rLen = 0;
+		rLoc = 1619;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 0;
+	};
+	C7FE1BB70F7ACCCA0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 38";
+		rLen = 0;
+		rLoc = 1619;
+		rType = 0;
+		vrLen = 1500;
+		vrLoc = 0;
+	};
+	C7FE1BB80F7ACCCA0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 38";
+		rLen = 0;
+		rLoc = 1619;
+		rType = 0;
+		vrLen = 1548;
+		vrLoc = 0;
+	};
+	C7FE1BBA0F7ACEF00047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 47";
+		rLen = 0;
+		rLoc = 2111;
+		rType = 0;
+		vrLen = 1574;
+		vrLoc = 0;
+	};
+	C7FE1C270F7AFAFB0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 34";
+		rLen = 0;
+		rLoc = 1124;
+		rType = 0;
+		vrLen = 1665;
+		vrLoc = 264;
+	};
+	C7FE1C280F7AFAFB0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 26";
+		rLen = 129;
+		rLoc = 644;
+		rType = 0;
+		vrLen = 1747;
+		vrLoc = 0;
+	};
+	C7FE1C290F7AFAFB0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
+		name = "UIQuery.m: 34";
+		rLen = 0;
+		rLoc = 1124;
+		rType = 0;
+		vrLen = 1665;
+		vrLoc = 264;
+	};
+	C7FE1C2A0F7AFAFB0047857B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C76EB7560F76DFF400EF8398 /* UIQuery.h */;
+		name = "UIQuery.h: 29";
+		rLen = 0;
+		rLoc = 976;
+		rType = 0;
+		vrLen = 2112;
 		vrLoc = 0;
 	};
 }

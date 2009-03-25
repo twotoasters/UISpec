@@ -21,8 +21,12 @@
 	
 	UIFilter *with;
 	UIExpectation *should;
-	UIQuery *touch, *parents, *first, *last, *all, *show, *flash;
-	UIQuery *textField, *navigationBar, *label, *button, *navigationButton, *alertView, *textView, *tableView, *tableViewCell;
+	UIQuery *touch, *parents, *first, *last, *all, *show, *flash, *descendants;
+	
+	UIQuery *textField, *navigationBar, *label, *button, *navigationButton, *alertView, *textView, *tableView, *tableViewCell, 
+			*toolbar, *toolbarButton, *tabBar, *tabBarButton, *datePicker, *window, *webView, *view, *Switch, *slider, *segmentedControl,
+			*searchBar, *scrollView, *progressView, *pickerView, *pageControl, *imageView, *control, *actionSheet, *activityIndicatorView,
+			*threePartButton, *navigationItemButtonView, *removeControlMinusButton;
 }
 
 @property BOOL parentsMode, allMode;
@@ -34,8 +38,12 @@
 
 @property(nonatomic, readonly) UIFilter *with;
 @property(nonatomic, readonly) UIExpectation *should;
-@property(nonatomic, readonly) UIQuery *touch, *parents, *first, *last, *all, *flash, *show;
-@property(nonatomic, readonly) UIQuery *textField, *navigationBar, *label, *button, *navigationButton, *alertView, *textView, *tableView, *tableViewCell;
+@property(nonatomic, readonly) UIQuery *touch, *parents, *first, *last, *all, *flash, *show, *descendants;
+
+@property(nonatomic, readonly) UIQuery *textField, *navigationBar, *label, *button, *navigationButton, *alertView, *textView, *tableView, *tableViewCell, 
+*toolbar, *toolbarButton, *tabBar, *tabBarButton, *datePicker, *window, *webView, *view, *Switch, *slider, *segmentedControl,
+*searchBar, *scrollView, *progressView, *pickerView, *pageControl, *imageView, *control, *actionSheet, *activityIndicatorView,
+*threePartButton, *navigationItemButtonView, *removeControlMinusButton;
 
 +(id)withApplicaton;
 
