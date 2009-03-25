@@ -197,7 +197,7 @@
 	};
 	C76EB5F40F74594900EF8398 /* UISpec.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {928, 583}}";
+			sepNavIntBoundsRect = "{{0, 0}, {928, 440}}";
 			sepNavSelRange = "{379, 0}";
 			sepNavVisRange = "{0, 403}";
 		};
@@ -232,16 +232,16 @@
 	};
 	C76EB7540F76DFF400EF8398 /* UIFilter.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1137, 820}}";
+			sepNavIntBoundsRect = "{{0, 0}, {977, 921}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 244}";
+			sepNavVisRange = "{0, 240}";
 		};
 	};
 	C76EB7550F76DFF400EF8398 /* UIFilter.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {928, 1288}}";
+			sepNavIntBoundsRect = "{{0, 0}, {977, 1162}}";
 			sepNavSelRange = "{1295, 0}";
-			sepNavVisRange = "{693, 1884}";
+			sepNavVisRange = "{0, 2219}";
 		};
 	};
 	C76EB7560F76DFF400EF8398 /* UIQuery.h */ = {
@@ -253,9 +253,9 @@
 	};
 	C76EB7570F76DFF400EF8398 /* UIQuery.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1536, 7168}}";
-			sepNavSelRange = "{10713, 0}";
-			sepNavVisRange = "{10165, 1280}";
+			sepNavIntBoundsRect = "{{0, 0}, {1536, 6734}}";
+			sepNavSelRange = "{5749, 227}";
+			sepNavVisRange = "{4062, 2408}";
 		};
 	};
 	C76EB7580F76DFF400EF8398 /* UIExpectation.h */ = {
@@ -659,7 +659,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 154";
 		rLen = 0;
-		rLoc = 5769;
+		rLoc = 6152;
 		rType = 0;
 		vrLen = 2226;
 		vrLoc = 3913;
@@ -759,7 +759,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6487;
+		rLoc = 6870;
 		rType = 0;
 		vrLen = 1979;
 		vrLoc = 4759;
@@ -799,7 +799,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6487;
+		rLoc = 6870;
 		rType = 0;
 		vrLen = 1977;
 		vrLoc = 4761;
@@ -809,7 +809,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6487;
+		rLoc = 6870;
 		rType = 0;
 		vrLen = 1979;
 		vrLoc = 4759;
@@ -879,7 +879,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6487;
+		rLoc = 6870;
 		rType = 0;
 		vrLen = 1977;
 		vrLoc = 4761;
@@ -899,7 +899,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6487;
+		rLoc = 6870;
 		rType = 0;
 		vrLen = 1977;
 		vrLoc = 4761;
@@ -919,7 +919,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 172";
 		rLen = 0;
-		rLoc = 6487;
+		rLoc = 6870;
 		rType = 0;
 		vrLen = 1977;
 		vrLoc = 4761;
@@ -1146,7 +1146,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 193";
 		rLen = 0;
-		rLoc = 6968;
+		rLoc = 7351;
 		rType = 0;
 		vrLen = 1975;
 		vrLoc = 5187;
@@ -1346,7 +1346,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 246";
 		rLen = 0;
-		rLoc = 8509;
+		rLoc = 8892;
 		rType = 0;
 		vrLen = 2339;
 		vrLoc = 6992;
@@ -1376,7 +1376,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 332";
 		rLen = 0;
-		rLoc = 11560;
+		rLoc = 11943;
 		rType = 0;
 		vrLen = 1591;
 		vrLoc = 10165;
@@ -1386,7 +1386,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 332";
 		rLen = 0;
-		rLoc = 11544;
+		rLoc = 11927;
 		rType = 0;
 		vrLen = 1604;
 		vrLoc = 10165;
@@ -1396,7 +1396,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 299";
 		rLen = 0;
-		rLoc = 10713;
+		rLoc = 11096;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 10165;
@@ -1406,7 +1406,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 299";
 		rLen = 0;
-		rLoc = 10713;
+		rLoc = 11096;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 10165;
@@ -1416,7 +1416,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 299";
 		rLen = 0;
-		rLoc = 10713;
+		rLoc = 11096;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 10165;
@@ -1430,7 +1430,7 @@
 		fRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */;
 		name = "UIQuery.m: 299";
 		rLen = 0;
-		rLoc = 10713;
+		rLoc = 11096;
 		rType = 0;
 		vrLen = 1280;
 		vrLoc = 10165;

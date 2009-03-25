@@ -147,22 +147,35 @@ static BOOL swizzleFiltersCalled;
 	NSString *selector = NSStringFromSelector(aSelector);
 	//NSLog(@"uiquery method missing selector = %@", selector);
 	
+	//Check if any view responds directly to selector
 	for (UIView *target in [self firstOrAllViews]) {
 		//NSLog(@"target = %@", target);
 		if ([target respondsToSelector:aSelector]) {
-			//NSLog(@"target view %@ reponds to = %@", target, selector);
+			//NSLog(@"target view %@ directly reponds to = %@", target, selector);
 			return [target methodSignatureForSelector:aSelector];
 		}
+	}
+	
+	//Check if any view responds as a property match
+	NSArray *selectors = [selector componentsSeparatedByString:@":"];
+	if (selectors.count == 2) {
+		return [[self with] methodSignatureForSelector:aSelector];
 	}
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
 	[self clearCache];
 	//NSLog(@"uiquery forwardInvocation");
+	BOOL isDirect = NO;
 	for (UIView *target in [self firstOrAllViews]) {
 		if ([target respondsToSelector:[anInvocation selector]]) {
 			[anInvocation invokeWithTarget:target];
+			isDirect = YES;
 		}
+	}
+	
+	if (!isDirect) {
+		[[self with] forwardInvocation:anInvocation];
 	}
 }
 
