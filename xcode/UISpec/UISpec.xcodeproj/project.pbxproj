@@ -410,7 +410,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = UISpec_Simulator;
-				SDKROOT = iphonesimulator2.2;
+				SDKROOT = iphonesimulator3.0;
 			};
 			name = Debug;
 		};
@@ -450,7 +450,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = UISpec_Device;
-				SDKROOT = iphoneos2.2;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
 		};

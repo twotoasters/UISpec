@@ -293,7 +293,7 @@ static BOOL swizzleFiltersCalled;
 	[self.should exist:@"before you can show it"];
 	for (UIView *view in [self firstOrAllViews]) {
 		NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-		NSLog(@"Class = %@", [view className]);
+		NSLog(@"Class = %@", [view class]);
 		int i, propertyCount = 0;
 		objc_property_t *propertyList = class_copyPropertyList([view class], &propertyCount);
 		for (i=0; i<propertyCount; i++) {
@@ -332,12 +332,12 @@ static BOOL swizzleFiltersCalled;
 	
 	for (UIView *view in [self firstOrAllViews]) {
 		UITouch *touch = [[UITouch alloc] initInView:view];
-		UIEvent *eventDown = [[UIEvent alloc] initWithTouch:touch];
+		UIEvent *eventDown = [[NSClassFromString(@"UITouchesEvent") alloc] initWithTouch:touch];
 		NSSet *touches = [[NSMutableSet alloc] initWithObjects:&touch count:1];
 		
 		[touch.view touchesBegan:touches withEvent:eventDown];
 		
-		UIEvent *eventUp = [[UIEvent alloc] initWithTouch:touch];
+		UIEvent *eventUp = [[NSClassFromString(@"UITouchesEvent") alloc] initWithTouch:touch];
 		[touch setPhase:UITouchPhaseEnded];
 		
 		[touch.view touchesEnded:touches withEvent:eventDown];
@@ -440,79 +440,6 @@ static BOOL swizzleFiltersCalled;
 
 @end
 
-//
-// GSEvent is an undeclared object. We don't need to use it ourselves but some
-// Apple APIs (UIScrollView in particular) require the x and y fields to be present.
-//
-@interface GSEventProxy : NSObject
-{
-@public
-	int ignored1[5];
-	float x;
-	float y;
-	int ignored2[24];
-}
-@end
-@implementation GSEventProxy
-@end
 
-//
-// PublicEvent
-//
-// A dummy class used to gain access to UIEvent's private member variables.
-// If UIEvent changes at all, this will break.
-//
-@interface PublicEvent : NSObject
-{
-@public
-    GSEventProxy           *_event;
-    NSTimeInterval          _timestamp;
-    NSMutableSet           *_touches;
-    CFMutableDictionaryRef  _keyedTouches;
-}
-@end
-
-@implementation PublicEvent
-@end
-
-//
-// UIEvent (Synthesize)
-//
-// A category to allow creation of a touch event.
-//
-@implementation UIEvent (Synthesize)
-
-- (id)initWithTouch:(UITouch *)touch
-{
-	self = [super init];
-	if (self != nil)
-	{
-		PublicEvent *publicEvent = (PublicEvent *)self;
-		publicEvent->_touches = [[NSMutableSet alloc] initWithObjects:&touch count:1];
-		publicEvent->_timestamp = [NSDate timeIntervalSinceReferenceDate];
-		
-		CGPoint location = [touch locationInView:touch.window];
-		
-		publicEvent->_event = [[GSEventProxy alloc] init];
-		publicEvent->_event->x = location.x;
-		publicEvent->_event->y = location.y;
-		
-		CFMutableDictionaryRef dict =
-		CFDictionaryCreateMutable(
-								  kCFAllocatorDefault,
-								  0,
-								  &kCFTypeDictionaryKeyCallBacks,
-								  &kCFTypeDictionaryValueCallBacks);
-		
-		//NSLog(@"dict = %@", dict);
-		//		NSLog(@"touch.view = %@", touch.view);
-		//		NSLog(@"publicEvent->_touches = %@", publicEvent->_touches);
-		CFDictionaryAddValue(dict, touch.view, publicEvent->_touches);
-		CFDictionaryAddValue(dict, touch.window, publicEvent->_touches);
-		
-		publicEvent->_keyedTouches = dict;
-	}
-	return self;
-}
 
 @end

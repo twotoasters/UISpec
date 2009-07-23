@@ -215,8 +215,8 @@
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>build-and-go</string>
 				<string>com.apple.ide.PBXToolbarStopButton</string>
-				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>get-info</string>
+				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>com.apple.pbx.toolbar.searchfield</string>
 			</array>
 			<key>ControllerClassBaseName</key>
@@ -230,6 +230,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,18 +275,13 @@
 								<string>C76EB75A0F76DFF400EF8398</string>
 								<string>1AB674ADFE9D54B511CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>C7FE17F00F77E1AD0047857B</string>
-								<string>C7FE1AF60F783CDB0047857B</string>
-								<string>C7FE17F20F77E1AD0047857B</string>
-								<string>C7FE1AE90F783BE90047857B</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>48</integer>
-									<integer>44</integer>
-									<integer>40</integer>
-									<integer>25</integer>
+									<integer>22</integer>
+									<integer>21</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -316,8 +313,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -335,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>C7FE1C2A0F7AFAFB0047857B</string>
+										<string>C7407B121019248D00E5392C</string>
 										<key>history</key>
 										<array>
 											<string>C7C6D2F70F77E08300D3C065</string>
@@ -347,7 +342,7 @@
 											<string>C7FE1B990F7ABB440047857B</string>
 											<string>C7FE1B9A0F7ABB440047857B</string>
 											<string>C7FE1C270F7AFAFB0047857B</string>
-											<string>C7FE1C280F7AFAFB0047857B</string>
+											<string>C7FE1C2A0F7AFAFB0047857B</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -355,40 +350,11 @@
 											<string>C7C6D3060F77E08300D3C065</string>
 											<string>C7C6D3090F77E08300D3C065</string>
 											<string>C7C6D30A0F77E08300D3C065</string>
-											<string>C7FE19850F7819840047857B</string>
 											<string>C7FE19860F7819840047857B</string>
-											<string>C7FE19870F7819840047857B</string>
-											<string>C7FE199D0F781BDE0047857B</string>
-											<string>C7FE19B90F7822550047857B</string>
 											<string>C7FE19BA0F7822550047857B</string>
-											<string>C7FE19BB0F7822550047857B</string>
-											<string>C7FE19BC0F7822550047857B</string>
-											<string>C7FE19BD0F7822550047857B</string>
 											<string>C7FE19BE0F7822550047857B</string>
-											<string>C7FE19C00F7822550047857B</string>
-											<string>C7FE19C20F7822550047857B</string>
-											<string>C7FE19C40F7822550047857B</string>
-											<string>C7FE19D40F78246F0047857B</string>
-											<string>C7FE1A2B0F7832340047857B</string>
-											<string>C7FE1A2D0F7832340047857B</string>
-											<string>C7FE1A2F0F7832340047857B</string>
-											<string>C7FE1A310F7832340047857B</string>
-											<string>C7FE1A330F7832340047857B</string>
-											<string>C7FE1A350F7832340047857B</string>
-											<string>C7FE1A370F7832340047857B</string>
-											<string>C7FE1A390F7832340047857B</string>
-											<string>C7FE1A3A0F7832340047857B</string>
-											<string>C7FE1A3B0F7832340047857B</string>
-											<string>C7FE1A3C0F7832340047857B</string>
-											<string>C7FE1A3D0F7832340047857B</string>
-											<string>C7FE1A440F7832C20047857B</string>
 											<string>C7FE1B9D0F7ABB440047857B</string>
 											<string>C7FE1B9E0F7ABB440047857B</string>
-											<string>C7FE1B9F0F7ABB440047857B</string>
-											<string>C7FE1BA10F7ABB440047857B</string>
-											<string>C7FE1BA30F7ABB440047857B</string>
-											<string>C7FE1BA50F7ABB440047857B</string>
-											<string>C7FE1BB30F7ABDAD0047857B</string>
 											<string>C7FE1C290F7AFAFB0047857B</string>
 										</array>
 									</dict>
@@ -403,18 +369,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {900, 802}}</string>
+								<string>{{0, 0}, {900, 561}}</string>
 								<key>RubberWindowFrame</key>
 								<string>34 97 1175 848 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>802pt</string>
+							<string>561pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>241pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -428,7 +394,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {900, -27}}</string>
+										<string>{{10, 27}, {900, 214}}</string>
 										<key>RubberWindowFrame</key>
 										<string>34 97 1175 848 0 0 1280 1002 </string>
 									</dict>
@@ -512,11 +478,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C7FE17F60F77E1B20047857B</string>
+				<string>C7407B131019248D00E5392C</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>C7FE17F70F77E1B20047857B</string>
+				<string>C7407B141019248D00E5392C</string>
 				<string>C76EB63C0F745B7000EF8398</string>
-				<string>C7FE17F80F77E1B20047857B</string>
+				<string>C7407B151019248D00E5392C</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -682,7 +648,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Users/brianknorr/Dev/UISpec/UISpec/xcode/UISpec/UISpec.xcodeproj</string>
+		<string>/Users/brianknorr/Dev/UISpec/UISpecFor30/xcode/UISpec/UISpec.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>34 97 1175 848 0 0 1280 1002 </string>

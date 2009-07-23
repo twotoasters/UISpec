@@ -23,7 +23,7 @@
 }
 
 -(void)onRegister {
-	self.viewComponent.delegate = self;
+	[self.viewComponent setDelegate:self];
 }
 
 -(NSArray *)listNotificationInterests {
@@ -43,13 +43,13 @@
 }
 
 -(void)handleNotification:(id<INotification>)notification {
-	self.viewComponent.view = nil;
+	[self.viewComponent setView:nil];
 	if ([[notification name] isEqualToString:ShowEditUser]) {
-		self.viewComponent.userVO = [notification body];
-		self.viewComponent.mode = EDIT;
+		[self.viewComponent setUserVO:[notification body]];
+		[self.viewComponent setMode:EDIT];
 	} else if ([[notification name] isEqualToString:ShowNewUser]) {
-		self.viewComponent.userVO = [[[UserVO alloc] init] autorelease];
-		self.viewComponent.mode = NEW;
+		[self.viewComponent setUserVO:[[[UserVO alloc] init] autorelease]];
+		[self.viewComponent setMode:NEW];
 	}
 	[self sendNotification:ShowUserForm body:self.viewComponent];
 }
