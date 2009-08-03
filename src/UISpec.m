@@ -62,6 +62,7 @@
 }
 
 +(void)runSpecExample:(NSTimer *)timer {
+	[self swizzleUIKit];
 	Class *class = NSClassFromString([timer.userInfo objectAtIndex:0]);
 	NSString *exampleName = [timer.userInfo objectAtIndex:1];
 	NSMutableArray *errors = [NSMutableArray array];
@@ -72,7 +73,6 @@
 
 +(void)runSpecClasses:(NSArray *)specClasses {
 	[self swizzleUIKit];
-	//NSLog(@"specClasses = %@", specClasses);
 	if (specClasses.count == 0) return;
 	
 	NSMutableArray *errors = [NSMutableArray array];
@@ -81,7 +81,6 @@
 	int examplesCount = 0;
 	for (Class *class in specClasses) {
 		NSArray *examples = [self examplesForSpecClass:class];
-		//NSLog(@"examples = %@", examples);
 		if (examples.count == 0) continue;
 		examplesCount = examplesCount + examples.count;
 		[self runExamples:examples onSpec:class errors:errors];
@@ -105,7 +104,7 @@
 }
 
 +(void)runExamples:(NSArray *)examples onSpec:(Class *)class errors:(NSMutableArray *)errors {
-	
+	NSLog(@"\n%@", NSStringFromClass(class));
 	UISpec *spec = [[[class alloc] init] autorelease];
 	if ([spec respondsToSelector:@selector(beforeAll)]) {
 		@try {
@@ -125,6 +124,7 @@
 			}
 		}
 		@try {
+			NSLog(@"\n- %@", exampleName);
 			[spec performSelector:NSSelectorFromString(exampleName)];
 		} @catch (NSException *exception) {
 			NSString *error = [NSString stringWithFormat:@"%@ %@ FAILED \n%@", class, exampleName, exception.reason];
@@ -218,9 +218,6 @@
 								  &kCFTypeDictionaryKeyCallBacks,
 								  &kCFTypeDictionaryValueCallBacks);
 		
-		//NSLog(@"dict = %@", dict);
-		//NSLog(@"touch.view = %@", touch.view);
-		//		NSLog(@"publicEvent->_touches = %@", publicEvent->_touches);
 		CFDictionaryAddValue(dict, touch.view, publicEvent->_touches);
 		CFDictionaryAddValue(dict, touch.window, publicEvent->_touches);
 		
@@ -230,7 +227,7 @@
 }
 
 -(void)noDealloc {
-	//NSLog(@"what the f");
+	//so there is no crash
 }
 
 +(void)swizzleUIKit {	

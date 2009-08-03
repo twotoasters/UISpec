@@ -3,10 +3,10 @@
 
 @implementation UIFilter
 
-@synthesize query;
+@synthesize query, redoer, redo;
 
 +(id)withQuery:(UIQuery *)query {
-	return [[[UIFilter alloc] initWithQuery:query] autorelease];
+	return [UIRedoer withTarget:[[[UIFilter alloc] initWithQuery:query] autorelease]];
 }
 
 -(id)initWithQuery:(UIQuery *)_query {
@@ -17,12 +17,17 @@
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-	////NSLog(@"methodSignatureForSelector");
 	NSString *selector = NSStringFromSelector(aSelector);
 	NSRange whereIsSet = [selector rangeOfString:@":"];
 	if (whereIsSet.length != 0) {
-		return [NSMethodSignature signatureWithObjCTypes:"@@:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"];
-	} 
+		NSArray *selectors = [NSStringFromSelector(aSelector) componentsSeparatedByString:@":"];
+		NSMutableString *signature = [NSMutableString stringWithString:@"@@:"];
+		for (NSString *selector in selectors) {
+			if ([selector length] > 0) {
+				[signature appendString:@"@"];
+			}
+		}
+		return [NSMethodSignature signatureWithObjCTypes:[signature cStringUsingEncoding:NSUTF8StringEncoding]];} 
 	else {
 		return [super methodSignatureForSelector:aSelector];
 	}
@@ -31,9 +36,6 @@
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
 	NSMutableString *selector = [NSMutableString stringWithString:NSStringFromSelector([anInvocation selector])];
 	NSArray *selectors = [selector componentsSeparatedByString:@":"];
-	
-	//NSLog(@"type = %s", [[anInvocation methodSignature] getArgumentTypeAtIndex:2]);
-	
 	NSMutableArray *array = [NSMutableArray array];
 	NSDate *start = [NSDate date];
 	while ([start timeIntervalSinceNow] > (0 - [query timeout])) {
@@ -48,7 +50,7 @@
 						matches = NO;
 						continue;
 					}
-					[anInvocation getArgument:&value atIndex:i];
+					[anInvocation getArgument:&value atIndex:i++];
 					NSString *returnType = [NSString stringWithFormat:@"%s", [[view methodSignatureForSelector:selector] methodReturnType]];
 					if ([returnType isEqualToString:@"@"]) {
 						if ([value isKindOfClass:[NSString class]]) {
@@ -61,7 +63,6 @@
 							continue;
 						}
 					} else {
-						//NSLog(@"yo %i %i", [view performSelector:selector], value);
 						if (![view performSelector:selector] == value) {
 							matches = NO;
 							continue;
@@ -76,15 +77,24 @@
 		if (array.count > 0) {
 			break;
 		} else {
-			[query redo];
+			[self redo];
 		}
 	}
-	id newQuery = [UIQuery withPreviousViews:[query previousViews] viewFilterApplied:[query viewFilterApplied] resultViews:array];
+	id newQuery = [UIQuery withViews:array className:[query className]];
 	[anInvocation setReturnValue:&newQuery];
+}
+
+-(id)redo {
+	if (redoer != nil) {
+		UIRedoer *redone = [redoer redo];
+		redoer.target = redone.target;
+		self.query = [[redoer play] query];
+	}
 }
 
 -(void)dealloc {
 	self.query = nil;
+	self.redoer = nil;
 	[super dealloc];
 }
 

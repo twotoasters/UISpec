@@ -5,7 +5,7 @@
 @implementation UIQueryTableViewCell
 
 -(void)delete {
-	UITableView *tableView = self.parents.tableView;
+	UITableView *tableView = self.parent.tableView;
 	[tableView.dataSource tableView:tableView commitEditingStyle:UITableViewCellEditingStyleDelete forRowAtIndexPath:[tableView indexPathForCell:[self.views objectAtIndex:0]]];
 }
 

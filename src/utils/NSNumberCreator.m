@@ -33,8 +33,7 @@
 		case '[': // array, of whatever, just gets the address
 			return [[NSValue alloc] initWithBytes:aValue objCType:aTypeDescription];
 	}
-	
-	//NSLog(@"converting unknown format %s", aTypeDescription);
+
 	return [[NSValue alloc] initWithBytes:aValue objCType:aTypeDescription];	
 }
 @end

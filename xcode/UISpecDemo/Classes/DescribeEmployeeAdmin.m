@@ -1,4 +1,5 @@
 #import "DescribeEmployeeAdmin.h"
+#import "Recordable.h"
 
 @implementation DescribeEmployeeAdmin
 
@@ -12,7 +13,10 @@
 
 -(void)addTestUser {
 	app.navigationButton.touch;
-	[[app.textField placeholder:@"First Name"] setText:@"Brian"];
+	UIQuery *firstName = [app.textField.with placeholder:@"First Name"];
+	[firstName setText:@"Brian"];
+	[firstName.redo setText:@"fdsfads"];
+	[firstName.redo setText:@"Brian"];
 	[[app.textField placeholder:@"Last Name"] setText:@"Knorr"];
 	[[app.textField placeholder:@"Email"] setText:@"b@g.com"];
 	[[app.textField placeholder:@"Username"] setText:@"bkuser"];
@@ -22,10 +26,15 @@
 }
 
 -(void)deleteTestUser {
-	[[[app.tableView.label text:@"Brian Knorr"] parents].tableViewCell delete];
+	[[[app.tableView.label text:@"Brian Knorr"] parent].tableViewCell delete];
 }
 
 -(void)itShouldShowListOfDefaultUsers {
+	
+	//Recordable *rapp = [[Recordable withTarget:app.tableView.label.with] text:@"Larry Stooge" isEnabled:YES];
+//	//[rapp tableViewCell];
+//	NSLog(@"wowow %@", rapp);
+//	NSLog(@"wowow12 %@", [rapp play]);
 	[[app.tableView.label text:@"Larry Stooge"] should].exist;
 	[[app.tableView.label text:@"Curly Stooge"] should].exist;
 	[[app.tableView.label text:@"Moe Stooge"] should].exist;
@@ -78,10 +87,10 @@
 	
 	[app.tableView scrollToBottom];
 	[[app.label text:@"Returns"] touch];
-	[[[app.label text:@"Returns"] parents].tableViewCell.should.have accessoryType:UITableViewCellAccessoryCheckmark];
+	[[[app.label text:@"Returns"] parent].tableViewCell.should.have accessoryType:UITableViewCellAccessoryCheckmark];
 	
 	[[app.label text:@"Returns"] touch];
-	[[[app.label text:@"Returns"] parents].tableViewCell.should.have accessoryType:UITableViewCellAccessoryNone];
+	[[[app.label text:@"Returns"] parent].tableViewCell.should.have accessoryType:UITableViewCellAccessoryNone];
 	
 	[[app view:@"UINavigationItemButtonView"] touch];
 	[[app view:@"UINavigationItemButtonView"] touch];

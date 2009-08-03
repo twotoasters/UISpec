@@ -12,7 +12,6 @@
 }
 
 -(id)initWithQuery:(UIQuery *)_query {
-	//NSLog(@"creating should");
 	if (self = [super init]) {
 		self.query = _query;
 	}
@@ -29,10 +28,8 @@
 }
 
 -(BOOL)exist:(NSString *)appendToFailureMessage {
-	[CallCache clear];
-	//NSLog(@"exist isNot = %d query view count = %i", isNot, [query views].count);
 	if ((([query views].count > 0) && isNot) || (([query views].count == 0) && !isNot)) {
-		[NSException raise:nil format:@"%@ should %@ %@", [query viewFilterApplied], (isNot ? @"not exist" : @"exist"), appendToFailureMessage];
+		[NSException raise:nil format:@"%@ should %@ %@", [query className], (isNot ? @"not exist" : @"exist"), appendToFailureMessage];
 	}
 	return YES;
 }
@@ -43,7 +40,6 @@
 }
 
 -(void)have:(BOOL)condition {
-	[CallCache clear];
 	if ((!condition && !isNot) || (condition && isNot)) {
 		[NSException raise:nil format:@"%@ did not pass condition: [%@ have:YES]", [[query view] class], (isNot ? @"should.not" : @"should")];
 	}
@@ -54,7 +50,6 @@
 	if (isNot) {
 		[NSException raise:nil format:@".not isn't supported yet for something like [should.not.have blah:1]"];
 	}
-	////NSLog(@"methodSignatureForSelector");
 	NSString *selector = NSStringFromSelector(aSelector);
 	NSRange whereIsSet = [selector rangeOfString:@":"];
 	if (whereIsSet.length != 0) {
@@ -66,15 +61,11 @@
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
-	[CallCache clear];
 	NSMutableString *selector = [NSMutableString stringWithString:NSStringFromSelector([anInvocation selector])];
 	NSArray *selectors = [selector componentsSeparatedByString:@":"];
-	
-	//NSLog(@"type = %s", [[anInvocation methodSignature] getArgumentTypeAtIndex:2]);
-	
 	NSMutableString *errorMessage = [NSMutableString string];
 	BOOL foundErrors = NO;
-	for (UIView *view in [query firstOrAllViews]) {
+	for (UIView *view in [query targetViews]) {
 		NSMutableArray *errors = [NSMutableArray array];
 		int i = 2;
 		id value = nil;
@@ -101,7 +92,6 @@
 						continue;
 					}
 				} else {
-					//NSLog(@"yo %i %i", [view performSelector:selector], value);
 					if ([view performSelector:selector] != value) {
 						[errors addObject:[NSString	 stringWithFormat:@"%@ is not equal to value", key]];
 						foundErrors = YES;

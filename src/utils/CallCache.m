@@ -18,7 +18,6 @@ static NSMutableDictionary *fullCallCache;
 }
 
 -(id)set:(id)object for:(id)key {
-	//NSLog(@"set object %@ for key %@", object, key);
 	NSMutableDictionary *myCallCache = [[CallCache getFullCache] objectForKey:[NSString stringWithFormat:@"%i", self.hash]];
 	if (myCallCache == nil) {
 		myCallCache = [NSMutableDictionary dictionary];
@@ -37,7 +36,6 @@ static NSMutableDictionary *fullCallCache;
 	if (myCallCache == nil) {
 		return nil;
 	}
-	//NSLog(@"got object %@ for key %@", [myCallCache objectForKey:key], key);
 	return [myCallCache objectForKey:key];
 }
 
