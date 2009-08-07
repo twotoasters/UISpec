@@ -78,6 +78,16 @@
 		C76EB7A40F76F03F00EF8398 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7A20F76F03F00EF8398 /* UIQueryTableView.m */; };
 		C76EB7A50F76F03F00EF8398 /* UIQueryTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7A10F76F03F00EF8398 /* UIQueryTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EB7A60F76F03F00EF8398 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7A20F76F03F00EF8398 /* UIQueryTableView.m */; };
+		C7D0EFE2102CB85200AC84EC /* Recordable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7FE1C2B0F7B26360047857B /* Recordable.h */; };
+		C7D0EFE3102CB85200AC84EC /* ViewFilterSwizzler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7FE1D9A0F7D6B060047857B /* ViewFilterSwizzler.h */; };
+		C7D0EFE4102CB85200AC84EC /* UIQueryAll.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7FE1DF90F7D6D7C0047857B /* UIQueryAll.h */; };
+		C7D0EFE5102CB85200AC84EC /* UIProxy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7E953540F81799A005FC682 /* UIProxy.h */; };
+		C7D0EFE6102CB85200AC84EC /* ReturnCacher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7E9535A0F818688005FC682 /* ReturnCacher.h */; };
+		C7D0EFE7102CB85200AC84EC /* WaitUntilIdle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7407B58101AA2F900E5392C /* WaitUntilIdle.h */; };
+		C7D0EFE8102CB85200AC84EC /* UIChildren.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7653A8E1023BE15001FF86B /* UIChildren.h */; };
+		C7D0EFE9102CB85200AC84EC /* UIDescendants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7653A901023BE15001FF86B /* UIDescendants.h */; };
+		C7D0EFEA102CB85200AC84EC /* UIParents.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7653A921023BE15001FF86B /* UIParents.h */; };
+		C7D0EFEB102CB85200AC84EC /* UIRedoer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7653B5F1023FD63001FF86B /* UIRedoer.h */; };
 		C7E953560F81799A005FC682 /* UIProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E953540F81799A005FC682 /* UIProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7E953570F81799A005FC682 /* UIProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E953550F81799A005FC682 /* UIProxy.m */; };
 		C7E953580F81799A005FC682 /* UIProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E953540F81799A005FC682 /* UIProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -132,7 +142,6 @@
 			dstPath = ../../../../bin/UISpec/Headers;
 			dstSubfolderSpec = 16;
 			files = (
-				C7FE1AED0F783CD10047857B /* UISpec.h in CopyFiles */,
 				C7FE1AEE0F783CD10047857B /* UIQueryTableViewCell.h in CopyFiles */,
 				C7FE1AEF0F783CD10047857B /* UIFilter.h in CopyFiles */,
 				C7FE1AF00F783CD10047857B /* UIQuery.h in CopyFiles */,
@@ -140,6 +149,17 @@
 				C7FE1AF20F783CD10047857B /* CallCache.h in CopyFiles */,
 				C7FE1AF30F783CD10047857B /* NSNumberCreator.h in CopyFiles */,
 				C7FE1AF40F783CD10047857B /* UIQueryTableView.h in CopyFiles */,
+				C7D0EFE2102CB85200AC84EC /* Recordable.h in CopyFiles */,
+				C7D0EFE3102CB85200AC84EC /* ViewFilterSwizzler.h in CopyFiles */,
+				C7D0EFE4102CB85200AC84EC /* UIQueryAll.h in CopyFiles */,
+				C7D0EFE5102CB85200AC84EC /* UIProxy.h in CopyFiles */,
+				C7D0EFE6102CB85200AC84EC /* ReturnCacher.h in CopyFiles */,
+				C7D0EFE7102CB85200AC84EC /* WaitUntilIdle.h in CopyFiles */,
+				C7D0EFE8102CB85200AC84EC /* UIChildren.h in CopyFiles */,
+				C7D0EFE9102CB85200AC84EC /* UIDescendants.h in CopyFiles */,
+				C7D0EFEA102CB85200AC84EC /* UIParents.h in CopyFiles */,
+				C7D0EFEB102CB85200AC84EC /* UIRedoer.h in CopyFiles */,
+				C7FE1AED0F783CD10047857B /* UISpec.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
