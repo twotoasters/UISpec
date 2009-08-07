@@ -4,6 +4,10 @@
 
 @implementation UIChildren
 
++(id)withTraversal {
+	return [[[self alloc] init] autorelease];
+}
+
 -(NSArray *)collect:(NSArray *)views {
 	NSMutableArray *array = [NSMutableArray array];
 	for (UIView *view in views) {

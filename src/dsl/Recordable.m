@@ -33,14 +33,17 @@
 }
 
 -(id)play {
+	//NSLog(@"**START playing %@", NSStringFromSelector(invocation.selector));
 	[invocation setTarget:target];
 	[invocation invoke];
 	NSString *returnType = [NSString stringWithFormat:@"%s", [[invocation methodSignature] methodReturnType]];
 	if (![returnType isEqualToString:@"(null)"] && ![returnType isEqualToString:@"v"]) {
 		id value;
 		[invocation getReturnValue:&value];
+		//NSLog(@"**END playing %@", NSStringFromSelector(invocation.selector));
 		return value;
 	} else {
+		//NSLog(@"**END playing %@", NSStringFromSelector(invocation.selector));
 		return nil;
 	}
 }

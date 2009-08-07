@@ -1,7 +1,6 @@
 
 #import "UIExpectation.h"
 #import "UIQuery.h"
-#import "CallCache.h"
 
 @implementation UIExpectation
 

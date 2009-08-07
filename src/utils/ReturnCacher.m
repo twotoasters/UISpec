@@ -48,7 +48,7 @@
 			
 			NSValue *invocationValue = [NSValue valueWithBytes:&value objCType:[[invocation methodSignature] getArgumentTypeAtIndex:i]];
 			NSValue *invocationInArrayValue = [NSValue valueWithBytes:&valueInInvocationInArray objCType:[[invocation methodSignature] getArgumentTypeAtIndex:i]];
-			if (![invocationInArrayValue isEqual:invocationValue]) {
+			if (![invocationInArrayValue isEqualToValue:invocationValue]) {
 				matches = NO;
 				break;
 			}

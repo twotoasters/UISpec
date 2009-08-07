@@ -1,9 +1,9 @@
-#import "UITraversal.h"
 
-@interface UIDescendants : UITraversal {
+@interface UIDescendants : NSObject {
 
 }
 
 -(NSArray *)collect:(NSArray *)views;
++(id)withTraversal;
 
 @end

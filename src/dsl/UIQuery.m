@@ -6,27 +6,36 @@
 #import "UIParents.h"
 #import "WaitUntilIdle.h"
 #import "UIRedoer.h"
+#import "UIQueryTableViewCell.h"
+#import "UIQueryTableView.h"
+#import "UIQueryAll.h"
+#import "UIFilter.h"
 
 @implementation UIQuery
+
+@synthesize views, className, redoer, timeout;
 
 +(id)withApplicaton {
 	return [self withViews:[NSMutableArray arrayWithObject:[UIApplication sharedApplication]] className:NSStringFromClass([UIApplication class])];
 }
 
--(UITraversal *)find {
-	return [self descendants];
+-(UIQuery *)find {
+	return [self descendant];
 }
 
--(UITraversal *)descendant {
-	return [UIDescendants withViews:views className:className];
+-(UIQuery *)descendant {
+	[self wait:.25];
+	return [UIQuery withViews:[[UIDescendants withTraversal] collect:views] className:className filter:YES];
 }
 
--(UITraversal *)child {
-	return [UIChildren withViews:views className:className];
+-(UIQuery *)child {
+	[self wait:.25];
+	return [UIQuery withViews:[[UIChildren withTraversal] collect:views] className:className filter:YES];
 }
 
--(UITraversal *)parent {
-	return [UIParents withViews:views className:className];
+-(UIQuery *)parent {
+	[self wait:.25];
+	return [UIQuery withViews:[[UIParents withTraversal] collect:views] className:className filter:YES];
 }
 
 -(UIExpectation *)should {
@@ -35,6 +44,111 @@
 
 -(UIFilter *)with {
 	return [UIFilter withQuery:self];
+}
+
++(id)withViews:(NSMutableArray *)views className:(NSString *)className {
+	return [UIRedoer withTarget:[[[self alloc] initWithViews:views className:className filter:NO] autorelease]];
+}
+
++(id)withViews:(NSMutableArray *)views className:(NSString *)className filter:(BOOL)filter {
+	return [UIRedoer withTarget:[[[self alloc] initWithViews:views className:className filter:filter] autorelease]];
+}
+
+-(id)initWithViews:(NSMutableArray *)_views className:(NSString *)_className filter:(BOOL)_filter {
+	if (self = [super init]) {
+		self.timeout = 10;
+		self.views = _views;
+		self.className = _className;
+		filter = _filter;
+	}
+	return self;
+}
+
+-(NSArray *)collect:(NSArray *)views {
+	return [[[[UIDescendants alloc] init] autorelease] collect:views];
+}
+
+-(NSArray *)targetViews {
+	return (views.count == 0) ? [NSArray array] : [NSArray arrayWithObject:[views objectAtIndex:0]];
+}
+
+-(UIQuery *)timeout:(int)seconds {
+	UIQuery *copy = [UIQuery withViews:views className:className];
+	copy.timeout = seconds;
+	return copy;
+}
+
+-(id)templateFilter {
+	NSString *viewName = NSStringFromSelector(_cmd);
+	return [self view:[NSString stringWithFormat:@"UI%@", [viewName stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[viewName substringWithRange:NSMakeRange(0,1)] uppercaseString]]]];
+}
+
+-(UIQuery *)index:(int)index {
+	if (index >= views.count) {
+		NSLog(@"UISPEC WARNING: %@ doesn't exist at index %i", className, index);
+	}
+	NSArray *resultViews = (index >= views.count) ? [NSArray array] : [NSArray arrayWithObject:[views objectAtIndex:index]];
+	return [UIQuery withViews:resultViews className:className];
+}
+
+-(UIQuery *)first {
+	return [self index:0];
+}
+
+-(UIQuery *)last {
+	return [self index:views.count - 1];
+}
+
+-(UIQuery *)all {
+	return [UIQueryAll withViews:views className:className];
+}
+
+-(UIQuery *)view:(NSString *)className {
+	NSArray *views = filter ? self.views : self.descendant.views;
+	NSMutableArray *array = [NSMutableArray array];
+	NSDate *start = [NSDate date];
+	while ([start timeIntervalSinceNow] > (0 - timeout)) {
+		//NSLog(@"Looking for %@", className);
+		Class class = NSClassFromString(className);
+		for (UIView * v in views) {
+			if ([v isKindOfClass:class]) {
+				[array addObject:v];
+			} 
+		}
+		if (array.count > 0) {
+			break;
+		}
+		self.redo;
+	}
+	if ([className isEqualToString:@"UITableViewCell"]) {
+		return [UIQueryTableViewCell withViews:array className:className];
+	} else if ([className isEqualToString:@"UITableView"]) {
+		return [UIQueryTableView withViews:array className:className];
+	} else {
+		//id value = [array objectAtIndex:0];
+		//NSLog(@"found %d", array.count);
+		//NSLog(@"found %@", value);
+		//if ([value respondsToSelector:@selector(text)]) {
+//			NSLog(@"text %@", [value text]);
+//		}
+		return [UIQuery withViews:array className:className];
+	}
+}
+
+-(UIQuery *)wait:(double)seconds {
+	CFRunLoopRunInMode(kCFRunLoopDefaultMode, seconds, false);
+	return [UIQuery withViews:views className:className];
+}
+
+-(id)redo {
+	//NSLog(@"UIQuery redo");
+	if (redoer != nil) {
+		//NSLog(@"UIQuery redo redoer = %@", redoer);
+		UIRedoer *redone = [redoer redo];
+		redoer.target = redone.target;
+		self.views = [[redoer play] views];
+	}
+	//return is provided by uiredoer
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
@@ -55,7 +169,7 @@
 	//Check if any view responds as a property match
 	NSArray *selectors = [selector componentsSeparatedByString:@":"];
 	if (selectors.count == 2) {
-		return [[self with] methodSignatureForSelector:aSelector];
+		return [self.with methodSignatureForSelector:aSelector];
 	}
 }
 
@@ -69,7 +183,7 @@
 	}
 	
 	if (!isDirect) {
-		[[self with] forwardInvocation:anInvocation];
+		[[[UIRedoer withTarget:self] with] forwardInvocation:anInvocation];
 	}
 }
 
@@ -148,6 +262,13 @@
 
 -(NSString *)description {
 	return [views description];
+}
+
+-(void)dealloc {
+	self.views = nil;
+	self.className = nil;
+	self.redoer = nil;
+	[super dealloc];
 }
 
 @end

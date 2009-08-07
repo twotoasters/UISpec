@@ -3,7 +3,7 @@
 
 @implementation UIFilter
 
-@synthesize query, redoer, redo;
+@synthesize query, redoer;
 
 +(id)withQuery:(UIQuery *)query {
 	return [UIRedoer withTarget:[[[UIFilter alloc] initWithQuery:query] autorelease]];
@@ -43,6 +43,7 @@
 			BOOL matches = YES;
 			int i = 2;
 			id value = nil;
+			id resultValue = nil;
 			for (NSString *key in selectors) {
 				if (![key isEqualToString:@""]) {
 					SEL selector = NSSelectorFromString(key);
@@ -77,6 +78,7 @@
 		if (array.count > 0) {
 			break;
 		} else {
+			//NSLog(@"selector = %@", selector);
 			[self redo];
 		}
 	}
@@ -85,7 +87,9 @@
 }
 
 -(id)redo {
+	//NSLog(@"UIFilter Redo");
 	if (redoer != nil) {
+		//NSLog(@"UIFilter Redo redoer %@", redoer);
 		UIRedoer *redone = [redoer redo];
 		redoer.target = redone.target;
 		self.query = [[redoer play] query];

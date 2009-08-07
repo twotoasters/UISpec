@@ -1,5 +1,4 @@
 #import "DescribeEmployeeAdmin.h"
-#import "Recordable.h"
 
 @implementation DescribeEmployeeAdmin
 
@@ -13,15 +12,12 @@
 
 -(void)addTestUser {
 	app.navigationButton.touch;
-	UIQuery *firstName = [app.textField.with placeholder:@"First Name"];
-	[firstName setText:@"Brian"];
-	[firstName.redo setText:@"fdsfads"];
-	[firstName.redo setText:@"Brian"];
+	[[app.textField.with placeholder:@"First Name"] setText:@"Brian"];
 	[[app.textField placeholder:@"Last Name"] setText:@"Knorr"];
 	[[app.textField placeholder:@"Email"] setText:@"b@g.com"];
-	[[app.textField placeholder:@"Username"] setText:@"bkuser"];
-	[[app.textField placeholder:@"Password"] setText:@"test"];
-	[[app.textField placeholder:@"Confirm"] setText:@"test"];
+	[[app.textField placeholder:@"Username*"] setText:@"bkuser"];
+	[[app.textField placeholder:@"Password*"] setText:@"test"];
+	[[app.textField placeholder:@"Confirm*"] setText:@"test"];
 	[[app.navigationButton.label text:@"Save"] touch];
 }
 
@@ -30,11 +26,6 @@
 }
 
 -(void)itShouldShowListOfDefaultUsers {
-	
-	//Recordable *rapp = [[Recordable withTarget:app.tableView.label.with] text:@"Larry Stooge" isEnabled:YES];
-//	//[rapp tableViewCell];
-//	NSLog(@"wowow %@", rapp);
-//	NSLog(@"wowow12 %@", [rapp play]);
 	[[app.tableView.label text:@"Larry Stooge"] should].exist;
 	[[app.tableView.label text:@"Curly Stooge"] should].exist;
 	[[app.tableView.label text:@"Moe Stooge"] should].exist;
@@ -63,7 +54,7 @@
 
 -(void)itShouldUpdateUserProfile {
 	[self addTestUser];
-	[[app.label text:@"Brian Knorr"] touch];
+	[[app.label.with text:@"Brian Knorr"] touch];
 	
 	[[app.textField placeholder:@"First Name"] setText:@"Jake"];
 	[[app.textField placeholder:@"Last Name"] setText:@"Dempsey"];
@@ -82,9 +73,9 @@
 
 -(void)itShouldUpdateUserRoles {
 	[self addTestUser];
-	[[app.label text:@"Brian Knorr"] touch];
+	[[app.label.with text:@"Brian Knorr"] touch];
 	[[app.label text:@"User Roles"] touch];
-	
+
 	[app.tableView scrollToBottom];
 	[[app.label text:@"Returns"] touch];
 	[[[app.label text:@"Returns"] parent].tableViewCell.should.have accessoryType:UITableViewCellAccessoryCheckmark];

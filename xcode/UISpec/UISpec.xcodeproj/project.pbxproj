@@ -28,10 +28,6 @@
 		C7407B5B101AA2FA00E5392C /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7407B59101AA2FA00E5392C /* WaitUntilIdle.m */; };
 		C7407B5C101AA2FA00E5392C /* WaitUntilIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = C7407B58101AA2F900E5392C /* WaitUntilIdle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7407B5D101AA2FA00E5392C /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7407B59101AA2FA00E5392C /* WaitUntilIdle.m */; };
-		C7653A8A1023BB9F001FF86B /* UISwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = C7653A881023BB9F001FF86B /* UISwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7653A8B1023BB9F001FF86B /* UISwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653A891023BB9F001FF86B /* UISwizzle.m */; };
-		C7653A8C1023BB9F001FF86B /* UISwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = C7653A881023BB9F001FF86B /* UISwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7653A8D1023BB9F001FF86B /* UISwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653A891023BB9F001FF86B /* UISwizzle.m */; };
 		C7653A941023BE15001FF86B /* UIChildren.h in Headers */ = {isa = PBXBuildFile; fileRef = C7653A8E1023BE15001FF86B /* UIChildren.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7653A951023BE15001FF86B /* UIChildren.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653A8F1023BE15001FF86B /* UIChildren.m */; };
 		C7653A961023BE15001FF86B /* UIDescendants.h in Headers */ = {isa = PBXBuildFile; fileRef = C7653A901023BE15001FF86B /* UIDescendants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,10 +98,10 @@
 		C7FE1C2E0F7B26360047857B /* Recordable.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1C2C0F7B26360047857B /* Recordable.m */; };
 		C7FE1C2F0F7B26360047857B /* Recordable.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FE1C2B0F7B26360047857B /* Recordable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7FE1C300F7B26360047857B /* Recordable.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1C2C0F7B26360047857B /* Recordable.m */; };
-		C7FE1D9C0F7D6B060047857B /* UITraversal.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FE1D9A0F7D6B060047857B /* UITraversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7FE1D9D0F7D6B060047857B /* UITraversal.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1D9B0F7D6B060047857B /* UITraversal.m */; };
-		C7FE1D9E0F7D6B060047857B /* UITraversal.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FE1D9A0F7D6B060047857B /* UITraversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7FE1D9F0F7D6B060047857B /* UITraversal.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1D9B0F7D6B060047857B /* UITraversal.m */; };
+		C7FE1D9C0F7D6B060047857B /* ViewFilterSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FE1D9A0F7D6B060047857B /* ViewFilterSwizzler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7FE1D9D0F7D6B060047857B /* ViewFilterSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1D9B0F7D6B060047857B /* ViewFilterSwizzler.m */; };
+		C7FE1D9E0F7D6B060047857B /* ViewFilterSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FE1D9A0F7D6B060047857B /* ViewFilterSwizzler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7FE1D9F0F7D6B060047857B /* ViewFilterSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1D9B0F7D6B060047857B /* ViewFilterSwizzler.m */; };
 		C7FE1DFB0F7D6D7C0047857B /* UIQueryAll.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FE1DF90F7D6D7C0047857B /* UIQueryAll.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7FE1DFC0F7D6D7C0047857B /* UIQueryAll.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1DFA0F7D6D7C0047857B /* UIQueryAll.m */; };
 		C7FE1DFD0F7D6D7C0047857B /* UIQueryAll.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FE1DF90F7D6D7C0047857B /* UIQueryAll.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,8 +148,6 @@
 /* Begin PBXFileReference section */
 		C7407B58101AA2F900E5392C /* WaitUntilIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitUntilIdle.h; sourceTree = "<group>"; };
 		C7407B59101AA2FA00E5392C /* WaitUntilIdle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitUntilIdle.m; sourceTree = "<group>"; };
-		C7653A881023BB9F001FF86B /* UISwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISwizzle.h; sourceTree = "<group>"; };
-		C7653A891023BB9F001FF86B /* UISwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwizzle.m; sourceTree = "<group>"; };
 		C7653A8E1023BE15001FF86B /* UIChildren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIChildren.h; path = ../../src/dsl/UIChildren.h; sourceTree = SOURCE_ROOT; };
 		C7653A8F1023BE15001FF86B /* UIChildren.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIChildren.m; path = ../../src/dsl/UIChildren.m; sourceTree = SOURCE_ROOT; };
 		C7653A901023BE15001FF86B /* UIDescendants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDescendants.h; path = ../../src/dsl/UIDescendants.h; sourceTree = SOURCE_ROOT; };
@@ -187,8 +181,8 @@
 		C7E9535B0F818688005FC682 /* ReturnCacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnCacher.m; sourceTree = "<group>"; };
 		C7FE1C2B0F7B26360047857B /* Recordable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recordable.h; path = ../dsl/Recordable.h; sourceTree = "<group>"; };
 		C7FE1C2C0F7B26360047857B /* Recordable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recordable.m; path = ../dsl/Recordable.m; sourceTree = "<group>"; };
-		C7FE1D9A0F7D6B060047857B /* UITraversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITraversal.h; sourceTree = "<group>"; };
-		C7FE1D9B0F7D6B060047857B /* UITraversal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITraversal.m; sourceTree = "<group>"; };
+		C7FE1D9A0F7D6B060047857B /* ViewFilterSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFilterSwizzler.h; sourceTree = "<group>"; };
+		C7FE1D9B0F7D6B060047857B /* ViewFilterSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFilterSwizzler.m; sourceTree = "<group>"; };
 		C7FE1DF90F7D6D7C0047857B /* UIQueryAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryAll.h; sourceTree = "<group>"; };
 		C7FE1DFA0F7D6D7C0047857B /* UIQueryAll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryAll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,12 +263,10 @@
 				C76EB7550F76DFF400EF8398 /* UIFilter.m */,
 				C76EB7580F76DFF400EF8398 /* UIExpectation.h */,
 				C76EB7590F76DFF400EF8398 /* UIExpectation.m */,
-				C7FE1D9A0F7D6B060047857B /* UITraversal.h */,
-				C7FE1D9B0F7D6B060047857B /* UITraversal.m */,
+				C7FE1D9A0F7D6B060047857B /* ViewFilterSwizzler.h */,
+				C7FE1D9B0F7D6B060047857B /* ViewFilterSwizzler.m */,
 				C7FE1DF90F7D6D7C0047857B /* UIQueryAll.h */,
 				C7FE1DFA0F7D6D7C0047857B /* UIQueryAll.m */,
-				C7653A881023BB9F001FF86B /* UISwizzle.h */,
-				C7653A891023BB9F001FF86B /* UISwizzle.m */,
 				C7653B5F1023FD63001FF86B /* UIRedoer.h */,
 				C7653B601023FD63001FF86B /* UIRedoer.m */,
 			);
@@ -319,12 +311,11 @@
 				C76EB7750F76DFF400EF8398 /* NSNumberCreator.h in Headers */,
 				C76EB7A50F76F03F00EF8398 /* UIQueryTableView.h in Headers */,
 				C7FE1C2D0F7B26360047857B /* Recordable.h in Headers */,
-				C7FE1D9C0F7D6B060047857B /* UITraversal.h in Headers */,
+				C7FE1D9C0F7D6B060047857B /* ViewFilterSwizzler.h in Headers */,
 				C7FE1DFB0F7D6D7C0047857B /* UIQueryAll.h in Headers */,
 				C7E953560F81799A005FC682 /* UIProxy.h in Headers */,
 				C7E9535C0F818688005FC682 /* ReturnCacher.h in Headers */,
 				C7407B5C101AA2FA00E5392C /* WaitUntilIdle.h in Headers */,
-				C7653A8C1023BB9F001FF86B /* UISwizzle.h in Headers */,
 				C7653A9A1023BE15001FF86B /* UIChildren.h in Headers */,
 				C7653A9C1023BE15001FF86B /* UIDescendants.h in Headers */,
 				C7653A9E1023BE15001FF86B /* UIParents.h in Headers */,
@@ -346,12 +337,11 @@
 				C76EB7690F76DFF400EF8398 /* NSNumberCreator.h in Headers */,
 				C76EB7A30F76F03F00EF8398 /* UIQueryTableView.h in Headers */,
 				C7FE1C2F0F7B26360047857B /* Recordable.h in Headers */,
-				C7FE1D9E0F7D6B060047857B /* UITraversal.h in Headers */,
+				C7FE1D9E0F7D6B060047857B /* ViewFilterSwizzler.h in Headers */,
 				C7FE1DFD0F7D6D7C0047857B /* UIQueryAll.h in Headers */,
 				C7E953580F81799A005FC682 /* UIProxy.h in Headers */,
 				C7E9535E0F818688005FC682 /* ReturnCacher.h in Headers */,
 				C7407B5A101AA2FA00E5392C /* WaitUntilIdle.h in Headers */,
-				C7653A8A1023BB9F001FF86B /* UISwizzle.h in Headers */,
 				C7653A941023BE15001FF86B /* UIChildren.h in Headers */,
 				C7653A961023BE15001FF86B /* UIDescendants.h in Headers */,
 				C7653A981023BE15001FF86B /* UIParents.h in Headers */,
@@ -445,12 +435,11 @@
 				C76EB7760F76DFF400EF8398 /* NSNumberCreator.m in Sources */,
 				C76EB7A60F76F03F00EF8398 /* UIQueryTableView.m in Sources */,
 				C7FE1C2E0F7B26360047857B /* Recordable.m in Sources */,
-				C7FE1D9D0F7D6B060047857B /* UITraversal.m in Sources */,
+				C7FE1D9D0F7D6B060047857B /* ViewFilterSwizzler.m in Sources */,
 				C7FE1DFC0F7D6D7C0047857B /* UIQueryAll.m in Sources */,
 				C7E953570F81799A005FC682 /* UIProxy.m in Sources */,
 				C7E9535D0F818688005FC682 /* ReturnCacher.m in Sources */,
 				C7407B5D101AA2FA00E5392C /* WaitUntilIdle.m in Sources */,
-				C7653A8D1023BB9F001FF86B /* UISwizzle.m in Sources */,
 				C7653A9B1023BE15001FF86B /* UIChildren.m in Sources */,
 				C7653A9D1023BE15001FF86B /* UIDescendants.m in Sources */,
 				C7653A9F1023BE15001FF86B /* UIParents.m in Sources */,
@@ -471,12 +460,11 @@
 				C76EB76A0F76DFF400EF8398 /* NSNumberCreator.m in Sources */,
 				C76EB7A40F76F03F00EF8398 /* UIQueryTableView.m in Sources */,
 				C7FE1C300F7B26360047857B /* Recordable.m in Sources */,
-				C7FE1D9F0F7D6B060047857B /* UITraversal.m in Sources */,
+				C7FE1D9F0F7D6B060047857B /* ViewFilterSwizzler.m in Sources */,
 				C7FE1DFE0F7D6D7C0047857B /* UIQueryAll.m in Sources */,
 				C7E953590F81799A005FC682 /* UIProxy.m in Sources */,
 				C7E9535F0F818688005FC682 /* ReturnCacher.m in Sources */,
 				C7407B5B101AA2FA00E5392C /* WaitUntilIdle.m in Sources */,
-				C7653A8B1023BB9F001FF86B /* UISwizzle.m in Sources */,
 				C7653A951023BE15001FF86B /* UIChildren.m in Sources */,
 				C7653A971023BE15001FF86B /* UIDescendants.m in Sources */,
 				C7653A991023BE15001FF86B /* UIParents.m in Sources */,
@@ -538,6 +526,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UISpec_Prefix.pch;
+				GCC_VERSION = 4.2;
 				INSTALL_PATH = /usr/local/lib;
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;

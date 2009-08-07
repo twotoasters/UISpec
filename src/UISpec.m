@@ -233,6 +233,7 @@
 +(void)swizzleUIKit {	
 	class_addMethod(NSClassFromString(@"UITouchesEvent"), @selector(initWithTouch:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(initWithTouch:))), "@@:@");
 	method_setImplementation(class_getInstanceMethod(NSClassFromString(@"UITouchesEvent"), @selector(dealloc)), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(noDealloc))));
+	[ViewFilterSwizzler swizzleFiltersForClass:[UIQuery class]];
 	//	class_addMethod([UIView class], @selector(methodSignatureForSelector:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(methodSignatureForSelector:))), "@@:@");
 //	class_addMethod([UIView class], @selector(forwardInvocation:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(forwardInvocation:))), "v@:@");
 //	class_addMethod([UIView class], @selector(traverse:class:properties:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(traverse:class:properties:))), "@@:@@@");

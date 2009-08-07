@@ -19,8 +19,11 @@
 
 -(id)play {
 	id value = super.play;
+	//NSLog(@"%d, play got = %@ for target %@", [value isKindOfClass:[UIRedoer class]], [value isKindOfClass:[UIRedoer class]] ? [value target] : value, target);
 	if ([value isKindOfClass:[UIRedoer class]]) {
+		//NSLog(@"trying to set redo");
 		if ([[value target] respondsToSelector:@selector(setRedoer:)]) {
+			//NSLog(@"setting redo");
 			[[value target] setRedoer:self];
 		}
 	}

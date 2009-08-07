@@ -5,23 +5,37 @@
 //  Created by Brian Knorr <btknorr@gmail.com>
 //  Copyright(c) 2009 StarterStep, Inc., Some rights reserved.
 //
+#import "ViewFilterSwizzler.h"
 
-#import "UIFilter.h"
-#import "UIExpectation.h"
-#import "Recordable.h"
-#import "UITraversal.h"
+@class UIFilter, UIExpectation, UIRedoer;
 
-@interface UIQuery : UITraversal {
+@interface UIQuery : ViewFilterSwizzler {
+	UIQuery *first, *last, *all, *redo;
 	UIFilter *with;
 	UIExpectation *should;
-	UITraversal *parent, *child, *descendant, *find;
+	UIQuery *parent, *child, *descendant, *find;
 	UIQuery *touch, *show, *flash;
+	NSMutableArray *views;
+	NSString *className;
+	UIRedoer *redoer;
+	int timeout;
+	BOOL filter;
 }
 
 @property(nonatomic, readonly) UIFilter *with;
 @property(nonatomic, readonly) UIExpectation *should;
-@property(nonatomic, readonly) UITraversal *parent, *child, *descendant, *find;
+@property(nonatomic, readonly) UIQuery *parent, *child, *descendant, *find;
 @property(nonatomic, readonly) UIQuery *touch, *flash, *show;
+@property int timeout;
+@property(nonatomic, retain) NSMutableArray *views;
+@property(nonatomic, retain) NSString *className;
+@property(nonatomic, retain) UIRedoer *redoer;
+@property(nonatomic, readonly) UIQuery *first, *last, *all, *redo;
+
+-(UIQuery *)view:(NSString *)className;
+-(UIQuery *)index:(int)index;
+-(UIQuery *)timeout:(int)seconds;
+-(UIQuery *)wait:(double)seconds;
 
 +(id)withApplicaton;
 
