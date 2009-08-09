@@ -9,12 +9,12 @@
 
 @interface UIExpectation : NSObject {
 	UIQuery *query;
-	BOOL isNot, exist, isHave;
-	UIExpectation *not, *have;
+	BOOL isNot, exist, isHave, isBe;
+	UIExpectation *not, *have, *be;
 }
 
 @property(nonatomic, retain) UIQuery *query;
-@property(nonatomic, readonly) UIExpectation *not, *have;
+@property(nonatomic, readonly) UIExpectation *not, *have, *be;
 @property(nonatomic, readonly) BOOL exist;
 
 -(void)have:(BOOL)condition;

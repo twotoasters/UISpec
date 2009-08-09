@@ -35,76 +35,107 @@
 
 -(UIExpectation *)have {
 	isHave = YES;
+	isBe = NO;
+	return self;
+}
+
+-(UIExpectation *)be {
+	isBe = YES;
+	isHave = NO;
 	return self;
 }
 
 -(void)have:(BOOL)condition {
 	if ((!condition && !isNot) || (condition && isNot)) {
-		[NSException raise:nil format:@"%@ did not pass condition: [%@ have:YES]", [[query view] class], (isNot ? @"should.not" : @"should")];
+		[NSException raise:nil format:@"%@ did not pass condition: [%@ have:YES]", [query className], (isNot ? @"should not" : @"should")];
 	}
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-	if (!isHave) return [super methodSignatureForSelector:aSelector];
-	if (isNot) {
-		[NSException raise:nil format:@".not isn't supported yet for something like [should.not.have blah:1]"];
+	NSMutableString *selector = NSStringFromSelector(aSelector);
+	if (isBe) {
+		NSMethodSignature *sig = [query methodSignatureForSelector:aSelector];
+		if ([@"(null)" isEqualToString:[NSString stringWithFormat:@"%@", sig]]) {
+			sig = [query methodSignatureForSelector:NSSelectorFromString([NSString stringWithFormat:@"is%@", [selector stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[selector substringWithRange:NSMakeRange(0,1)] uppercaseString]]])];
+		}
+		return sig;
 	}
-	NSString *selector = NSStringFromSelector(aSelector);
-	NSRange whereIsSet = [selector rangeOfString:@":"];
-	if (whereIsSet.length != 0) {
-		return [NSMethodSignature signatureWithObjCTypes:"@@:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"];
-	} 
-	else {
-		return [super methodSignatureForSelector:aSelector];
+	if (isHave) {
+		if (isNot) {
+			[NSException raise:nil format:@"not isn't supported yet for something like [should.not.have foo:1]"];
+		}
+		NSString *selector = NSStringFromSelector(aSelector);
+		NSRange whereIsSet = [selector rangeOfString:@":"];
+		if (whereIsSet.length != 0) {
+			return [NSMethodSignature signatureWithObjCTypes:"@@:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"];
+		}
 	}
+	return [super methodSignatureForSelector:aSelector];
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
 	NSMutableString *selector = [NSMutableString stringWithString:NSStringFromSelector([anInvocation selector])];
-	NSArray *selectors = [selector componentsSeparatedByString:@":"];
-	NSMutableString *errorMessage = [NSMutableString string];
-	BOOL foundErrors = NO;
-	for (UIView *view in [query targetViews]) {
-		NSMutableArray *errors = [NSMutableArray array];
-		int i = 2;
-		id value = nil;
-		for (NSString *key in selectors) {
-			if (![key isEqualToString:@""]) {
-				SEL selector = NSSelectorFromString(key);
-				if (![view respondsToSelector:selector]) {
-					[errors addObject:[NSString stringWithFormat:@"%@ doesn't respond to %@", [view class], key]];
-					foundErrors = YES;
-					continue;
-				}
-				[anInvocation getArgument:&value atIndex:i];
-				NSString *returnType = [NSString stringWithFormat:@"%s", [[view methodSignatureForSelector:selector] methodReturnType]];
-				if ([returnType isEqualToString:@"@"]) {
-					if ([value isKindOfClass:[NSString class]]) {
-						if ([[view performSelector:selector] rangeOfString:value].length == 0) {
-							[errors addObject:[NSString stringWithFormat:@"%@ : \"%@\" doesn't contain \"%@\"", key, [view performSelector:selector], value]];
+	if (isBe) {
+		if (![query respondsToSelector:[anInvocation selector]]) {
+			[anInvocation setSelector:NSSelectorFromString([NSString stringWithFormat:@"is%@", [selector stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[selector substringWithRange:NSMakeRange(0,1)] uppercaseString]]])];
+		}
+		[anInvocation setTarget:query];
+		[anInvocation invoke];
+		NSString *returnType = [NSString stringWithFormat:@"%s", [[anInvocation methodSignature] methodReturnType]];
+		if (![returnType isEqualToString:@"c"]) {
+			[NSException raise:nil format:@"[%@ %@ be %@] is invalid. 'be' only works against selectors that return BOOL (YES or NO)", [query className], (isNot ? @"should not" : @"should"), selector];
+		}
+		BOOL value;
+		[anInvocation getReturnValue:&value];
+		if ((value == YES && isNot) || (value == NO && !isNot)) {
+			[NSException raise:nil format:@"%@ did not pass condition: [%@ be %@]", [query className], (isNot ? @"should not" : @"should"), selector];
+		}
+	} else if (isHave) {
+		NSArray *selectors = [selector componentsSeparatedByString:@":"];
+		NSMutableString *errorMessage = [NSMutableString string];
+		BOOL foundErrors = NO;
+		for (UIView *view in [query targetViews]) {
+			NSMutableArray *errors = [NSMutableArray array];
+			int i = 2;
+			id value = nil;
+			for (NSString *key in selectors) {
+				if (![key isEqualToString:@""]) {
+					SEL selector = NSSelectorFromString(key);
+					if (![view respondsToSelector:selector]) {
+						[errors addObject:[NSString stringWithFormat:@"%@ doesn't respond to %@", [view class], key]];
+						foundErrors = YES;
+						continue;
+					}
+					[anInvocation getArgument:&value atIndex:i];
+					NSString *returnType = [NSString stringWithFormat:@"%s", [[view methodSignatureForSelector:selector] methodReturnType]];
+					if ([returnType isEqualToString:@"@"]) {
+						if ([value isKindOfClass:[NSString class]]) {
+							if ([[view performSelector:selector] rangeOfString:value].length == 0) {
+								[errors addObject:[NSString stringWithFormat:@"%@ : \"%@\" doesn't contain \"%@\"", key, [view performSelector:selector], value]];
+								foundErrors = YES;
+								continue;
+							}
+						} else if (![[view performSelector:selector] isEqual:value]) {
+							[errors addObject:[NSString	 stringWithFormat:@"%@ : %@ is not equal to %@", key, [view performSelector:selector], value]];
 							foundErrors = YES;
 							continue;
 						}
-					} else if (![[view performSelector:selector] isEqual:value]) {
-						[errors addObject:[NSString	 stringWithFormat:@"%@ : %@ is not equal to %@", key, [view performSelector:selector], value]];
-						foundErrors = YES;
-						continue;
-					}
-				} else {
-					if ([view performSelector:selector] != value) {
-						[errors addObject:[NSString	 stringWithFormat:@"%@ is not equal to value", key]];
-						foundErrors = YES;
-						continue;
+					} else {
+						if ([view performSelector:selector] != value) {
+							[errors addObject:[NSString	 stringWithFormat:@"%@ is not equal to value", key]];
+							foundErrors = YES;
+							continue;
+						}
 					}
 				}
 			}
+			if (foundErrors) {
+				[errorMessage appendFormat:@"%@ should have %@ but %@\n", [view class], selector, errors];
+			}
 		}
 		if (foundErrors) {
-			[errorMessage appendFormat:@"%@ should have %@ but %@\n", [view class], selector, errors];
+			[NSException raise:nil format:errorMessage];
 		}
-	}
-	if (foundErrors) {
-		[NSException raise:nil format:errorMessage];
 	}
 }
 

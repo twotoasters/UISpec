@@ -68,6 +68,10 @@
 	return [[[[UIDescendants alloc] init] autorelease] collect:views];
 }
 
+-(UIQuery *)target {
+	return self;
+}
+
 -(NSArray *)targetViews {
 	return (views.count == 0) ? [NSArray array] : [NSArray arrayWithObject:[views objectAtIndex:0]];
 }
@@ -108,7 +112,6 @@
 	NSMutableArray *array = [NSMutableArray array];
 	NSDate *start = [NSDate date];
 	while ([start timeIntervalSinceNow] > (0 - timeout)) {
-		//NSLog(@"Looking for %@", className);
 		Class class = NSClassFromString(className);
 		for (UIView * v in views) {
 			if ([v isKindOfClass:class]) {
@@ -125,12 +128,6 @@
 	} else if ([className isEqualToString:@"UITableView"]) {
 		return [UIQueryTableView withViews:array className:className];
 	} else {
-		//id value = [array objectAtIndex:0];
-		//NSLog(@"found %d", array.count);
-		//NSLog(@"found %@", value);
-		//if ([value respondsToSelector:@selector(text)]) {
-//			NSLog(@"text %@", [value text]);
-//		}
 		return [UIQuery withViews:array className:className];
 	}
 }
@@ -152,14 +149,13 @@
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-	if ([self respondsToSelector:aSelector]) {
+	if ([UIQuery instancesRespondToSelector:aSelector]) {
 		return [super methodSignatureForSelector:aSelector];
 	}
 	
 	[self.should exist:[NSString stringWithFormat:@"before you can call %@", NSStringFromSelector(aSelector)]];
 	NSString *selector = NSStringFromSelector(aSelector);
 	
-	//Check if any view responds directly to selector
 	for (UIView *target in [self targetViews]) {
 		if ([target respondsToSelector:aSelector]) {
 			return [target methodSignatureForSelector:aSelector];
@@ -171,6 +167,7 @@
 	if (selectors.count == 2) {
 		return [self.with methodSignatureForSelector:aSelector];
 	}
+	return [super methodSignatureForSelector:aSelector];
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
@@ -185,6 +182,18 @@
 	if (!isDirect) {
 		[[[UIRedoer withTarget:self] with] forwardInvocation:anInvocation];
 	}
+}
+
+- (BOOL)respondsToSelector:(SEL)aSelector {
+	if ([UIQuery instancesRespondToSelector:aSelector]) {
+		return YES;
+	}
+	for (UIView *target in [self targetViews]) {
+		if ([target respondsToSelector:aSelector]) {
+			return YES;
+		}
+	}
+	return [super respondsToSelector:aSelector];
 }
 
 -(UIQuery *)flash {
@@ -264,6 +273,10 @@
 	return [views description];
 }
 
+-(void)logRange:(NSString *)prefix range:(NSRange)range {
+	NSLog(@"%@ location = %d, length = %d", prefix, range.location, range.length);
+}
+
 -(void)dealloc {
 	self.views = nil;
 	self.className = nil;
@@ -341,6 +354,87 @@
 
 @end
 
+UIQuery * $(NSString *script, ...) {
+	va_list args;
+	va_start(args, script);
+	script = [[[NSString alloc] initWithFormat:script arguments:args] autorelease];
+	va_end(args);
+	
+	//float test;
+	//	[[NSScanner scannerWithString:@"45.73"] scanFloat:(float *)&test];
+	//	NSLog(@"((((((( test = %f", test);
+	
+	//NSLog(@"script = %@, length = %d", script, script.length);
+	UIQuery *result = [UIQuery withApplicaton];
+	NSRange nextSearchRange = NSMakeRange(0, script.length);
+	NSRange nextSpaceRange = [script rangeOfString:@" " options:NSLiteralSearch range:nextSearchRange];	
+	
+	NSRange checkForSet = [script rangeOfString:@":" options:NSLiteralSearch range:nextSearchRange];
+	if (checkForSet.length != 0 && checkForSet.location < nextSpaceRange.location) {
+		NSRange openQuote = [script rangeOfString:@"'" options:NSLiteralSearch range:nextSearchRange];
+		nextSearchRange = NSMakeRange(openQuote.location + openQuote.length, script.length - openQuote.location - openQuote.length);
+		NSRange closeQuote = [script rangeOfString:@"'" options:NSLiteralSearch range:nextSearchRange];
+		nextSearchRange = NSMakeRange(closeQuote.location + closeQuote.length, script.length - closeQuote.location - closeQuote.length);
+		nextSpaceRange = [script rangeOfString:@" " options:NSLiteralSearch range:nextSearchRange];
+	}
+	
+	if (nextSpaceRange.length == 0) {
+		nextSpaceRange =  NSMakeRange(script.length, 0);
+	}
+	NSRange nextCommandRange = NSMakeRange(nextSearchRange.location, nextSpaceRange.location);
+	while (YES) {
+		NSString *command = [script substringWithRange:nextCommandRange];
+		
+		//NSLog(@"command = %@", command);
+		if (![command isEqualToString:@""]) {
+			NSRange whereIsSet = [command rangeOfString:@":"];
+			if (whereIsSet.length != 0) {
+				NSArray *selectors = [command componentsSeparatedByString:@":"];
+				NSString *selector = [NSString stringWithFormat:@"%@:", [selectors objectAtIndex:0]];
+				NSString *arg = [selectors objectAtIndex:1];
+				BOOL isString = [arg rangeOfString:@"'"].length != 0;
+				arg = [arg stringByReplacingOccurrencesOfString:@"'" withString:@""];
+				id argValue = nil;
+				if (isString) {
+					argValue = arg;
+				} else if ([arg isEqualToString:@"YES"] || [arg isEqualToString:@"NO"]) {
+					argValue = [arg isEqualToString:@"YES"];
+				} else {
+					argValue = [arg intValue];
+				}
+				result = [result performSelector:NSSelectorFromString(selector) withObject:argValue];
+			} else {
+				result = [result performSelector:NSSelectorFromString(command)];
+			}
+		}
+		//NSLog(@"result = %@", [result target]);
+		if (nextSpaceRange.location == script.length) {
+			break;
+		}
+		nextSearchRange = NSMakeRange(nextSpaceRange.location + nextSpaceRange.length, script.length - nextSpaceRange.location - nextSpaceRange.length);
+		nextSpaceRange = [script rangeOfString:@" " options:NSLiteralSearch range:nextSearchRange];
+		
+		NSRange checkForSet = [script rangeOfString:@":" options:NSLiteralSearch range:nextSearchRange];
+		if (checkForSet.length != 0 && checkForSet.location < nextSpaceRange.location) {
+			NSRange openQuote = [script rangeOfString:@"'" options:NSLiteralSearch range:nextSearchRange];
+			//[self logRange:@"openQuote" range:openQuote];
+			nextSearchRange = NSMakeRange(openQuote.location + openQuote.length, script.length - openQuote.location - openQuote.length);
+			//[self logRange:@"nextSearchRange" range:nextSearchRange];
+			NSRange closeQuote = [script rangeOfString:@"'" options:NSLiteralSearch range:nextSearchRange];
+			//[self logRange:@"closeQuote" range:closeQuote];
+			nextSearchRange = NSMakeRange(closeQuote.location + closeQuote.length, script.length - closeQuote.location - closeQuote.length);
+			//[self logRange:@"nextSearchRange" range:nextSearchRange];
+			nextSpaceRange = [script rangeOfString:@" " options:NSLiteralSearch range:nextSearchRange];
+			//[self logRange:@"nextSpaceRange" range:nextSpaceRange];
+		}
+		
+		if (nextSpaceRange.length == 0) {
+			nextSpaceRange =  NSMakeRange(script.length, 0);
+		}
+		nextCommandRange = NSMakeRange(nextCommandRange.location + nextCommandRange.length + 1, nextSpaceRange.location - nextCommandRange.location - nextCommandRange.length - 1);
+		//[self logRange:@"nextCommandRange" range:nextCommandRange];
+	}
+	return result;
+}
 
 
-@end

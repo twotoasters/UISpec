@@ -9,6 +9,8 @@
 
 @class UIFilter, UIExpectation, UIRedoer;
 
+UIQuery * $(NSString *script, ...);
+
 @interface UIQuery : ViewFilterSwizzler {
 	UIQuery *first, *last, *all, *redo;
 	UIFilter *with;
@@ -36,6 +38,7 @@
 -(UIQuery *)index:(int)index;
 -(UIQuery *)timeout:(int)seconds;
 -(UIQuery *)wait:(double)seconds;
+-(UIQuery *)target;
 
 +(id)withApplicaton;
 

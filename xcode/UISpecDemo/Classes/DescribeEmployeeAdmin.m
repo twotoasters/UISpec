@@ -11,8 +11,11 @@
 }
 
 -(void)addTestUser {
-	app.navigationButton.touch;
-	[[app.textField.with placeholder:@"First Name"] setText:@"Brian"];
+	//app.navigationButton.touch;
+	//[app run:@"navigationButton touch"];
+	$(@"navigationButton touch");
+	$(@"textField placeholder:'First Name' setText:'Brian'");
+	//[[app.textField.with placeholder:@"First Name"] setText:@"Brian"];
 	[[app.textField placeholder:@"Last Name"] setText:@"Knorr"];
 	[[app.textField placeholder:@"Email"] setText:@"b@g.com"];
 	[[app.textField placeholder:@"Username*"] setText:@"bkuser"];
@@ -78,7 +81,8 @@
 
 	[app.tableView scrollToBottom];
 	[[app.label text:@"Returns"] touch];
-	[[[app.label text:@"Returns"] parent].tableViewCell.should.have accessoryType:UITableViewCellAccessoryCheckmark];
+	[[[app.label text:@"Returns"] parent].tableViewCell.should.be selected];
+	$(@"label text:'Returns' parent tableViewCell should have accessoryType:%d", UITableViewCellAccessoryCheckmark);
 	
 	[[app.label text:@"Returns"] touch];
 	[[[app.label text:@"Returns"] parent].tableViewCell.should.have accessoryType:UITableViewCellAccessoryNone];
