@@ -20,7 +20,8 @@
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
-	[anInvocation retainArguments];
+	//NSLog(@"**Recordable forwardInvocation selector %@", NSStringFromSelector(anInvocation.selector));
+	//[anInvocation retainArguments];
 	NSString *returnType = [NSString stringWithFormat:@"%s", [[anInvocation methodSignature] methodReturnType]];
 	if (![returnType isEqualToString:@"v"]) {
 		[anInvocation setReturnValue:&self];
@@ -33,17 +34,17 @@
 }
 
 -(id)play {
-	//NSLog(@"**START playing %@", NSStringFromSelector(invocation.selector));
+	NSLog(@"**START playing %@", NSStringFromSelector(invocation.selector));
 	[invocation setTarget:target];
 	[invocation invoke];
 	NSString *returnType = [NSString stringWithFormat:@"%s", [[invocation methodSignature] methodReturnType]];
 	if (![returnType isEqualToString:@"(null)"] && ![returnType isEqualToString:@"v"]) {
 		id value;
 		[invocation getReturnValue:&value];
-		//NSLog(@"**END playing %@", NSStringFromSelector(invocation.selector));
+		NSLog(@"**END playing %@", NSStringFromSelector(invocation.selector));
 		return value;
 	} else {
-		//NSLog(@"**END playing %@", NSStringFromSelector(invocation.selector));
+		NSLog(@"**END playing %@", NSStringFromSelector(invocation.selector));
 		return nil;
 	}
 }

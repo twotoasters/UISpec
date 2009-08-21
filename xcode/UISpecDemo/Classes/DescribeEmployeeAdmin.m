@@ -1,9 +1,11 @@
 #import "DescribeEmployeeAdmin.h"
+#import "UIBug.h"
 
 @implementation DescribeEmployeeAdmin
 
 -(void)beforeAll {
 	app = [[UIQuery withApplicaton] retain];
+	[UIBug bugAtPoint:CGPointMake(0, 465)];
 }
 
 -(void)afterAll {
@@ -79,7 +81,8 @@
 	[[app.label.with text:@"Brian Knorr"] touch];
 	[[app.label text:@"User Roles"] touch];
 
-	[app.tableView scrollToBottom];
+	[app.tableView scrollDown:4];
+
 	[[app.label text:@"Returns"] touch];
 	[[[app.label text:@"Returns"] parent].tableViewCell.should.be selected];
 	$(@"label text:'Returns' parent tableViewCell should have accessoryType:%d", UITableViewCellAccessoryCheckmark);

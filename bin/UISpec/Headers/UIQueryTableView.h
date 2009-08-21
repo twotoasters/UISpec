@@ -13,5 +13,6 @@
 }
 
 -(UIQuery *)scrollToBottom;
+-(UIQuery *)scrollDown:(int)numberOfRows;
 
 @end

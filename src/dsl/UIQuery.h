@@ -16,23 +16,24 @@ UIQuery * $(NSString *script, ...);
 	UIFilter *with;
 	UIExpectation *should;
 	UIQuery *parent, *child, *descendant, *find;
-	UIQuery *touch, *show, *flash;
+	UIQuery *touch, *show, *flash, *path, *inspect;
 	NSMutableArray *views;
 	NSString *className;
 	UIRedoer *redoer;
 	int timeout;
-	BOOL filter;
+	BOOL filter, exists;
 }
 
 @property(nonatomic, readonly) UIFilter *with;
 @property(nonatomic, readonly) UIExpectation *should;
 @property(nonatomic, readonly) UIQuery *parent, *child, *descendant, *find;
-@property(nonatomic, readonly) UIQuery *touch, *flash, *show;
+@property(nonatomic, readonly) UIQuery *touch, *flash, *show, *path, *inspect;
 @property int timeout;
 @property(nonatomic, retain) NSMutableArray *views;
 @property(nonatomic, retain) NSString *className;
 @property(nonatomic, retain) UIRedoer *redoer;
 @property(nonatomic, readonly) UIQuery *first, *last, *all, *redo;
+@property BOOL exists;
 
 -(UIQuery *)view:(NSString *)className;
 -(UIQuery *)index:(int)index;
@@ -41,6 +42,7 @@ UIQuery * $(NSString *script, ...);
 -(UIQuery *)target;
 
 +(id)withApplicaton;
++(void)show:(NSArray *)views;
 
 @end
 

@@ -18,9 +18,17 @@
 }
 
 -(id)play {
-	id value = super.play;
+	//NSLog(@"**START playing %@", NSStringFromSelector(invocation.selector));
+	[invocation setTarget:target];
+	[invocation invoke];
+	NSString *returnType = [NSString stringWithFormat:@"%s", [[invocation methodSignature] methodReturnType]];
+	id value = nil;
+	if (![returnType isEqualToString:@"(null)"] && ![returnType isEqualToString:@"v"]) {
+		[invocation getReturnValue:&value];
+	}
+	//NSLog(@"**END playing %@", NSStringFromSelector(invocation.selector));
 	//NSLog(@"%d, play got = %@ for target %@", [value isKindOfClass:[UIRedoer class]], [value isKindOfClass:[UIRedoer class]] ? [value target] : value, target);
-	if ([value isKindOfClass:[UIRedoer class]]) {
+	if ([returnType isEqualToString:@"@"] && [value isKindOfClass:[UIRedoer class]]) {
 		//NSLog(@"trying to set redo");
 		if ([[value target] respondsToSelector:@selector(setRedoer:)]) {
 			//NSLog(@"setting redo");

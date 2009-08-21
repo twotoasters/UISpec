@@ -10,6 +10,7 @@
 #import "UIQueryTableView.h"
 #import "UIQueryAll.h"
 #import "UIFilter.h"
+#import "UIBug.h"
 
 @implementation UIQuery
 
@@ -148,6 +149,10 @@
 	//return is provided by uiredoer
 }
 
+-(BOOL)exists {
+	return [self targetViews].count > 0;
+}
+
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
 	if ([UIQuery instancesRespondToSelector:aSelector]) {
 		return [super methodSignatureForSelector:aSelector];
@@ -213,37 +218,134 @@
 
 -(UIQuery *)show {
 	[self.should exist:@"before you can show it"];
+	[UIQuery show:[self targetViews]];
+	return [UIQuery withViews:views className:className];
+}
+
+-(UIQuery *)path {
+	[self.should exist:@"before you can show its path"];
+	NSMutableString *path = [NSMutableString stringWithString:@"\n"];
 	for (UIView *view in [self targetViews]) {
-		NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-		NSLog(@"Class = %@", [view class]);
-		int i, propertyCount = 0;
-		objc_property_t *propertyList = class_copyPropertyList([view class], &propertyCount);
-		for (i=0; i<propertyCount; i++) {
-			objc_property_t *thisProperty = propertyList + i;
-			const char* propertyName = property_getName(*thisProperty);
-			const char* propertyAttributes = property_getAttributes(*thisProperty);
-			NSString *key = [NSString stringWithFormat:@"%s", propertyName];
-			NSString *keyAttributes = [NSString stringWithFormat:@"%s", propertyAttributes];
-			
-			if ([view respondsToSelector:NSSelectorFromString(key)]) {
-				id value = nil;
-				if ([keyAttributes rangeOfString:@"T@"].length != 0) {
-					value = [view performSelector:NSSelectorFromString(key)];
-				} else {
-					value = @"Need to get value for this key";
-				}
-				if (value == nil) {
-					value = @"nil";
-				}
-				[dict setObject:value forKey:key];
-			}
+		NSArray *parentViews = [[UIParents withTraversal] collect:[NSArray arrayWithObject:view]];
+		for (int i = parentViews.count-1; i>=0; i--) {
+			[path appendFormat:@"%@ -> ", [[parentViews objectAtIndex:i] class]];
 		}
+		[path appendFormat:@"%@", [view class]];
+	}
+	NSLog(path);
+	return [UIQuery withViews:views className:className]; 
+}
+
+-(UIQuery *)inspect {
+	[UIBug openInspectorWithView:[views objectAtIndex:0]];
+	return [UIQuery withViews:views className:className]; 
+}
+
++(void)show:(NSArray *)views {
+	for (UIView *view in views) {
+		NSMutableDictionary *dict = [self describe:view];
 		if ([dict allKeys].count > 0) {
-			NSLog([dict description]);
+			NSLog(@"\nClass: %@ \n%@", [view class], [dict description]);
 		}
 	}
-	return self;
 }
+
++(NSDictionary *)describe:(id)object {
+	
+	unsigned i;
+	id objValue;
+	int intValue;
+	long longValue;
+	char *charPtrValue;
+	char charValue;
+	short shortValue;
+	float floatValue;
+	double doubleValue;
+	
+	NSMutableDictionary *properties = [NSMutableDictionary dictionary];
+	
+	int propertyCount = 0;
+	objc_property_t *propertyList = class_copyPropertyList([object class], &propertyCount);
+	for (i=0; i<propertyCount; i++) {
+		objc_property_t *thisProperty = propertyList + i;
+		const char* propertyName = property_getName(*thisProperty);
+		const char* propertyAttributes = property_getAttributes(*thisProperty);
+		
+		NSString *key = [NSString stringWithFormat:@"%s", propertyName];
+		NSString *keyAttributes = [NSString stringWithFormat:@"%s", propertyAttributes];
+		//NSLog(@"key = %@", key);
+		//		NSLog(@"keyAttributes = %@", keyAttributes);
+		
+		NSArray *attributes = [keyAttributes componentsSeparatedByString:@","];
+		if ([[[attributes lastObject] substringToIndex:1] isEqualToString:@"G"]) {
+			key = [[attributes lastObject] substringFromIndex:1];
+		}
+		
+		SEL selector = NSSelectorFromString(key);
+		if ([object respondsToSelector:selector]) {
+			NSMethodSignature *sig = [object methodSignatureForSelector:selector];
+			//NSLog(@"sig = %@", sig);
+			NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sig];
+			[invocation setSelector:selector];
+			//NSLog(@"invocation selector = %@", NSStringFromSelector([invocation selector]));
+			[invocation setTarget:object];
+			[invocation invoke];
+			
+			const char* type = [[invocation methodSignature] methodReturnType];
+			NSString *returnType = [NSString stringWithFormat:@"%s", type];
+			const char* trimmedType = [[returnType substringToIndex:1] cStringUsingEncoding:NSASCIIStringEncoding];
+			//NSLog(@"return type = %@", returnType);
+			switch(*trimmedType) {
+				case '@':
+					[invocation getReturnValue:(void **)&objValue];
+					if (objValue == nil) {
+						[properties setObject:[NSString stringWithFormat:@"%@", objValue] forKey:key];
+					} else {
+						[properties setObject:objValue forKey:key];
+					}
+					break;
+				case 'i':
+					[invocation getReturnValue:(void **)&intValue];
+					[properties setObject:[NSString stringWithFormat:@"%i", intValue] forKey:key];
+					break;
+				case 's':
+					[invocation getReturnValue:(void **)&shortValue];
+					[properties setObject:[NSString stringWithFormat:@"%ud", shortValue] forKey:key];
+					break;
+				case 'd':
+					[invocation getReturnValue:(void **)&doubleValue];
+					[properties setObject:[NSString stringWithFormat:@"%lf", doubleValue] forKey:key];
+					break;
+				case 'f':
+					[invocation getReturnValue:(void **)&floatValue];
+					[properties setObject:[NSString stringWithFormat:@"%f", floatValue] forKey:key];
+					break;
+				case 'l':
+					[invocation getReturnValue:(void **)&longValue];
+					[properties setObject:[NSString stringWithFormat:@"%ld", longValue] forKey:key];
+					break;
+				case '*':
+					[invocation getReturnValue:(void **)&charPtrValue];
+					[properties setObject:[NSString stringWithFormat:@"%s", charPtrValue] forKey:key];
+					break;
+				case 'c':
+					[invocation getReturnValue:(void **)&charValue];
+					[properties setObject:[NSString stringWithFormat:@"%d", charValue] forKey:key];
+					break;
+				case '{': {
+					unsigned int length = [[invocation methodSignature] methodReturnLength];
+					void *buffer = (void *)malloc(length);
+					[invocation getReturnValue:buffer];
+					NSValue *value = [[[NSValue alloc] initWithBytes:buffer objCType:type] autorelease];
+					[properties setObject:value forKey:key];
+					break;
+				}
+			}
+	    }
+	}
+    return properties;
+}
+
 
 - (UIQuery *)touch {
 	[self.should exist:@"before you can touch it"];
@@ -264,7 +366,7 @@
 		[eventUp release];
 		[touches release];
 		[touch release];
-		[self wait:.25];
+		[self wait:.5];
 	}
 	return [UIQuery withViews:views className:className];
 }

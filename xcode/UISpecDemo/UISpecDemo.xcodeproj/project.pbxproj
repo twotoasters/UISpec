@@ -37,6 +37,7 @@
 		C76EB7010F745EE900EF8398 /* UserFormMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6E50F745EE800EF8398 /* UserFormMediator.m */; };
 		C76EB7020F745EE900EF8398 /* UserListMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6E70F745EE800EF8398 /* UserListMediator.m */; };
 		C76EB7030F745EE900EF8398 /* UserRolesMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6E90F745EE800EF8398 /* UserRolesMediator.m */; };
+		C7D32C6B103F67D200071AE1 /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C7D32C6A103F67D200071AE1 /* UISpec.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		C76EB6E70F745EE800EF8398 /* UserListMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserListMediator.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m; sourceTree = SOURCE_ROOT; };
 		C76EB6E80F745EE800EF8398 /* UserRolesMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRolesMediator.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.h; sourceTree = SOURCE_ROOT; };
 		C76EB6E90F745EE800EF8398 /* UserRolesMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRolesMediator.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m; sourceTree = SOURCE_ROOT; };
+		C7D32C6A103F67D200071AE1 /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../../src/UISpec.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C7D32C6A103F67D200071AE1 /* UISpec.bundle */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
@@ -512,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				C7D32C6B103F67D200071AE1 /* UISpec.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
