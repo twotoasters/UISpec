@@ -574,7 +574,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UISpecDemo_Prefix.pch;
 				GCC_VERSION = 4.2;
-				HEADER_SEARCH_PATHS = "../UISpec/**";
+				HEADER_SEARCH_PATHS = "../../bin/UISpec/Headers/**";
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,7 +593,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UISpecDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "../UISpec/**";
+				HEADER_SEARCH_PATHS = "../../bin/UISpec/Headers/**";
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,42 +1,6 @@
 #import "UISpec.h"
 #import "objc/runtime.h"
 
-//
-// GSEvent is an undeclared object. We don't need to use it ourselves but some
-// Apple APIs (UIScrollView in particular) require the x and y fields to be present.
-//
-@interface GSEventProxy : NSObject
-{
-@public
-	int ignored1[5];
-	float x;
-	float y;
-	int ignored2[24];
-}
-@end
-@implementation GSEventProxy
-@end
-
-//
-// PublicEvent
-//
-// A dummy class used to gain access to UIEvent's private member variables.
-// If UIEvent changes at all, this will break.
-//
-@interface PublicEvent : NSObject
-{
-@public
-    GSEventProxy           *_event;
-    NSTimeInterval          _timestamp;
-    NSMutableSet           *_touches;
-    CFMutableDictionaryRef  _keyedTouches;
-}
-@end
-
-@implementation PublicEvent
-@end
-
-
 @implementation UISpec
 
 +(void)runSpecsAfterDelay:(int)seconds {
@@ -62,7 +26,6 @@
 }
 
 +(void)runSpecExample:(NSTimer *)timer {
-	[self swizzleUIKit];
 	Class *class = NSClassFromString([timer.userInfo objectAtIndex:0]);
 	NSString *exampleName = [timer.userInfo objectAtIndex:1];
 	NSMutableArray *errors = [NSMutableArray array];
@@ -72,7 +35,6 @@
 }
 
 +(void)runSpecClasses:(NSArray *)specClasses {
-	[self swizzleUIKit];
 	if (specClasses.count == 0) return;
 	
 	NSMutableArray *errors = [NSMutableArray array];
@@ -175,7 +137,6 @@
 	return NO;
 }
 
-
 +(NSArray*)specClasses {
 	NSMutableArray *array = [NSMutableArray array];
     int numClasses = objc_getClassList(NULL, 0);
@@ -192,55 +153,6 @@
         free(classes);
     }
 	return array;
-}
-
-
-
-- (id)initWithTouch:(UITouch *)touch
-{
-	self = [super init];
-	if (self != nil)
-	{
-		PublicEvent *publicEvent = (PublicEvent *)self;
-		publicEvent->_touches = [[NSMutableSet alloc] initWithObjects:&touch count:1];
-		publicEvent->_timestamp = [NSDate timeIntervalSinceReferenceDate];
-		
-		CGPoint location = [touch locationInView:touch.window];
-		
-		publicEvent->_event = [[GSEventProxy alloc] init];
-		publicEvent->_event->x = location.x;
-		publicEvent->_event->y = location.y;
-		
-		CFMutableDictionaryRef dict =
-		CFDictionaryCreateMutable(
-								  kCFAllocatorDefault,
-								  0,
-								  &kCFTypeDictionaryKeyCallBacks,
-								  &kCFTypeDictionaryValueCallBacks);
-		
-		CFDictionaryAddValue(dict, touch.view, publicEvent->_touches);
-		CFDictionaryAddValue(dict, touch.window, publicEvent->_touches);
-		
-		publicEvent->_keyedTouches = dict;
-	}
-	return self;
-}
-
--(void)noDealloc {
-	//so there is no crash
-}
-
-+(void)swizzleUIKit {	
-	class_addMethod(NSClassFromString(@"UITouchesEvent"), @selector(initWithTouch:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(initWithTouch:))), "@@:@");
-	method_setImplementation(class_getInstanceMethod(NSClassFromString(@"UITouchesEvent"), @selector(dealloc)), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(noDealloc))));
-	[ViewFilterSwizzler swizzleFiltersForClass:[UIQuery class]];
-	//	class_addMethod([UIView class], @selector(methodSignatureForSelector:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(methodSignatureForSelector:))), "@@:@");
-//	class_addMethod([UIView class], @selector(forwardInvocation:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(forwardInvocation:))), "v@:@");
-//	class_addMethod([UIView class], @selector(traverse:class:properties:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(traverse:class:properties:))), "@@:@@@");
-//	class_addMethod([UIView class], @selector(touch), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(touch))), "v@:");
-//	class_addMethod([UIApplication class], @selector(methodSignatureForSelector:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(methodSignatureForSelector:))), "@@:@");
-//	class_addMethod([UIApplication class], @selector(forwardInvocation:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(forwardInvocation:))), "v@:@");
-//	class_addMethod([UIApplication class], @selector(traverse:class:properties:), method_getImplementation(class_getInstanceMethod([UISpec class], @selector(traverse:class:properties:))), "@@:@@@");
 }
 
 +(void)swizzleMethodOnClass:(Class)targetClass originalSelector:(SEL)originalSelector fromClass:(Class)fromClass alternateSelector:(SEL)alternateSelector {
