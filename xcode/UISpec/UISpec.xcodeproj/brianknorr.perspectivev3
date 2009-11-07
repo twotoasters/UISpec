@@ -331,45 +331,52 @@
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>C78EE0BA10A4F07100E5E5D8</string>
+										<string>C78EE0FF10A4FDAF00E5E5D8</string>
 										<key>history</key>
 										<array>
-											<string>C78EE01E10A4D7A400E5E5D8</string>
-											<string>C78EE02010A4D7A400E5E5D8</string>
-											<string>C78EE02110A4D7A400E5E5D8</string>
-											<string>C78EE02210A4D7A400E5E5D8</string>
-											<string>C78EE02310A4D7A400E5E5D8</string>
 											<string>C78EE04C10A4E24700E5E5D8</string>
 											<string>C78EE05A10A4E2CB00E5E5D8</string>
 											<string>C78EE06110A4E30E00E5E5D8</string>
-											<string>C78EE06210A4E30E00E5E5D8</string>
-											<string>C78EE09C10A4EC0400E5E5D8</string>
+											<string>C78EE0DC10A4FCA700E5E5D8</string>
+											<string>C78EE0DD10A4FCA700E5E5D8</string>
+											<string>C78EE0DE10A4FCA700E5E5D8</string>
+											<string>C78EE0DF10A4FCA700E5E5D8</string>
+											<string>C78EE0E010A4FCA700E5E5D8</string>
+											<string>C78EE0E110A4FCA700E5E5D8</string>
+											<string>C78EE0E210A4FCA700E5E5D8</string>
 										</array>
 										<key>prevStack</key>
 										<array>
-											<string>C70A8481107D590600016E88</string>
-											<string>C716288110A349AF00398DB4</string>
-											<string>C716288E10A349AF00398DB4</string>
-											<string>C78EE02710A4D7A400E5E5D8</string>
 											<string>C78EE02810A4D7A400E5E5D8</string>
 											<string>C78EE02910A4D7A400E5E5D8</string>
 											<string>C78EE02A10A4D7A400E5E5D8</string>
 											<string>C78EE02B10A4D7A400E5E5D8</string>
 											<string>C78EE02C10A4D7A400E5E5D8</string>
-											<string>C78EE02D10A4D7A400E5E5D8</string>
 											<string>C78EE02E10A4D7A400E5E5D8</string>
-											<string>C78EE02F10A4D7A400E5E5D8</string>
-											<string>C78EE03010A4D7A400E5E5D8</string>
-											<string>C78EE03110A4D7A400E5E5D8</string>
-											<string>C78EE03210A4D7A400E5E5D8</string>
-											<string>C78EE03310A4D7A400E5E5D8</string>
-											<string>C78EE03410A4D7A400E5E5D8</string>
 											<string>C78EE03510A4D7A400E5E5D8</string>
 											<string>C78EE03610A4D7A400E5E5D8</string>
 											<string>C78EE05B10A4E2CB00E5E5D8</string>
 											<string>C78EE05C10A4E2CB00E5E5D8</string>
 											<string>C78EE06310A4E30E00E5E5D8</string>
 											<string>C78EE06410A4E30E00E5E5D8</string>
+											<string>C78EE0E310A4FCA700E5E5D8</string>
+											<string>C78EE0E410A4FCA700E5E5D8</string>
+											<string>C78EE0E510A4FCA700E5E5D8</string>
+											<string>C78EE0E610A4FCA700E5E5D8</string>
+											<string>C78EE0E710A4FCA700E5E5D8</string>
+											<string>C78EE0E810A4FCA700E5E5D8</string>
+											<string>C78EE0E910A4FCA700E5E5D8</string>
+											<string>C78EE0EA10A4FCA700E5E5D8</string>
+											<string>C78EE0EB10A4FCA700E5E5D8</string>
+											<string>C78EE0EC10A4FCA700E5E5D8</string>
+											<string>C78EE0ED10A4FCA700E5E5D8</string>
+											<string>C78EE0EE10A4FCA700E5E5D8</string>
+											<string>C78EE0EF10A4FCA700E5E5D8</string>
+											<string>C78EE0F010A4FCA700E5E5D8</string>
+											<string>C78EE0F110A4FCA700E5E5D8</string>
+											<string>C78EE0F210A4FCA700E5E5D8</string>
+											<string>C78EE0F310A4FCA700E5E5D8</string>
+											<string>C78EE0F410A4FCA700E5E5D8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -383,18 +390,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {926, 904}}</string>
+								<string>{{0, 0}, {926, 633}}</string>
 								<key>RubberWindowFrame</key>
 								<string>605 107 1201 950 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>904pt</string>
+							<string>633pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>271pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -424,7 +431,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {926, -27}}</string>
+										<string>{{10, 27}, {926, 244}}</string>
 										<key>RubberWindowFrame</key>
 										<string>605 107 1201 950 0 0 1920 1058 </string>
 									</dict>

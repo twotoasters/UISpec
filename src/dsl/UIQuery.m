@@ -468,11 +468,20 @@ UIQuery * $(NSMutableString *script, ...) {
 	
 	NSMutableArray *strings = [NSMutableArray array];
 	NSArray *stringParams = [script componentsSeparatedByString:@"'"];
-	//NSLog(@"%@", stringParams);
+	//NSLog(@"stringParams = %@", stringParams);
 	if (stringParams.count > 1) {
 		for (int i=1; i<stringParams.count; i=i+2) {
 			[strings addObject:[stringParams objectAtIndex:i]];
 			[script replaceOccurrencesOfString:[NSString stringWithFormat:@"'%@'", [stringParams objectAtIndex:i]] withString:@"BIGFATGUYWITHPIGFEET" options:NSLiteralSearch range:NSMakeRange(0, [script length])];
+		}
+	} else {
+		stringParams = [script componentsSeparatedByString:@"\""];
+		//NSLog(@"stringParams = %@", stringParams);
+		if (stringParams.count > 1) {
+			for (int i=1; i<stringParams.count; i=i+2) {
+				[strings addObject:[stringParams objectAtIndex:i]];
+				[script replaceOccurrencesOfString:[NSString stringWithFormat:@"\"%@\"", [stringParams objectAtIndex:i]] withString:@"BIGFATGUYWITHPIGFEET" options:NSLiteralSearch range:NSMakeRange(0, [script length])];
+			}
 		}
 	}
 	//NSLog(@"script = %@", script);
