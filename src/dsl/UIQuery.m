@@ -204,7 +204,7 @@
 -(UIQuery *)flash {
 	[self.should exist:@"before you can flash it"];
 	for (UIView *view in [self targetViews]) {
-		UIColor *tempColor = view.backgroundColor;
+		UIColor *tempColor = [view.backgroundColor retain];
 		for (int i=0; i<5; i++) {
 			view.backgroundColor = [UIColor yellowColor];
 			CFRunLoopRunInMode(kCFRunLoopDefaultMode, .05, false);
@@ -212,8 +212,9 @@
 			CFRunLoopRunInMode(kCFRunLoopDefaultMode, .05, false);
 		}
 		view.backgroundColor = tempColor;
+		[tempColor release];
 	}
-	return self;
+	return [UIQuery withViews:views className:className];
 }
 
 -(UIQuery *)show {
@@ -224,15 +225,15 @@
 
 -(UIQuery *)path {
 	[self.should exist:@"before you can show its path"];
-	NSMutableString *path = [NSMutableString stringWithString:@"\n"];
 	for (UIView *view in [self targetViews]) {
+		NSMutableString *path = [NSMutableString stringWithString:@"\n"];
 		NSArray *parentViews = [[UIParents withTraversal] collect:[NSArray arrayWithObject:view]];
 		for (int i = parentViews.count-1; i>=0; i--) {
 			[path appendFormat:@"%@ -> ", [[parentViews objectAtIndex:i] class]];
 		}
 		[path appendFormat:@"%@", [view class]];
+		NSLog(path);
 	}
-	NSLog(path);
 	return [UIQuery withViews:views className:className]; 
 }
 
@@ -456,85 +457,57 @@
 
 @end
 
-UIQuery * $(NSString *script, ...) {
+UIQuery * $(NSMutableString *script, ...) {
 	va_list args;
 	va_start(args, script);
-	script = [[[NSString alloc] initWithFormat:script arguments:args] autorelease];
+	script = [[[NSMutableString alloc] initWithFormat:script arguments:args] autorelease];
 	va_end(args);
 	
-	//float test;
-	//	[[NSScanner scannerWithString:@"45.73"] scanFloat:(float *)&test];
-	//	NSLog(@"((((((( test = %f", test);
-	
-	//NSLog(@"script = %@, length = %d", script, script.length);
 	UIQuery *result = [UIQuery withApplicaton];
-	NSRange nextSearchRange = NSMakeRange(0, script.length);
-	NSRange nextSpaceRange = [script rangeOfString:@" " options:NSLiteralSearch range:nextSearchRange];	
+	//NSLog(@"script = %@, length = %d", script, script.length);
 	
-	NSRange checkForSet = [script rangeOfString:@":" options:NSLiteralSearch range:nextSearchRange];
-	if (checkForSet.length != 0 && checkForSet.location < nextSpaceRange.location) {
-		NSRange openQuote = [script rangeOfString:@"'" options:NSLiteralSearch range:nextSearchRange];
-		nextSearchRange = NSMakeRange(openQuote.location + openQuote.length, script.length - openQuote.location - openQuote.length);
-		NSRange closeQuote = [script rangeOfString:@"'" options:NSLiteralSearch range:nextSearchRange];
-		nextSearchRange = NSMakeRange(closeQuote.location + closeQuote.length, script.length - closeQuote.location - closeQuote.length);
-		nextSpaceRange = [script rangeOfString:@" " options:NSLiteralSearch range:nextSearchRange];
+	NSMutableArray *strings = [NSMutableArray array];
+	NSArray *stringParams = [script componentsSeparatedByString:@"'"];
+	//NSLog(@"%@", stringParams);
+	if (stringParams.count > 1) {
+		for (int i=1; i<stringParams.count; i=i+2) {
+			[strings addObject:[stringParams objectAtIndex:i]];
+			[script replaceOccurrencesOfString:[NSString stringWithFormat:@"'%@'", [stringParams objectAtIndex:i]] withString:@"BIGFATGUYWITHPIGFEET" options:NSLiteralSearch range:NSMakeRange(0, [script length])];
+		}
 	}
+	//NSLog(@"script = %@", script);
+	//NSLog(@"strings = %@", strings);
 	
-	if (nextSpaceRange.length == 0) {
-		nextSpaceRange =  NSMakeRange(script.length, 0);
-	}
-	NSRange nextCommandRange = NSMakeRange(nextSearchRange.location, nextSpaceRange.location);
-	while (YES) {
-		NSString *command = [script substringWithRange:nextCommandRange];
-		
-		//NSLog(@"command = %@", command);
-		if (![command isEqualToString:@""]) {
-			NSRange whereIsSet = [command rangeOfString:@":"];
-			if (whereIsSet.length != 0) {
-				NSArray *selectors = [command componentsSeparatedByString:@":"];
-				NSString *selector = [NSString stringWithFormat:@"%@:", [selectors objectAtIndex:0]];
-				NSString *arg = [selectors objectAtIndex:1];
-				BOOL isString = [arg rangeOfString:@"'"].length != 0;
-				arg = [arg stringByReplacingOccurrencesOfString:@"'" withString:@""];
-				id argValue = nil;
-				if (isString) {
-					argValue = arg;
-				} else if ([arg isEqualToString:@"YES"] || [arg isEqualToString:@"NO"]) {
-					argValue = [arg isEqualToString:@"YES"];
-				} else {
-					argValue = [arg intValue];
-				}
-				result = [result performSelector:NSSelectorFromString(selector) withObject:argValue];
+	NSArray *commands = [script componentsSeparatedByString:@" "];
+	//NSLog(@"commands = %@", commands);
+	
+	int stringCount = 0;
+	for (NSString *command in commands) {
+		NSArray *commandAndParam = [command componentsSeparatedByString:@":"];
+		NSString *commandValue = [commandAndParam objectAtIndex:0];
+		//NSLog(@"commandValue = %@", commandValue);
+		NSString *param = nil;
+		if (commandAndParam.count > 1) {
+			param = [commandAndParam objectAtIndex:1];
+		}
+		if (param != nil) {
+			id paramValue = nil;
+			if ([param isEqualToString:@"BIGFATGUYWITHPIGFEET"]) {
+				paramValue = [strings objectAtIndex:stringCount];
+				stringCount++;
+				//NSLog(@"paramValue = %@", paramValue);
+			} else if ([param isEqualToString:@"YES"] || [param isEqualToString:@"NO"]) {
+				paramValue = [param isEqualToString:@"YES"];
+				//NSLog(@"paramValue = %d", paramValue);
 			} else {
-				result = [result performSelector:NSSelectorFromString(command)];
+				paramValue = [param intValue];
+				//NSLog(@"paramValue = %d", paramValue);
 			}
+			result = [result performSelector:NSSelectorFromString([NSString stringWithFormat:@"%@:", commandValue]) withObject:paramValue];
+		} else {
+			result = [result performSelector:NSSelectorFromString(commandValue)];
 		}
-		//NSLog(@"result = %@", [result target]);
-		if (nextSpaceRange.location == script.length) {
-			break;
-		}
-		nextSearchRange = NSMakeRange(nextSpaceRange.location + nextSpaceRange.length, script.length - nextSpaceRange.location - nextSpaceRange.length);
-		nextSpaceRange = [script rangeOfString:@" " options:NSLiteralSearch range:nextSearchRange];
-		
-		NSRange checkForSet = [script rangeOfString:@":" options:NSLiteralSearch range:nextSearchRange];
-		if (checkForSet.length != 0 && checkForSet.location < nextSpaceRange.location) {
-			NSRange openQuote = [script rangeOfString:@"'" options:NSLiteralSearch range:nextSearchRange];
-			//[self logRange:@"openQuote" range:openQuote];
-			nextSearchRange = NSMakeRange(openQuote.location + openQuote.length, script.length - openQuote.location - openQuote.length);
-			//[self logRange:@"nextSearchRange" range:nextSearchRange];
-			NSRange closeQuote = [script rangeOfString:@"'" options:NSLiteralSearch range:nextSearchRange];
-			//[self logRange:@"closeQuote" range:closeQuote];
-			nextSearchRange = NSMakeRange(closeQuote.location + closeQuote.length, script.length - closeQuote.location - closeQuote.length);
-			//[self logRange:@"nextSearchRange" range:nextSearchRange];
-			nextSpaceRange = [script rangeOfString:@" " options:NSLiteralSearch range:nextSearchRange];
-			//[self logRange:@"nextSpaceRange" range:nextSpaceRange];
-		}
-		
-		if (nextSpaceRange.length == 0) {
-			nextSpaceRange =  NSMakeRange(script.length, 0);
-		}
-		nextCommandRange = NSMakeRange(nextCommandRange.location + nextCommandRange.length + 1, nextSpaceRange.location - nextCommandRange.location - nextCommandRange.length - 1);
-		//[self logRange:@"nextCommandRange" range:nextCommandRange];
+		//NSLog(@"result = %@", result);
 	}
 	return result;
 }

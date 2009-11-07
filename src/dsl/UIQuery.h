@@ -9,7 +9,7 @@
 
 @class UIFilter, UIExpectation, UIRedoer;
 
-UIQuery * $(NSString *script, ...);
+UIQuery * $(NSMutableString *script, ...);
 
 @interface UIQuery : ViewFilterSwizzler {
 	UIQuery *first, *last, *all, *redo;

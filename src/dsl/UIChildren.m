@@ -11,7 +11,7 @@
 -(NSArray *)collect:(NSArray *)views {
 	NSMutableArray *array = [NSMutableArray array];
 	for (UIView *view in views) {
-		for (UIView *subView in view.subviews) {
+		for (UIView *subView in [view.subviews reverseObjectEnumerator]) {
 			[array addObject:subView];
 		}
 	}

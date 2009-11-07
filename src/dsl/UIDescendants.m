@@ -18,10 +18,10 @@
 
 -(void)collectDescendantsOnView:(UIView *)view inToArray:(NSMutableArray *)array {
 	NSArray *subViews = ([view isKindOfClass:[UIApplication class]]) ? [view windows] : [view subviews];
-	for (UIView * v in subViews) {
+	for (UIView * v in [subViews reverseObjectEnumerator]) {
 		[array addObject:v];
 	}
-	for (UIView * v in subViews) {
+	for (UIView * v in [subViews reverseObjectEnumerator]) {
 		[self collectDescendantsOnView:v inToArray:array];
 	}
 }

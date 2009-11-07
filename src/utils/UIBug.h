@@ -10,4 +10,6 @@
 
 }
 
++(id)bugAtPoint:(CGPoint)point;
+
 @end
