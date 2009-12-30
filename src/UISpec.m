@@ -1,7 +1,20 @@
 #import "UISpec.h"
 #import "objc/runtime.h"
+#import "UIConsoleLog.h"
+
 
 @implementation UISpec
+
+static UILog *logger = nil;
+
++(void)initialize {
+	logger = [[UIConsoleLog alloc] init];
+}
+
++(void)setLog:(UILog *)log{
+	[logger release];
+	logger = [log retain];
+}
 
 +(void)runSpecsAfterDelay:(int)seconds {
 	[NSTimer scheduledTimerWithTimeInterval:seconds target:self selector:@selector(runSpecs) userInfo:nil repeats:NO];
@@ -28,85 +41,65 @@
 +(void)runSpecExample:(NSTimer *)timer {
 	Class *class = NSClassFromString([timer.userInfo objectAtIndex:0]);
 	NSString *exampleName = [timer.userInfo objectAtIndex:1];
-	NSMutableArray *errors = [NSMutableArray array];
-	NSDate *start = [NSDate date];
-	[self runExamples:[NSArray arrayWithObject:exampleName] onSpec:class errors:errors];
-	[self logSpec:errors finishTime:[NSString stringWithFormat:@"%f", fabsf([start timeIntervalSinceNow])] examplesCount:@"1"];
+	[logger onStart];
+	[self runExamples:[NSArray arrayWithObject:exampleName] onSpec:class];
+	[logger onFinish:1];
 }
 
 +(void)runSpecClasses:(NSArray *)specClasses {
 	if (specClasses.count == 0) return;
-	
-	NSMutableArray *errors = [NSMutableArray array];
-	
-	NSDate *start = [NSDate date];
 	int examplesCount = 0;
+	[logger onStart];
 	for (Class *class in specClasses) {
 		NSArray *examples = [self examplesForSpecClass:class];
 		if (examples.count == 0) continue;
 		examplesCount = examplesCount + examples.count;
-		[self runExamples:examples onSpec:class errors:errors];
+		[self runExamples:examples onSpec:class];
 	}
-	[self logSpec:errors finishTime:[NSString stringWithFormat:@"%f", fabsf([start timeIntervalSinceNow])] examplesCount:[NSString stringWithFormat:@"%i", examplesCount]];
+	[logger onFinish:examplesCount];
 }
 
-+(void)logSpec:(NSArray *)errors finishTime:(NSString *)finishTime examplesCount:(NSString *)examplesCount {
-	NSMutableString *log = [NSMutableString string];
-	if (errors.count > 0) {
-		int count = 0;
-		for (NSString *error in errors) {
-			[log appendFormat:@"\n\n%i)", ++count];
-			[log appendFormat:@"\n%@", error];
-		}
-	}
-	[log appendFormat:@"\n\nFinished in %@ seconds", finishTime];
-	
-	[log appendFormat:@"\n\n%@ examples %i failures", examplesCount, errors.count];
-	NSLog(log);
-}
-
-+(void)runExamples:(NSArray *)examples onSpec:(Class *)class errors:(NSMutableArray *)errors {
-	NSLog(@"\n%@", NSStringFromClass(class));
++(void)runExamples:(NSArray *)examples onSpec:(Class *)class {
 	UISpec *spec = [[[class alloc] init] autorelease];
+	[logger onSpec:spec];
 	if ([spec respondsToSelector:@selector(beforeAll)]) {
 		@try {
+			[logger onBeforeAll];
 			[spec beforeAll];
 		} @catch (NSException *exception) {
-			NSString *error = [NSString stringWithFormat:@"%@ in %@ beforeAll \n %@", exception.name, class, exception.reason];
-			[errors addObject:error];
+			[logger onBeforeAllException:exception];
 		}
 	}
-	for (NSString *exampleName in examples) {
+	for (NSString *exampleName in [examples reverseObjectEnumerator]) {
 		if ([spec respondsToSelector:@selector(before)]) {
 			@try {
+				[logger onBefore:exampleName];
 				[spec before];
 			} @catch (NSException *exception) {
-				NSString *error = [NSString stringWithFormat:@"%@ in %@ before %@ \n %@", exception.name, class, exampleName, exception.reason];
-				[errors addObject:error];
+				[logger onBeforeException:exception];
 			}
 		}
 		@try {
-			NSLog(@"\n- %@", exampleName);
+			[logger onExample:exampleName];
 			[spec performSelector:NSSelectorFromString(exampleName)];
 		} @catch (NSException *exception) {
-			NSString *error = [NSString stringWithFormat:@"%@ %@ FAILED \n%@", class, exampleName, exception.reason];
-			[errors addObject:error];
+			[logger onExampleException:exception];
 		}
 		if ([spec respondsToSelector:@selector(after)]) {
 			@try {
+				[logger onAfter:exampleName];
 				[spec after];
 			} @catch (NSException *exception) {
-				NSString *error = [NSString stringWithFormat:@"%@ in %@ after %@ \n %@", exception.name, class, exampleName, exception.reason];
-				[errors addObject:error];
+				[logger onAfterException:exception];
 			}
 		}
 	}
 	if ([spec respondsToSelector:@selector(afterAll)]) {
 		@try {
+			[logger onAfterAll];
 			[spec afterAll];
 		} @catch (NSException *exception) {
-			NSString *error = [NSString stringWithFormat:@"%@ in %@ afterAll \n %@", exception.name, class, exception.reason];
-			[errors addObject:error];
+			[logger onAfterAllException:exception];
 		}
 	}
 }

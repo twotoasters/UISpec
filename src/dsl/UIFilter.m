@@ -40,7 +40,7 @@
 	NSDate *start = [NSDate date];
 	while ([start timeIntervalSinceNow] > (0 - [query timeout])) {
 		for (UIView *view in [query views]) {
-			BOOL matches = YES;
+			int matchCount = 0;
 			int i = 2;
 			id value = nil;
 			id resultValue = nil;
@@ -48,30 +48,34 @@
 				if (![key isEqualToString:@""]) {
 					SEL selector = NSSelectorFromString(key);
 					if (![view respondsToSelector:selector]) {
-						matches = NO;
 						continue;
 					}
 					[anInvocation getArgument:&value atIndex:i++];
 					NSString *returnType = [NSString stringWithFormat:@"%s", [[view methodSignatureForSelector:selector] methodReturnType]];
+					//NSLog(@"selector = %@ and returnType = %@", key, returnType);
 					if ([returnType isEqualToString:@"@"]) {
 						if ([value isKindOfClass:[NSString class]]) {
-							if ([[view performSelector:selector] rangeOfString:value].length == 0) {
-								matches = NO;
-								continue;
+							if ([[view performSelector:selector] rangeOfString:value].length != 0) {
+								matchCount++;
 							}
-						} else if (![[view performSelector:selector] isEqual:value]) {
-							matches = NO;
-							continue;
+						} else if ([[view performSelector:selector] isEqual:value]) {
+							matchCount++;
+						} else if ([view performSelector:selector] == value) {
+							matchCount++;
 						}
 					} else {
-						if (![view performSelector:selector] == value) {
-							matches = NO;
-							continue;
+						//if ([returnType isEqualToString:@"i"]) {
+//							NSLog(@"value for int = %d and selector performed = %d", value, [view performSelector:selector]);
+//						}
+						if ([view performSelector:selector] == value) {
+							matchCount++;
 						}
 					}
+				} else {
+					matchCount++;
 				}
 			}
-			if (matches) {
+			if (selectors.count == matchCount) {
 				[array addObject:view];
 			}
 		}

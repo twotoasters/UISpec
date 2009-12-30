@@ -1,11 +1,12 @@
 UISpec by Brian Knorr <btknorr@gmail.com>
 Copyright(c) 2009 StarterStep, Inc., Some rights reserved.
 --------------------------------------------------------------------------
-Release Date: 3/22/09
+Release Date: 12/30/09
     Platform: iPhone 
      Version: 1 
-    Revision: 0
+    Revision: 1
       Author: Brian Knorr <btknorr@gmail.com>
      License: GNU General Public License v3
 --------------------------------------------------------------------------
 1.0 - This is the first release of UISpec - BTK
+1.1 - Includes new expectation framework with specs, UICatalog demo, UILog for custom handling of UISpec results, and bug fixes; 

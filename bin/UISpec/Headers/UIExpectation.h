@@ -5,20 +5,43 @@
 //  Created by Brian Knorr <btknorr@gmail.com>
 //  Copyright(c) 2009 StarterStep, Inc., Some rights reserved.
 //
-@class UIQuery;
+
+#define expectThat(aValue) ({ \
+/* The stack var is here, so this macro can accept constants directly. */ \
+__typeof__(aValue) __aValue = (aValue); \
+[UIExpectation withValue:&__aValue objCType:@encode(__typeof__(aValue)) file:__FILE__ line:__LINE__ isFailureTest:NO]; \
+}) \
+
+#define expectFailureWhen(aValue) ({ \
+/* The stack var is here, so this macro can accept constants directly. */ \
+__typeof__(aValue) __aValue = (aValue); \
+[UIExpectation withValue:&__aValue objCType:@encode(__typeof__(aValue)) file:__FILE__ line:__LINE__ isFailureTest:YES]; \
+}) \
+
+#define be(aValue) ({ \
+__typeof__(aValue) __aValue = (aValue); \
+[UIMatcher withValue:&__aValue objCType:@encode(__typeof__(aValue)) matchSelector:@selector(be:)]; \
+}) \
+
+
+#import "UIMatcher.h"
 
 @interface UIExpectation : NSObject {
-	UIQuery *query;
-	BOOL isNot, exist, isHave, isBe;
-	UIExpectation *not, *have, *be;
+	BOOL exist, isNot, isHave, isBe, isFailureTest;
+	UIExpectation *not, *have, *be, *should, *shouldNot;
+	id value;
+	const char * typeDescription;
+	const char * file;
+	int line;
 }
 
-@property(nonatomic, retain) UIQuery *query;
-@property(nonatomic, readonly) UIExpectation *not, *have, *be;
+@property(nonatomic, readonly) UIExpectation *not, *have, *be, *should, *shouldNot;
 @property(nonatomic, readonly) BOOL exist;
 
--(void)have:(BOOL)condition;
++(id)withValue:(const void *)aValue objCType:(const char *)aTypeDescription file:(const char *)aFile line:(int)aLine isFailureTest:(BOOL)failureTest;
 
-+(id)withQuery:(UIQuery *)query;
+-(void)should:(UIMatcher *)matcher;
+-(void)shouldNot:(UIMatcher *)matcher;
+-(void)not:(UIMatcher *)matcher;
 
 @end

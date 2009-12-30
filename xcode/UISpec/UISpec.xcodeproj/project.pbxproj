@@ -25,6 +25,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		C708D8F010C4B86A000A2462 /* UIMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C708D8EF10C4B86A000A2462 /* UIMatcher.m */; };
+		C708D8F110C4B86A000A2462 /* UIMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C708D8EE10C4B86A000A2462 /* UIMatcher.h */; };
+		C708D8F210C4B86A000A2462 /* UIMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C708D8EF10C4B86A000A2462 /* UIMatcher.m */; };
+		C708D8F310C4B86A000A2462 /* UIMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C708D8EE10C4B86A000A2462 /* UIMatcher.h */; };
+		C708D8F410C4B86A000A2462 /* UIMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C708D8EF10C4B86A000A2462 /* UIMatcher.m */; };
 		C7407B5A101AA2FA00E5392C /* WaitUntilIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = C7407B58101AA2F900E5392C /* WaitUntilIdle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7407B5B101AA2FA00E5392C /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7407B59101AA2FA00E5392C /* WaitUntilIdle.m */; };
 		C7407B5C101AA2FA00E5392C /* WaitUntilIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = C7407B58101AA2F900E5392C /* WaitUntilIdle.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +50,8 @@
 		C7653B621023FD63001FF86B /* UIRedoer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653B601023FD63001FF86B /* UIRedoer.m */; };
 		C7653B631023FD63001FF86B /* UIRedoer.h in Headers */ = {isa = PBXBuildFile; fileRef = C7653B5F1023FD63001FF86B /* UIRedoer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7653B641023FD63001FF86B /* UIRedoer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653B601023FD63001FF86B /* UIRedoer.m */; };
+		C76A5D9E10CC390600BB4595 /* UIMatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C708D8EE10C4B86A000A2462 /* UIMatcher.h */; };
+		C76A5D9F10CC390D00BB4595 /* UIQueryExpectation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C77A47CE10C9903B00C1BF8D /* UIQueryExpectation.h */; };
 		C76EB6020F74594900EF8398 /* UISpec.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB5F40F74594900EF8398 /* UISpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EB6030F74594900EF8398 /* UISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB5F50F74594900EF8398 /* UISpec.m */; };
 		C76EB6100F74594900EF8398 /* UISpec.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB5F40F74594900EF8398 /* UISpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,6 +86,11 @@
 		C76EB7A40F76F03F00EF8398 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7A20F76F03F00EF8398 /* UIQueryTableView.m */; };
 		C76EB7A50F76F03F00EF8398 /* UIQueryTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EB7A10F76F03F00EF8398 /* UIQueryTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EB7A60F76F03F00EF8398 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7A20F76F03F00EF8398 /* UIQueryTableView.m */; };
+		C77A47D010C9903B00C1BF8D /* UIQueryExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A47CF10C9903B00C1BF8D /* UIQueryExpectation.m */; };
+		C77A47D110C9903B00C1BF8D /* UIQueryExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = C77A47CE10C9903B00C1BF8D /* UIQueryExpectation.h */; };
+		C77A47D210C9903B00C1BF8D /* UIQueryExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A47CF10C9903B00C1BF8D /* UIQueryExpectation.m */; };
+		C77A47D310C9903B00C1BF8D /* UIQueryExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = C77A47CE10C9903B00C1BF8D /* UIQueryExpectation.h */; };
+		C77A47D410C9903B00C1BF8D /* UIQueryExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A47CF10C9903B00C1BF8D /* UIQueryExpectation.m */; };
 		C77AB487103F26F600FDCEEB /* UISpec.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = C77AB465103F263400FDCEEB /* UISpec.bundle */; };
 		C77AB492103F298700FDCEEB /* UIInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = C77AB48E103F298700FDCEEB /* UIInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C77AB493103F298700FDCEEB /* UIInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = C77AB48F103F298700FDCEEB /* UIInspector.m */; };
@@ -104,6 +116,30 @@
 		C7D32A94103F40DF00071AE1 /* UIConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D32A92103F40DF00071AE1 /* UIConsole.m */; };
 		C7D32A95103F40DF00071AE1 /* UIConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = C7D32A91103F40DF00071AE1 /* UIConsole.h */; };
 		C7D32A96103F40DF00071AE1 /* UIConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D32A92103F40DF00071AE1 /* UIConsole.m */; };
+		C7D4F29C10BDA3CB00B00019 /* CallCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB75C0F76DFF400EF8398 /* CallCache.m */; };
+		C7D4F29D10BDA3CB00B00019 /* NSNumberCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB75E0F76DFF400EF8398 /* NSNumberCreator.m */; };
+		C7D4F29E10BDA3CB00B00019 /* Recordable.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1C2C0F7B26360047857B /* Recordable.m */; };
+		C7D4F29F10BDA3CB00B00019 /* ReturnCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9535B0F818688005FC682 /* ReturnCacher.m */; };
+		C7D4F2A010BDA3CB00B00019 /* UIBug.m in Sources */ = {isa = PBXBuildFile; fileRef = C77AB491103F298700FDCEEB /* UIBug.m */; };
+		C7D4F2A110BDA3CB00B00019 /* UIChildren.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653A8F1023BE15001FF86B /* UIChildren.m */; };
+		C7D4F2A210BDA3CB00B00019 /* UIConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D32A92103F40DF00071AE1 /* UIConsole.m */; };
+		C7D4F2A310BDA3CB00B00019 /* UIDescendants.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653A911023BE15001FF86B /* UIDescendants.m */; };
+		C7D4F2A410BDA3CB00B00019 /* UIExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7590F76DFF400EF8398 /* UIExpectation.m */; };
+		C7D4F2A510BDA3CB00B00019 /* UIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7550F76DFF400EF8398 /* UIFilter.m */; };
+		C7D4F2A610BDA3CB00B00019 /* UIInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = C77AB48F103F298700FDCEEB /* UIInspector.m */; };
+		C7D4F2A710BDA3CB00B00019 /* UIParents.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653A931023BE15001FF86B /* UIParents.m */; };
+		C7D4F2A810BDA3CB00B00019 /* UIProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E953550F81799A005FC682 /* UIProxy.m */; };
+		C7D4F2A910BDA3CB00B00019 /* UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7570F76DFF400EF8398 /* UIQuery.m */; };
+		C7D4F2AA10BDA3CB00B00019 /* UIQueryAll.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1DFA0F7D6D7C0047857B /* UIQueryAll.m */; };
+		C7D4F2AB10BDA3CB00B00019 /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7A20F76F03F00EF8398 /* UIQueryTableView.m */; };
+		C7D4F2AC10BDA3CB00B00019 /* UIQueryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB7520F76DFF400EF8398 /* UIQueryTableViewCell.m */; };
+		C7D4F2AD10BDA3CB00B00019 /* UIRedoer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653B601023FD63001FF86B /* UIRedoer.m */; };
+		C7D4F2AE10BDA3CB00B00019 /* UISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB5F50F74594900EF8398 /* UISpec.m */; };
+		C7D4F2AF10BDA3CB00B00019 /* ViewFilterSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FE1D9B0F7D6B060047857B /* ViewFilterSwizzler.m */; };
+		C7D4F2B010BDA3CB00B00019 /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7407B59101AA2FA00E5392C /* WaitUntilIdle.m */; };
+		C7D4F2B410BDA48300B00019 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4F2B310BDA48300B00019 /* main.m */; };
+		C7D4F2EB10BDA54500B00019 /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C77AB465103F263400FDCEEB /* UISpec.bundle */; };
+		C7D4F2EE10BDA57C00B00019 /* DescribeUIExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4F2ED10BDA57C00B00019 /* DescribeUIExpectation.m */; };
 		C7E953560F81799A005FC682 /* UIProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E953540F81799A005FC682 /* UIProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7E953570F81799A005FC682 /* UIProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E953550F81799A005FC682 /* UIProxy.m */; };
 		C7E953580F81799A005FC682 /* UIProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E953540F81799A005FC682 /* UIProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -112,6 +148,13 @@
 		C7E9535D0F818688005FC682 /* ReturnCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9535B0F818688005FC682 /* ReturnCacher.m */; };
 		C7E9535E0F818688005FC682 /* ReturnCacher.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E9535A0F818688005FC682 /* ReturnCacher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7E9535F0F818688005FC682 /* ReturnCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9535B0F818688005FC682 /* ReturnCacher.m */; };
+		C7EFF4D710E40D02007DB16A /* UILog.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EFF4D410E40D02007DB16A /* UILog.h */; };
+		C7EFF4D910E40D02007DB16A /* UILog.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EFF4D410E40D02007DB16A /* UILog.h */; };
+		C7EFF50D10E41565007DB16A /* UIConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EFF50C10E41565007DB16A /* UIConsoleLog.m */; };
+		C7EFF50E10E41565007DB16A /* UIConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EFF50B10E41565007DB16A /* UIConsoleLog.h */; };
+		C7EFF50F10E41565007DB16A /* UIConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EFF50C10E41565007DB16A /* UIConsoleLog.m */; };
+		C7EFF51010E41565007DB16A /* UIConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EFF50B10E41565007DB16A /* UIConsoleLog.h */; };
+		C7EFF51110E41565007DB16A /* UIConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EFF50C10E41565007DB16A /* UIConsoleLog.m */; };
 		C7FE1AED0F783CD10047857B /* UISpec.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB5F40F74594900EF8398 /* UISpec.h */; };
 		C7FE1AEE0F783CD10047857B /* UIQueryTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB7510F76DFF400EF8398 /* UIQueryTableViewCell.h */; };
 		C7FE1AEF0F783CD10047857B /* UIFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C76EB7540F76DFF400EF8398 /* UIFilter.h */; };
@@ -168,6 +211,8 @@
 			dstPath = ../../../../bin/UISpec/Headers;
 			dstSubfolderSpec = 16;
 			files = (
+				C76A5D9F10CC390D00BB4595 /* UIQueryExpectation.h in CopyFiles */,
+				C76A5D9E10CC390600BB4595 /* UIMatcher.h in CopyFiles */,
 				C77AB49B103F29E800FDCEEB /* UIInspector.h in CopyFiles */,
 				C77AB49C103F29E800FDCEEB /* UIBug.h in CopyFiles */,
 				C7FE1AEE0F783CD10047857B /* UIQueryTableViewCell.h in CopyFiles */,
@@ -194,6 +239,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C708D8EE10C4B86A000A2462 /* UIMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMatcher.h; sourceTree = "<group>"; };
+		C708D8EF10C4B86A000A2462 /* UIMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMatcher.m; sourceTree = "<group>"; };
 		C7407B58101AA2F900E5392C /* WaitUntilIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitUntilIdle.h; sourceTree = "<group>"; };
 		C7407B59101AA2FA00E5392C /* WaitUntilIdle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitUntilIdle.m; sourceTree = "<group>"; };
 		C7653A8E1023BE15001FF86B /* UIChildren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIChildren.h; path = ../../src/dsl/UIChildren.h; sourceTree = SOURCE_ROOT; };
@@ -223,6 +270,8 @@
 		C76EB75E0F76DFF400EF8398 /* NSNumberCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSNumberCreator.m; path = ../../src/utils/NSNumberCreator.m; sourceTree = SOURCE_ROOT; };
 		C76EB7A10F76F03F00EF8398 /* UIQueryTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryTableView.h; sourceTree = "<group>"; };
 		C76EB7A20F76F03F00EF8398 /* UIQueryTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryTableView.m; sourceTree = "<group>"; };
+		C77A47CE10C9903B00C1BF8D /* UIQueryExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryExpectation.h; sourceTree = "<group>"; };
+		C77A47CF10C9903B00C1BF8D /* UIQueryExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryExpectation.m; sourceTree = "<group>"; };
 		C77AB465103F263400FDCEEB /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../../src/UISpec.bundle; sourceTree = "<group>"; };
 		C77AB48E103F298700FDCEEB /* UIInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInspector.h; sourceTree = "<group>"; };
 		C77AB48F103F298700FDCEEB /* UIInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIInspector.m; sourceTree = "<group>"; };
@@ -230,10 +279,18 @@
 		C77AB491103F298700FDCEEB /* UIBug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBug.m; sourceTree = "<group>"; };
 		C7D32A91103F40DF00071AE1 /* UIConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConsole.h; sourceTree = "<group>"; };
 		C7D32A92103F40DF00071AE1 /* UIConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConsole.m; sourceTree = "<group>"; };
+		C7D4F29310BDA39C00B00019 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D4F29510BDA39C00B00019 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		C7D4F2B310BDA48300B00019 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7D4F2EC10BDA57C00B00019 /* DescribeUIExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeUIExpectation.h; sourceTree = "<group>"; };
+		C7D4F2ED10BDA57C00B00019 /* DescribeUIExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeUIExpectation.m; sourceTree = "<group>"; };
 		C7E953540F81799A005FC682 /* UIProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProxy.h; sourceTree = "<group>"; };
 		C7E953550F81799A005FC682 /* UIProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProxy.m; sourceTree = "<group>"; };
 		C7E9535A0F818688005FC682 /* ReturnCacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnCacher.h; sourceTree = "<group>"; };
 		C7E9535B0F818688005FC682 /* ReturnCacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnCacher.m; sourceTree = "<group>"; };
+		C7EFF4D410E40D02007DB16A /* UILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UILog.h; path = ../../src/dsl/UILog.h; sourceTree = "<group>"; };
+		C7EFF50B10E41565007DB16A /* UIConsoleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIConsoleLog.h; path = ../../src/dsl/UIConsoleLog.h; sourceTree = "<group>"; };
+		C7EFF50C10E41565007DB16A /* UIConsoleLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIConsoleLog.m; path = ../../src/dsl/UIConsoleLog.m; sourceTree = "<group>"; };
 		C7FE1C2B0F7B26360047857B /* Recordable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recordable.h; path = ../dsl/Recordable.h; sourceTree = "<group>"; };
 		C7FE1C2C0F7B26360047857B /* Recordable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recordable.m; path = ../dsl/Recordable.m; sourceTree = "<group>"; };
 		C7FE1D9A0F7D6B060047857B /* ViewFilterSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFilterSwizzler.h; sourceTree = "<group>"; };
@@ -257,16 +314,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7D4F29110BDA39C00B00019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		08FB7794FE84155DC02AAC07 /* UISpec */ = {
 			isa = PBXGroup;
 			children = (
+				C7D4F2B110BDA46900B00019 /* specs */,
 				C76EB5E70F74592C00EF8398 /* src */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				C77AB465103F263400FDCEEB /* UISpec.bundle */,
 				C76EB6230F7459DC00EF8398 /* UISpec_Prefix.pch */,
+				C7D4F29510BDA39C00B00019 /* Specs-Info.plist */,
 			);
 			name = UISpec;
 			sourceTree = "<group>";
@@ -276,6 +342,7 @@
 			children = (
 				C76EB5D20F74586B00EF8398 /* UISpec_Simulator.a */,
 				C76EB5DA0F7458C100EF8398 /* UISpec_Device.a */,
+				C7D4F29310BDA39C00B00019 /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +352,9 @@
 			children = (
 				C76EB5F40F74594900EF8398 /* UISpec.h */,
 				C76EB5F50F74594900EF8398 /* UISpec.m */,
+				C7EFF4D410E40D02007DB16A /* UILog.h */,
+				C7EFF50B10E41565007DB16A /* UIConsoleLog.h */,
+				C7EFF50C10E41565007DB16A /* UIConsoleLog.m */,
 				C76EB7530F76DFF400EF8398 /* dsl */,
 				C76EB7500F76DFF400EF8398 /* components */,
 				C76EB75A0F76DFF400EF8398 /* utils */,
@@ -325,6 +395,10 @@
 				C7FE1DFA0F7D6D7C0047857B /* UIQueryAll.m */,
 				C7653B5F1023FD63001FF86B /* UIRedoer.h */,
 				C7653B601023FD63001FF86B /* UIRedoer.m */,
+				C708D8EE10C4B86A000A2462 /* UIMatcher.h */,
+				C708D8EF10C4B86A000A2462 /* UIMatcher.m */,
+				C77A47CE10C9903B00C1BF8D /* UIQueryExpectation.h */,
+				C77A47CF10C9903B00C1BF8D /* UIQueryExpectation.m */,
 			);
 			name = dsl;
 			path = ../../src/dsl;
@@ -356,6 +430,17 @@
 			path = ../../src/utils;
 			sourceTree = SOURCE_ROOT;
 		};
+		C7D4F2B110BDA46900B00019 /* specs */ = {
+			isa = PBXGroup;
+			children = (
+				C7D4F2B310BDA48300B00019 /* main.m */,
+				C7D4F2EC10BDA57C00B00019 /* DescribeUIExpectation.h */,
+				C7D4F2ED10BDA57C00B00019 /* DescribeUIExpectation.m */,
+			);
+			name = specs;
+			path = ../../specs;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -385,6 +470,10 @@
 				C77AB496103F298700FDCEEB /* UIInspector.h in Headers */,
 				C77AB498103F298700FDCEEB /* UIBug.h in Headers */,
 				C7D32A93103F40DF00071AE1 /* UIConsole.h in Headers */,
+				C708D8F110C4B86A000A2462 /* UIMatcher.h in Headers */,
+				C77A47D310C9903B00C1BF8D /* UIQueryExpectation.h in Headers */,
+				C7EFF4D710E40D02007DB16A /* UILog.h in Headers */,
+				C7EFF50E10E41565007DB16A /* UIConsoleLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +503,10 @@
 				C77AB492103F298700FDCEEB /* UIInspector.h in Headers */,
 				C77AB494103F298700FDCEEB /* UIBug.h in Headers */,
 				C7D32A95103F40DF00071AE1 /* UIConsole.h in Headers */,
+				C708D8F310C4B86A000A2462 /* UIMatcher.h in Headers */,
+				C77A47D110C9903B00C1BF8D /* UIQueryExpectation.h in Headers */,
+				C7EFF4D910E40D02007DB16A /* UILog.h in Headers */,
+				C7EFF51010E41565007DB16A /* UIConsoleLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +547,23 @@
 			productReference = C76EB5DA0F7458C100EF8398 /* UISpec_Device.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C7D4F29210BDA39C00B00019 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7D4F29B10BDA39D00B00019 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				C7D4F28F10BDA39C00B00019 /* Resources */,
+				C7D4F29010BDA39C00B00019 /* Sources */,
+				C7D4F29110BDA39C00B00019 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = C7D4F29310BDA39C00B00019 /* Specs.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -469,9 +579,21 @@
 				C76EB5D10F74586B00EF8398 /* UISpec_Simulator */,
 				C76EB5D90F7458C100EF8398 /* UISpec_Device */,
 				C76EB5DF0F7458EF00EF8398 /* UISpec_Universal */,
+				C7D4F29210BDA39C00B00019 /* Specs */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7D4F28F10BDA39C00B00019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D4F2EB10BDA54500B00019 /* UISpec.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		C76EB5DE0F7458EF00EF8398 /* ShellScript */ = {
@@ -515,6 +637,9 @@
 				C77AB497103F298700FDCEEB /* UIInspector.m in Sources */,
 				C77AB499103F298700FDCEEB /* UIBug.m in Sources */,
 				C7D32A94103F40DF00071AE1 /* UIConsole.m in Sources */,
+				C708D8F210C4B86A000A2462 /* UIMatcher.m in Sources */,
+				C77A47D410C9903B00C1BF8D /* UIQueryExpectation.m in Sources */,
+				C7EFF50F10E41565007DB16A /* UIConsoleLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +668,42 @@
 				C77AB493103F298700FDCEEB /* UIInspector.m in Sources */,
 				C77AB495103F298700FDCEEB /* UIBug.m in Sources */,
 				C7D32A96103F40DF00071AE1 /* UIConsole.m in Sources */,
+				C708D8F410C4B86A000A2462 /* UIMatcher.m in Sources */,
+				C77A47D210C9903B00C1BF8D /* UIQueryExpectation.m in Sources */,
+				C7EFF51110E41565007DB16A /* UIConsoleLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D4F29010BDA39C00B00019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D4F29C10BDA3CB00B00019 /* CallCache.m in Sources */,
+				C7D4F29D10BDA3CB00B00019 /* NSNumberCreator.m in Sources */,
+				C7D4F29E10BDA3CB00B00019 /* Recordable.m in Sources */,
+				C7D4F29F10BDA3CB00B00019 /* ReturnCacher.m in Sources */,
+				C7D4F2A010BDA3CB00B00019 /* UIBug.m in Sources */,
+				C7D4F2A110BDA3CB00B00019 /* UIChildren.m in Sources */,
+				C7D4F2A210BDA3CB00B00019 /* UIConsole.m in Sources */,
+				C7D4F2A310BDA3CB00B00019 /* UIDescendants.m in Sources */,
+				C7D4F2A410BDA3CB00B00019 /* UIExpectation.m in Sources */,
+				C7D4F2A510BDA3CB00B00019 /* UIFilter.m in Sources */,
+				C7D4F2A610BDA3CB00B00019 /* UIInspector.m in Sources */,
+				C7D4F2A710BDA3CB00B00019 /* UIParents.m in Sources */,
+				C7D4F2A810BDA3CB00B00019 /* UIProxy.m in Sources */,
+				C7D4F2A910BDA3CB00B00019 /* UIQuery.m in Sources */,
+				C7D4F2AA10BDA3CB00B00019 /* UIQueryAll.m in Sources */,
+				C7D4F2AB10BDA3CB00B00019 /* UIQueryTableView.m in Sources */,
+				C7D4F2AC10BDA3CB00B00019 /* UIQueryTableViewCell.m in Sources */,
+				C7D4F2AD10BDA3CB00B00019 /* UIRedoer.m in Sources */,
+				C7D4F2AE10BDA3CB00B00019 /* UISpec.m in Sources */,
+				C7D4F2AF10BDA3CB00B00019 /* ViewFilterSwizzler.m in Sources */,
+				C7D4F2B010BDA3CB00B00019 /* WaitUntilIdle.m in Sources */,
+				C7D4F2B410BDA48300B00019 /* main.m in Sources */,
+				C7D4F2EE10BDA57C00B00019 /* DescribeUIExpectation.m in Sources */,
+				C708D8F010C4B86A000A2462 /* UIMatcher.m in Sources */,
+				C77A47D010C9903B00C1BF8D /* UIQueryExpectation.m in Sources */,
+				C7EFF50D10E41565007DB16A /* UIConsoleLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,6 +851,55 @@
 			};
 			name = Release;
 		};
+		C7D4F29910BDA39D00B00019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "Specs-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Specs;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C7D4F29A10BDA39D00B00019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "Specs-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Specs;
+				SDKROOT = iphoneos3.0;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -725,6 +935,15 @@
 			buildConfigurations = (
 				C76EB5E00F7458EF00EF8398 /* Debug */,
 				C76EB5E10F7458EF00EF8398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7D4F29B10BDA39D00B00019 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7D4F29910BDA39D00B00019 /* Debug */,
+				C7D4F29A10BDA39D00B00019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
