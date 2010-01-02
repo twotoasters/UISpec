@@ -12,6 +12,7 @@
 		1D60589E0D05DD5A006BFB54 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC4B2650D05D9C8003A8154 /* CoreFoundation.framework */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2F51F20A10EED09600FBCA7C /* DescribeWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F51F20910EED09600FBCA7C /* DescribeWebView.m */; };
 		530986800DE753E300CC7C10 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5309867F0DE753E300CC7C10 /* blueButton.png */; };
 		5316140F0DDCC3480085B0B5 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5316140D0DDCC3480085B0B5 /* TransitionViewController.m */; };
 		531992A70DCBAE7300530CD7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531992A30DCBAE7300530CD7 /* MainWindow.xib */; };
@@ -107,6 +108,8 @@
 		1DC4B2650D05D9C8003A8154 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F51F20810EED09600FBCA7C /* DescribeWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeWebView.h; sourceTree = "<group>"; };
+		2F51F20910EED09600FBCA7C /* DescribeWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeWebView.m; sourceTree = "<group>"; };
 		5309867F0DE753E300CC7C10 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 		5316140D0DDCC3480085B0B5 /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
 		5316140E0DDCC3480085B0B5 /* TransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
@@ -364,6 +367,8 @@
 				C7C60A3D10B377C200CC59E0 /* DescribeButtons.m */,
 				C7C90DEB10B469ED004111A3 /* DescribeControls.h */,
 				C7C90DEC10B469ED004111A3 /* DescribeControls.m */,
+				2F51F20810EED09600FBCA7C /* DescribeWebView.h */,
+				2F51F20910EED09600FBCA7C /* DescribeWebView.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -513,6 +518,7 @@
 				C7FD8FF410B322000088AD09 /* DescribeUICatalog.m in Sources */,
 				C7C60A3E10B377C200CC59E0 /* DescribeButtons.m in Sources */,
 				C7C90DED10B469ED004111A3 /* DescribeControls.m in Sources */,
+				2F51F20A10EED09600FBCA7C /* DescribeWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -83,7 +83,7 @@
     urlField.textColor = [UIColor blackColor];
     urlField.delegate = self;
     urlField.placeholder = @"<enter a URL>";
-    urlField.text = @"http://www.apple.com";
+    urlField.text = @"http://www.google.com";
 	urlField.backgroundColor = [UIColor whiteColor];
 	urlField.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	urlField.returnKeyType = UIReturnKeyGo;
@@ -95,7 +95,7 @@
 	[self.view addSubview:urlField];
 	[urlField release];
 	
-	[self.myWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apple.com/"]]];
+	[self.myWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.google.com/"]]];
 }
 
 // called after the view controller's view is released and set to nil.
