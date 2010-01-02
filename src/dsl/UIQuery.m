@@ -8,6 +8,10 @@
 #import "UIRedoer.h"
 #import "UIQueryTableViewCell.h"
 #import "UIQueryTableView.h"
+#import "UIQuerySearchBar.h"
+#import "UIQueryTabBar.h"
+#import "UIQuerySegmentedControl.h"
+#import "UIQueryWebView.h"
 #import "UIQueryAll.h"
 #import "UIFilter.h"
 #import "UIBug.h"
@@ -129,7 +133,20 @@
 		return [UIQueryTableViewCell withViews:array className:className];
 	} else if ([className isEqualToString:@"UITableView"]) {
 		return [UIQueryTableView withViews:array className:className];
-	} else {
+	} 
+	else if ([className isEqualToString:@"UISearchBar"]) {
+		return [UIQuerySearchBar withViews:array className:className];
+	}
+	else if ([className isEqualToString:@"UITabBar"]) {
+		return [UIQueryTabBar withViews:array className:className];
+	}
+	else if ([className isEqualToString:@"UISegmentedControl"]) {
+		return [UIQuerySegmentedControl withViews:array className:className];
+	}
+	else if ([className isEqualToString:@"UIWebView"]) {
+		return [UIQueryWebView withViews:array className:className];
+	}
+	else {
 		return [UIQuery withViews:array className:className];
 	}
 }
