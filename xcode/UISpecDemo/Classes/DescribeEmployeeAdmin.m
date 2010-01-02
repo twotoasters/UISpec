@@ -4,7 +4,7 @@
 @implementation DescribeEmployeeAdmin
 
 -(void)beforeAll {
-	app = [[UIQuery withApplicaton] retain];
+	app = [[UIQuery withApplication] retain];
 	[UIBug bugAtPoint:CGPointMake(0, 465)];
 }
 
