@@ -42,7 +42,7 @@ UIQuery * $(NSMutableString *script, ...);
 -(UIQuery *)wait:(double)seconds;
 -(UIQuery *)target;
 
-+(id)withApplicaton;
++(id)withApplication;
 +(void)show:(NSArray *)views;
 
 @end

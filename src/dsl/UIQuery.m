@@ -17,7 +17,7 @@
 
 @synthesize views, className, redoer, timeout;
 
-+(id)withApplicaton {
++(id)withApplication {
 	return [self withViews:[NSMutableArray arrayWithObject:[UIApplication sharedApplication]] className:NSStringFromClass([UIApplication class])];
 }
 
@@ -468,7 +468,7 @@ UIQuery * $(NSMutableString *script, ...) {
 	script = [[[NSMutableString alloc] initWithFormat:script arguments:args] autorelease];
 	va_end(args);
 	
-	UIQuery *result = [UIQuery withApplicaton];
+	UIQuery *result = [UIQuery withApplication];
 	//NSLog(@"script = %@, length = %d", script, script.length);
 	
 	NSMutableArray *strings = [NSMutableArray array];

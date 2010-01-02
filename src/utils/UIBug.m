@@ -110,7 +110,7 @@ static CGPoint originalPoint;
 	
 	//[[UIQuery withViews:[NSArray arrayWithObject:touch.view] className:NSStringFromClass([touch.view class])] descendant].all.show;
 	//NSLog(@"pushing view %@", targetView);
-	//UINavigationController *nav = [[[UIQuery withApplicaton] view:@"UILayoutContainerView"].last delegate];
+	//UINavigationController *nav = [[[UIQuery withApplication] view:@"UILayoutContainerView"].last delegate];
 	UIInspector *browser = [[[UIInspector alloc] initWithView:view] autorelease];
 	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:browser];
 	//NSLog(@"pushing view %@", targetView);
