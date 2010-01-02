@@ -1,49 +1,52 @@
-//
-//  UIQueryWebView.m
-//  UISpec
-//
-//  Created by Cory Smith on 09-12-30.
-//  Copyright 2009 Leading Lines Design. All rights reserved.
-//
 
 #import "UIQueryWebView.h"
 
 @implementation UIQueryWebView
 
 -(UIQuery *)setValue:(NSString *)value forElementWithId:(NSString *)elementId {
-	UIWebView *webView = self;
-	NSString *javascript;
+	//NSString *javascript = [NSString stringWithFormat:@"$('#%@').val('%@');", elementId, value];
+	NSString *javascript = [NSString stringWithFormat:@"document.getElementById('%@').value = '%@';", elementId, value];
 	
-	if([self jQuerySupported])
-		javascript = [NSString stringWithFormat:@"document.getElementById('%@').value = '%@';", elementId, value];
-	else 
-		javascript = [NSString stringWithFormat:@"$('#%@').val('%@');", elementId, value];	
-
+	//if(![self jQuerySupported])
+//		[self injectjQuery];
+	
 	[self stringByEvaluatingJavaScriptFromString:javascript];
 	return [UIQuery withViews:views className:className];
 }
 
--(UIQuery *)clickElementWithId:(NSString *)elementId {
-	UIWebView *theWebView = self;
+-(UIQuery *)clickElementWithId:(NSString *)elementId {	
+	//NSString *javascript = [NSString stringWithFormat:@"$('#%@').click();", elementId];
+	NSString *javascript = [NSString stringWithFormat:@"document.getElementById('%@').click();", elementId];
+	//if(![self jQuerySupported]) 
+//		[self injectjQuery];
 	
-	NSString *javascript;
-	if([self jQuerySupported]) 
-		javascript = [NSString stringWithFormat:@"$(#'%@').click();", elementId];
-	else 
-		javascript = [NSString stringWithFormat:@"document.getElementById('%@').click();", elementId];
-	[theWebView stringByEvaluatingJavaScriptFromString:javascript];
+	//	javascript = [NSString stringWithFormat:@"$('#%@').click();", elementId];
+//	else 
+//		javascript = [NSString stringWithFormat:@"document.getElementById('%@').click();", elementId];
+	
+	[self stringByEvaluatingJavaScriptFromString:javascript];
 	return [UIQuery withViews:views className:className];
+}
+
+-(void) injectjQuery {
+	NSLog(@"Injecting jQuery");
+	NSString *jQueryInjection = @"var headElement = document.getElementsByTagName('head')[0]; var script = document.createElement('script'); script.setAttribute('src','http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js'); script.setAttribute('type','text/javascript'); headElement.appendChild(script);";
+	[self stringByEvaluatingJavaScriptFromString: jQueryInjection];	
 }
 
 -(BOOL) jQuerySupported {
 	
 	UIWebView *theWebView = self;
-	NSString *html = [theWebView stringByEvaluatingJavaScriptFromString: @"document.body.innerHTML"];
+	NSString *html = [theWebView stringByEvaluatingJavaScriptFromString: @"document.documentElement.innerHTML"];
 	
-	//NSPredicate *regextest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @".jquery."];
-	//return [regextest evaluateWithObject:html];
-	NSLog([NSString stringWithFormat:@"jQuery Supported : %d", [html rangeOfString:@"jquery"].location != NSNotFound]);
-	return [html rangeOfString:@"jquery"].location != NSNotFound;
+	BOOL isJQuerySupported = [html rangeOfString:@"jquery"].location != NSNotFound;
+	
+	NSLog([NSString stringWithFormat:@"jQuery Supported : %d", isJQuerySupported]);
+	return isJQuerySupported;
+}
+
+-(NSString *) html {
+	return [self stringByEvaluatingJavaScriptFromString: @"document.body.innerHTML"];
 }
 
 @end

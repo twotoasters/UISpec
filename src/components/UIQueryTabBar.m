@@ -1,10 +1,3 @@
-//
-//  UIQueryTabBar.m
-//  UISpec
-//
-//  Created by Cory Smith on 09-12-23.
-//  Copyright 2009 Leading Lines Design. All rights reserved.
-//
 
 #import "UIQueryTabBar.h"
 
