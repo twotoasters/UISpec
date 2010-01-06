@@ -5,8 +5,7 @@
 @implementation UIQuerySegmentedControl
 
 -(UIQuery *)selectSegmentWithText:(NSString *)text {
-	[[self.label text:@"TV"] touch];
-	return [UIQuery withViews:views className:className];
+	return [[self.label text:text] touch];
 }
 
 @end

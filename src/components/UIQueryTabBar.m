@@ -4,8 +4,7 @@
 @implementation UIQueryTabBar
 
 -(UIQuery *)selectTabWithTitle:(NSString *)tabTitle {
-	[[[self.label text:tabTitle] parent] touch];
-	return [UIQuery withViews:views className:className];
+	return [[[self.label text:tabTitle] parent] touch];
 }
 
 @end
