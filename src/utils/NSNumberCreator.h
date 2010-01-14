@@ -13,10 +13,10 @@
 #define N(aValue) ({ \
 /* The stack var is here, so this macro can accept constants directly. */ \
 __typeof__(aValue) __aValue = (aValue); \
-[NSNumber numberWithValue:&__aValue objCType:@encode(__typeof__(aValue))]; \
+[NSNumberCreator numberWithValue:&__aValue objCType:@encode(__typeof__(aValue))]; \
 }) \
 
-@interface NSNumber (CreatingFromArbitraryTypes)
+@interface NSNumberCreator : NSObject
 + numberWithValue:(const void *)aValue objCType:(const char *)aTypeDescription;
 - initWithValue:(const void *)aValue objCType:(const char *)aTypeDescription;
 @end

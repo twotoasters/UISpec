@@ -1,6 +1,6 @@
 #import "NSNumberCreator.h"
 
-@implementation NSNumber (CreatingFromArbitraryTypes)
+@implementation NSNumberCreator
 + numberWithValue:(const void *)aValue objCType:(const char *)aTypeDescription;
 {
 	return [[[self alloc] initWithValue:aValue objCType:aTypeDescription] autorelease];
@@ -9,7 +9,6 @@
 /// For the constants see: <http://developer.apple.com/documentation/Cocoa/Conceptual/ObjectiveC/Articles/chapter_14_section_9.html>
 - initWithValue:(const void *)aValue objCType:(const char *)aTypeDescription;
 {
-	NSLog(@"*********made it here %s", aTypeDescription);
 	if ('^' == *aTypeDescription
 		&& nil == *(id *)aValue) return nil; // nil should stay nil, even if it's technically a (void *)
 	id number = [NSNumber alloc];

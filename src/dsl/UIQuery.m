@@ -8,15 +8,20 @@
 #import "UIRedoer.h"
 #import "UIQueryTableViewCell.h"
 #import "UIQueryTableView.h"
+#import "UIQuerySearchBar.h"
+#import "UIQueryTabBar.h"
+#import "UIQuerySegmentedControl.h"
+#import "UIQueryWebView.h"
 #import "UIQueryAll.h"
 #import "UIFilter.h"
 #import "UIBug.h"
+#import "UIQueryExpectation.h"
 
 @implementation UIQuery
 
 @synthesize views, className, redoer, timeout;
 
-+(id)withApplicaton {
++(id)withApplication {
 	return [self withViews:[NSMutableArray arrayWithObject:[UIApplication sharedApplication]] className:NSStringFromClass([UIApplication class])];
 }
 
@@ -39,8 +44,8 @@
 	return [UIQuery withViews:[[UIParents withTraversal] collect:views] className:className filter:YES];
 }
 
--(UIExpectation *)should {
-	return [UIExpectation withQuery:self];
+-(UIQueryExpectation *)should {
+	return [UIQueryExpectation withQuery:self];
 }
 
 -(UIFilter *)with {
@@ -128,7 +133,20 @@
 		return [UIQueryTableViewCell withViews:array className:className];
 	} else if ([className isEqualToString:@"UITableView"]) {
 		return [UIQueryTableView withViews:array className:className];
-	} else {
+	} 
+	else if ([className isEqualToString:@"UISearchBar"]) {
+		return [UIQuerySearchBar withViews:array className:className];
+	}
+	else if ([className isEqualToString:@"UITabBar"]) {
+		return [UIQueryTabBar withViews:array className:className];
+	}
+	else if ([className isEqualToString:@"UISegmentedControl"]) {
+		return [UIQuerySegmentedControl withViews:array className:className];
+	}
+	else if ([className isEqualToString:@"UIWebView"]) {
+		return [UIQueryWebView withViews:array className:className];
+	}
+	else {
 		return [UIQuery withViews:array className:className];
 	}
 }
@@ -158,7 +176,7 @@
 		return [super methodSignatureForSelector:aSelector];
 	}
 	
-	[self.should exist:[NSString stringWithFormat:@"before you can call %@", NSStringFromSelector(aSelector)]];
+	[[UIQueryExpectation withQuery:self] exist:[NSString stringWithFormat:@"before you can call %@", NSStringFromSelector(aSelector)]];
 	NSString *selector = NSStringFromSelector(aSelector);
 	
 	for (UIView *target in [self targetViews]) {
@@ -202,7 +220,7 @@
 }
 
 -(UIQuery *)flash {
-	[self.should exist:@"before you can flash it"];
+	[[UIQueryExpectation withQuery:self] exist:@"before you can flash it"];
 	for (UIView *view in [self targetViews]) {
 		UIColor *tempColor = [view.backgroundColor retain];
 		for (int i=0; i<5; i++) {
@@ -218,13 +236,14 @@
 }
 
 -(UIQuery *)show {
-	[self.should exist:@"before you can show it"];
+	//NSLog(@"calling show");
+	[[UIQueryExpectation withQuery:self] exist:@"before you can show it"];
 	[UIQuery show:[self targetViews]];
 	return [UIQuery withViews:views className:className];
 }
 
 -(UIQuery *)path {
-	[self.should exist:@"before you can show its path"];
+	[[UIQueryExpectation withQuery:self] exist:@"before you can show its path"];
 	for (UIView *view in [self targetViews]) {
 		NSMutableString *path = [NSMutableString stringWithString:@"\n"];
 		NSArray *parentViews = [[UIParents withTraversal] collect:[NSArray arrayWithObject:view]];
@@ -252,104 +271,107 @@
 }
 
 +(NSDictionary *)describe:(id)object {
-	
-	unsigned i;
-	id objValue;
-	int intValue;
-	long longValue;
-	char *charPtrValue;
-	char charValue;
-	short shortValue;
-	float floatValue;
-	double doubleValue;
-	
+	//NSLog(@"describing object %@", object);
 	NSMutableDictionary *properties = [NSMutableDictionary dictionary];
-	
-	int propertyCount = 0;
-	objc_property_t *propertyList = class_copyPropertyList([object class], &propertyCount);
-	for (i=0; i<propertyCount; i++) {
-		objc_property_t *thisProperty = propertyList + i;
-		const char* propertyName = property_getName(*thisProperty);
-		const char* propertyAttributes = property_getAttributes(*thisProperty);
+	Class clazz = [object class];
+	do {
+		//NSLog(@"describing class %@", NSStringFromClass(clazz));
+		unsigned i;
+		id objValue;
+		int intValue;
+		long longValue;
+		char *charPtrValue;
+		char charValue;
+		short shortValue;
+		float floatValue;
+		double doubleValue;
 		
-		NSString *key = [NSString stringWithFormat:@"%s", propertyName];
-		NSString *keyAttributes = [NSString stringWithFormat:@"%s", propertyAttributes];
-		//NSLog(@"key = %@", key);
-		//		NSLog(@"keyAttributes = %@", keyAttributes);
-		
-		NSArray *attributes = [keyAttributes componentsSeparatedByString:@","];
-		if ([[[attributes lastObject] substringToIndex:1] isEqualToString:@"G"]) {
-			key = [[attributes lastObject] substringFromIndex:1];
-		}
-		
-		SEL selector = NSSelectorFromString(key);
-		if ([object respondsToSelector:selector]) {
-			NSMethodSignature *sig = [object methodSignatureForSelector:selector];
-			//NSLog(@"sig = %@", sig);
-			NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sig];
-			[invocation setSelector:selector];
-			//NSLog(@"invocation selector = %@", NSStringFromSelector([invocation selector]));
-			[invocation setTarget:object];
-			[invocation invoke];
+		int propertyCount = 0;
+		objc_property_t *propertyList = class_copyPropertyList(clazz, &propertyCount);
+		//NSLog(@"property count = %d", propertyCount);
+		for (i=0; i<propertyCount; i++) {
+			objc_property_t *thisProperty = propertyList + i;
+			const char* propertyName = property_getName(*thisProperty);
+			const char* propertyAttributes = property_getAttributes(*thisProperty);
 			
-			const char* type = [[invocation methodSignature] methodReturnType];
-			NSString *returnType = [NSString stringWithFormat:@"%s", type];
-			const char* trimmedType = [[returnType substringToIndex:1] cStringUsingEncoding:NSASCIIStringEncoding];
-			//NSLog(@"return type = %@", returnType);
-			switch(*trimmedType) {
-				case '@':
-					[invocation getReturnValue:(void **)&objValue];
-					if (objValue == nil) {
-						[properties setObject:[NSString stringWithFormat:@"%@", objValue] forKey:key];
-					} else {
-						[properties setObject:objValue forKey:key];
+			NSString *key = [NSString stringWithFormat:@"%s", propertyName];
+			NSString *keyAttributes = [NSString stringWithFormat:@"%s", propertyAttributes];
+			//NSLog(@"key = %@", key);
+			//NSLog(@"keyAttributes = %@", keyAttributes);
+			
+			NSArray *attributes = [keyAttributes componentsSeparatedByString:@","];
+			if ([[[attributes lastObject] substringToIndex:1] isEqualToString:@"G"]) {
+				key = [[attributes lastObject] substringFromIndex:1];
+			}
+			
+			SEL selector = NSSelectorFromString(key);
+			if ([object respondsToSelector:selector]) {
+				NSMethodSignature *sig = [object methodSignatureForSelector:selector];
+				//NSLog(@"sig = %@", sig);
+				NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sig];
+				[invocation setSelector:selector];
+				//NSLog(@"invocation selector = %@", NSStringFromSelector([invocation selector]));
+				[invocation setTarget:object];
+				[invocation invoke];
+				
+				const char* type = [[invocation methodSignature] methodReturnType];
+				NSString *returnType = [NSString stringWithFormat:@"%s", type];
+				const char* trimmedType = [[returnType substringToIndex:1] cStringUsingEncoding:NSASCIIStringEncoding];
+				//NSLog(@"return type = %@", returnType);
+				switch(*trimmedType) {
+					case '@':
+						[invocation getReturnValue:(void **)&objValue];
+						if (objValue == nil) {
+							[properties setObject:[NSString stringWithFormat:@"%@", objValue] forKey:key];
+						} else {
+							[properties setObject:objValue forKey:key];
+						}
+						break;
+					case 'i':
+						[invocation getReturnValue:(void **)&intValue];
+						[properties setObject:[NSString stringWithFormat:@"%i", intValue] forKey:key];
+						break;
+					case 's':
+						[invocation getReturnValue:(void **)&shortValue];
+						[properties setObject:[NSString stringWithFormat:@"%ud", shortValue] forKey:key];
+						break;
+					case 'd':
+						[invocation getReturnValue:(void **)&doubleValue];
+						[properties setObject:[NSString stringWithFormat:@"%lf", doubleValue] forKey:key];
+						break;
+					case 'f':
+						[invocation getReturnValue:(void **)&floatValue];
+						[properties setObject:[NSString stringWithFormat:@"%f", floatValue] forKey:key];
+						break;
+					case 'l':
+						[invocation getReturnValue:(void **)&longValue];
+						[properties setObject:[NSString stringWithFormat:@"%ld", longValue] forKey:key];
+						break;
+					case '*':
+						[invocation getReturnValue:(void **)&charPtrValue];
+						[properties setObject:[NSString stringWithFormat:@"%s", charPtrValue] forKey:key];
+						break;
+					case 'c':
+						[invocation getReturnValue:(void **)&charValue];
+						[properties setObject:[NSString stringWithFormat:@"%d", charValue] forKey:key];
+						break;
+					case '{': {
+						unsigned int length = [[invocation methodSignature] methodReturnLength];
+						void *buffer = (void *)malloc(length);
+						[invocation getReturnValue:buffer];
+						NSValue *value = [[[NSValue alloc] initWithBytes:buffer objCType:type] autorelease];
+						[properties setObject:value forKey:key];
+						break;
 					}
-					break;
-				case 'i':
-					[invocation getReturnValue:(void **)&intValue];
-					[properties setObject:[NSString stringWithFormat:@"%i", intValue] forKey:key];
-					break;
-				case 's':
-					[invocation getReturnValue:(void **)&shortValue];
-					[properties setObject:[NSString stringWithFormat:@"%ud", shortValue] forKey:key];
-					break;
-				case 'd':
-					[invocation getReturnValue:(void **)&doubleValue];
-					[properties setObject:[NSString stringWithFormat:@"%lf", doubleValue] forKey:key];
-					break;
-				case 'f':
-					[invocation getReturnValue:(void **)&floatValue];
-					[properties setObject:[NSString stringWithFormat:@"%f", floatValue] forKey:key];
-					break;
-				case 'l':
-					[invocation getReturnValue:(void **)&longValue];
-					[properties setObject:[NSString stringWithFormat:@"%ld", longValue] forKey:key];
-					break;
-				case '*':
-					[invocation getReturnValue:(void **)&charPtrValue];
-					[properties setObject:[NSString stringWithFormat:@"%s", charPtrValue] forKey:key];
-					break;
-				case 'c':
-					[invocation getReturnValue:(void **)&charValue];
-					[properties setObject:[NSString stringWithFormat:@"%d", charValue] forKey:key];
-					break;
-				case '{': {
-					unsigned int length = [[invocation methodSignature] methodReturnLength];
-					void *buffer = (void *)malloc(length);
-					[invocation getReturnValue:buffer];
-					NSValue *value = [[[NSValue alloc] initWithBytes:buffer objCType:type] autorelease];
-					[properties setObject:value forKey:key];
-					break;
 				}
 			}
-	    }
-	}
+		}
+	} while ((clazz = class_getSuperclass(clazz)) != nil);
     return properties;
 }
 
-
 - (UIQuery *)touch {
-	[self.should exist:@"before you can touch it"];
+	[[UIQueryExpectation withQuery:self] exist:@"before you can touch it"];
 	
 	for (UIView *view in [self targetViews]) {
 		UITouch *touch = [[UITouch alloc] initInView:view];
@@ -373,7 +395,7 @@
 }
 
 -(NSString *)description {
-	return [views description];
+	return [NSString stringWithFormat:@"UIQuery: %@", [views description]];
 }
 
 -(void)logRange:(NSString *)prefix range:(NSRange)range {
@@ -463,7 +485,7 @@ UIQuery * $(NSMutableString *script, ...) {
 	script = [[[NSMutableString alloc] initWithFormat:script arguments:args] autorelease];
 	va_end(args);
 	
-	UIQuery *result = [UIQuery withApplicaton];
+	UIQuery *result = [UIQuery withApplication];
 	//NSLog(@"script = %@, length = %d", script, script.length);
 	
 	NSMutableArray *strings = [NSMutableArray array];
@@ -520,7 +542,6 @@ UIQuery * $(NSMutableString *script, ...) {
 	}
 	return result;
 }
-
 
 //
 //  TouchSynthesis.m
