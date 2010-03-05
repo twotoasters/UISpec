@@ -45,6 +45,7 @@
 		2FDBB78010EECE3100193065 /* UIQuerySegmentedControl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FDBB75610EECD0200193065 /* UIQuerySegmentedControl.h */; };
 		2FDBB78110EECE3100193065 /* UIQueryTabBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FDBB75810EECD0200193065 /* UIQueryTabBar.h */; };
 		2FDBB78210EECE3100193065 /* UIQueryWebView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FDBB75A10EECD0200193065 /* UIQueryWebView.h */; };
+		4CDB4A9E1141ADCB009F6046 /* UILog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7EFF4D410E40D02007DB16A /* UILog.h */; };
 		C708D8F010C4B86A000A2462 /* UIMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C708D8EF10C4B86A000A2462 /* UIMatcher.m */; };
 		C708D8F110C4B86A000A2462 /* UIMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C708D8EE10C4B86A000A2462 /* UIMatcher.h */; };
 		C708D8F210C4B86A000A2462 /* UIMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C708D8EF10C4B86A000A2462 /* UIMatcher.m */; };
@@ -231,6 +232,7 @@
 			dstPath = ../../../../bin/UISpec/Headers;
 			dstSubfolderSpec = 16;
 			files = (
+				4CDB4A9E1141ADCB009F6046 /* UILog.h in CopyFiles */,
 				2FDBB77F10EECE3100193065 /* UIQuerySearchBar.h in CopyFiles */,
 				2FDBB78010EECE3100193065 /* UIQuerySegmentedControl.h in CopyFiles */,
 				2FDBB78110EECE3100193065 /* UIQueryTabBar.h in CopyFiles */,

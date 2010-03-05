@@ -55,6 +55,8 @@
 	[errors addObject:error];
 }
 
+-(void)afterSpec:(UISpec *)spec { }
+
 -(void)onFinish:(int)count {
 	NSMutableString *log = [NSMutableString string];
 	if (errors.count > 0) {

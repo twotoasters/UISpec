@@ -2,7 +2,6 @@
 #import "objc/runtime.h"
 #import "UIConsoleLog.h"
 
-
 @implementation UISpec
 
 static UILog *logger = nil;
@@ -102,6 +101,7 @@ static UILog *logger = nil;
 			[logger onAfterAllException:exception];
 		}
 	}
+	[logger afterSpec:spec];
 }
 
 +(NSArray *)examplesForSpecClass:(Class *)specClass {
