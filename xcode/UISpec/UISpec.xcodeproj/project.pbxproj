@@ -55,6 +55,8 @@
 		C7407B5B101AA2FA00E5392C /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7407B59101AA2FA00E5392C /* WaitUntilIdle.m */; };
 		C7407B5C101AA2FA00E5392C /* WaitUntilIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = C7407B58101AA2F900E5392C /* WaitUntilIdle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7407B5D101AA2FA00E5392C /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7407B59101AA2FA00E5392C /* WaitUntilIdle.m */; };
+		C75AE68E11B071AE005A4858 /* UIConsoleLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7EFF50B10E41565007DB16A /* UIConsoleLog.h */; };
+		C75AE68F11B071DE005A4858 /* UIConsole.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7D32A91103F40DF00071AE1 /* UIConsole.h */; };
 		C7653A941023BE15001FF86B /* UIChildren.h in Headers */ = {isa = PBXBuildFile; fileRef = C7653A8E1023BE15001FF86B /* UIChildren.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7653A951023BE15001FF86B /* UIChildren.m in Sources */ = {isa = PBXBuildFile; fileRef = C7653A8F1023BE15001FF86B /* UIChildren.m */; };
 		C7653A961023BE15001FF86B /* UIDescendants.h in Headers */ = {isa = PBXBuildFile; fileRef = C7653A901023BE15001FF86B /* UIDescendants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -232,6 +234,8 @@
 			dstPath = ../../../../bin/UISpec/Headers;
 			dstSubfolderSpec = 16;
 			files = (
+				C75AE68F11B071DE005A4858 /* UIConsole.h in CopyFiles */,
+				C75AE68E11B071AE005A4858 /* UIConsoleLog.h in CopyFiles */,
 				4CDB4A9E1141ADCB009F6046 /* UILog.h in CopyFiles */,
 				2FDBB77F10EECE3100193065 /* UIQuerySearchBar.h in CopyFiles */,
 				2FDBB78010EECE3100193065 /* UIQuerySegmentedControl.h in CopyFiles */,
