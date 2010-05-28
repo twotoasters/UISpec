@@ -65,6 +65,7 @@
 		53FEDF930E8067FD001CAA6B /* TransitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53FEDF910E8067FD001CAA6B /* TransitionViewController.xib */; };
 		C78EDFD210A4D30A00E5E5D8 /* UISpec_Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C78EDF8E10A4D0ED00E5E5D8 /* UISpec_Simulator.a */; };
 		C78EDFFB10A4D43100E5E5D8 /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C78EDFFA10A4D43100E5E5D8 /* UISpec.bundle */; };
+		C794055F10F6B2120071522D /* DescribeTextFields.m in Sources */ = {isa = PBXBuildFile; fileRef = C794055E10F6B2120071522D /* DescribeTextFields.m */; };
 		C7C60A3E10B377C200CC59E0 /* DescribeButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C60A3D10B377C200CC59E0 /* DescribeButtons.m */; };
 		C7C90DED10B469ED004111A3 /* DescribeControls.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C90DEC10B469ED004111A3 /* DescribeControls.m */; };
 		C7FD8FF410B322000088AD09 /* DescribeUICatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FD8FF310B322000088AD09 /* DescribeUICatalog.m */; };
@@ -182,6 +183,8 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C78EDF8710A4D0ED00E5E5D8 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
 		C78EDFFA10A4D43100E5E5D8 /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../../bin/UISpec/UISpec.bundle; sourceTree = SOURCE_ROOT; };
+		C794055D10F6B2120071522D /* DescribeTextFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeTextFields.h; sourceTree = "<group>"; };
+		C794055E10F6B2120071522D /* DescribeTextFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeTextFields.m; sourceTree = "<group>"; };
 		C7C60A3C10B377C200CC59E0 /* DescribeButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeButtons.h; sourceTree = "<group>"; };
 		C7C60A3D10B377C200CC59E0 /* DescribeButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeButtons.m; sourceTree = "<group>"; };
 		C7C90DEB10B469ED004111A3 /* DescribeControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeControls.h; sourceTree = "<group>"; };
@@ -369,6 +372,8 @@
 				C7C90DEC10B469ED004111A3 /* DescribeControls.m */,
 				2F51F20810EED09600FBCA7C /* DescribeWebView.h */,
 				2F51F20910EED09600FBCA7C /* DescribeWebView.m */,
+				C794055D10F6B2120071522D /* DescribeTextFields.h */,
+				C794055E10F6B2120071522D /* DescribeTextFields.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				C7C60A3E10B377C200CC59E0 /* DescribeButtons.m in Sources */,
 				C7C90DED10B469ED004111A3 /* DescribeControls.m in Sources */,
 				2F51F20A10EED09600FBCA7C /* DescribeWebView.m in Sources */,
+				C794055F10F6B2120071522D /* DescribeTextFields.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

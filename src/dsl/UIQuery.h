@@ -37,6 +37,7 @@ UIQuery * $(NSMutableString *script, ...);
 @property BOOL exists;
 
 -(UIQuery *)view:(NSString *)className;
+-(UIQuery *)marked:(NSString *)mark;
 -(UIQuery *)index:(int)index;
 -(UIQuery *)timeout:(int)seconds;
 -(UIQuery *)wait:(double)seconds;
@@ -61,6 +62,7 @@ UIQuery * $(NSMutableString *script, ...);
 @property BOOL exists;
 
 -(UIQuery *)view:(NSString *)className;
+-(UIQuery *)marked:(NSString *)mark;
 -(UIQuery *)index:(int)index;
 -(UIQuery *)timeout:(int)seconds;
 -(UIQuery *)wait:(double)seconds;

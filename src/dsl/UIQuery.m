@@ -114,10 +114,10 @@
 }
 
 -(UIQuery *)view:(NSString *)className {
-	NSArray *views = filter ? self.views : self.descendant.views;
 	NSMutableArray *array = [NSMutableArray array];
 	NSDate *start = [NSDate date];
 	while ([start timeIntervalSinceNow] > (0 - timeout)) {
+		NSArray *views = filter ? self.views : self.descendant.views;
 		Class class = NSClassFromString(className);
 		for (UIView * v in views) {
 			if ([v isKindOfClass:class]) {
@@ -151,6 +151,10 @@
 	}
 }
 
+-(UIQuery *)marked:(NSString *)mark {
+	return [self.with accessibilityLabel:mark];
+}
+ 
 -(UIQuery *)wait:(double)seconds {
 	CFRunLoopRunInMode(kCFRunLoopDefaultMode, seconds, false);
 	return [UIQuery withViews:views className:className];
@@ -312,7 +316,14 @@
 				[invocation setSelector:selector];
 				//NSLog(@"invocation selector = %@", NSStringFromSelector([invocation selector]));
 				[invocation setTarget:object];
-				[invocation invoke];
+				
+				@try {
+					[invocation invoke];
+				}
+				@catch (NSException *exception) {
+					NSLog(@"UIQuery.describe caught %@: %@", [exception name], [exception reason]);
+					continue;
+				}
 				
 				const char* type = [[invocation methodSignature] methodReturnType];
 				NSString *returnType = [NSString stringWithFormat:@"%s", type];
@@ -407,74 +418,6 @@
 	self.className = nil;
 	self.redoer = nil;
 	[super dealloc];
-}
-
-@end
-
-
-@implementation UITouch (UIQuery)
-//
-// initInView:phase:
-//
-// Creats a UITouch, centered on the specified view, in the view's window.
-// Sets the phase as specified.
-//
-- (id)initInView:(UIView *)view
-{
-	self = [super init];
-	if (self != nil)
-	{
-		CGRect frameInWindow;
-		if ([view isKindOfClass:[UIWindow class]])
-		{
-			frameInWindow = view.frame;
-		}
-		else
-		{
-			frameInWindow =
-			[view.window convertRect:view.frame fromView:view.superview];
-		}
-		
-		_tapCount = 1;
-		_locationInWindow =
-		CGPointMake(
-					frameInWindow.origin.x + 0.5 * frameInWindow.size.width,
-					frameInWindow.origin.y + 0.5 * frameInWindow.size.height);
-		_previousLocationInWindow = _locationInWindow;
-		
-		UIView *target = [view.window hitTest:_locationInWindow withEvent:nil];
-		
-		_window = [view.window retain];
-		_view = [target retain];
-		_phase = UITouchPhaseBegan;
-		_touchFlags._firstTouchForView = 1;
-		_touchFlags._isTap = 1;
-		_timestamp = [NSDate timeIntervalSinceReferenceDate];
-	}
-	return self;
-}
-
-//
-// setPhase:
-//
-// Setter to allow access to the _phase member.
-//
-- (void)setPhase:(UITouchPhase)phase
-{
-	_phase = phase;
-	_timestamp = [NSDate timeIntervalSinceReferenceDate];
-}
-
-//
-// setPhase:
-//
-// Setter to allow access to the _locationInWindow member.
-//
-- (void)setLocationInWindow:(CGPoint)location
-{
-	_previousLocationInWindow = _locationInWindow;
-	_locationInWindow = location;
-	_timestamp = [NSDate timeIntervalSinceReferenceDate];
 }
 
 @end

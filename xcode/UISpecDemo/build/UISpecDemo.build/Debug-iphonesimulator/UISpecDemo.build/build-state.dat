@@ -1,1175 +1,0 @@
-TUISpecDemo
-v7
-r0
-t278431934.752015
-cCheck dependencies
-cProcessInfoPlistFile /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/Info.plist Info.plist
-cCompileXIB /Users/blake/Projects/uispec/xcode/UISpecDemo/MainWindow.xib
-cCpResource build/Debug-iphonesimulator/UISpecDemo.app/UISpec.bundle ../../src/UISpec.bundle
-cProcessPCH /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch.gch UISpecDemo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/SpecMain.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/../SpecMain.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UISpecDemoAppDelegate.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/UISpecDemoAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DescribeEmployeeAdmin.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/ApplicationFacade.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/CreateUserCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DeleteUserCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUserRolesCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUsersCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/StartupCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserRolesCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesEnum.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserProxy.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesProxy.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesVO.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserVO.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdmin.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserForm.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserList.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRoles.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdminMediator.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserFormMediator.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserListMediator.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesMediator.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo normal i386
-cGenerateDSYMFile /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app.dSYM /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo
-cTouch /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk
-c000000004ABE051D00000000000000EE
-t1253967133
-s238
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004A0BAA26000000000026DB00
-t1242278438
-s2546432
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004A0BAB370000000000260C20
-t1242278711
-s2493472
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004A0BAB250000000000001355
-t1242278693
-s4949
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004A0CBEBB000000000000075E
-t1242349243
-s1886
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004A0CBF5F0000000001432D80
-t1242349407
-s21179776
-
-N/Users/blake/Projects/uispec/src/UISpec.h
-c000000004AE7807000000000000001F5
-t1256685680
-s501
-i"ViewFilterSwizzler.h"
-i"UIQuery.h"
-i"UIFilter.h"
-i"UIExpectation.h"
-
-N/Users/blake/Projects/uispec/src/dsl/Recordable.h
-c000000004AE780700000000000000191
-t1256685680
-s401
-
-N/Users/blake/Projects/uispec/src/dsl/UIExpectation.h
-c000000004AE7807000000000000001FF
-t1256685680
-s511
-
-N/Users/blake/Projects/uispec/src/dsl/UIFilter.h
-c000000004AE7807000000000000001B9
-t1256685680
-s441
-i"UIRedoer.h"
-
-N/Users/blake/Projects/uispec/src/dsl/UIQuery.h
-c000000004AE78070000000000000051F
-t1256685680
-s1311
-i"ViewFilterSwizzler.h"
-
-N/Users/blake/Projects/uispec/src/dsl/UIRedoer.h
-c000000004AE780700000000000000114
-t1256685680
-s276
-i"Recordable.h"
-
-N/Users/blake/Projects/uispec/src/dsl/ViewFilterSwizzler.h
-c000000004AE7807000000000000003EB
-t1256685680
-s1003
-
-N/Users/blake/Projects/uispec/src/utils/UIBug.h
-c000000004AE7807000000000000000B9
-t1256685680
-s185
-
-N/Users/blake/Projects/uispec/xcode/UISpec/build/Debug-iphonesimulator/UISpec_Simulator.a
-c000000004AE83E8200000000000740D0
-t1256734338
-s475344
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/../../src/UISpec.bundle
-c000000004AE780700000000000000066
-t1256685680
-s102
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/../SpecMain.m
-c000000004AE78070000000000000015E
-t1256685680
-s350
-i"UISpec.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.h
-c000000004AE78070000000000000012D
-t1256685680
-s301
-i"UISpec.h"
-i"UIQuery.h"
-i"UIExpectation.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m
-c000000004AE780700000000000000CF7
-t1256685680
-s3319
-i"DescribeEmployeeAdmin.h"
-i"UIBug.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/PureMVC_ObjectiveC_1_1.a
-c000000004AE780700000000000055820
-t1256685680
-s350240
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/Facade.h
-c000000004AE7807000000000000005E6
-t1256685680
-s1510
-i<Foundation/Foundation.h>
-i"IFacade.h"
-i"IController.h"
-i"IModel.h"
-i"IView.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/ICommand.h
-c000000004AE78070000000000000015E
-t1256685680
-s350
-i"INotification.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/IController.h
-c000000004AE78070000000000000083A
-t1256685680
-s2106
-i"INotification.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/IFacade.h
-c000000004AE780700000000000001285
-t1256685680
-s4741
-i"INotification.h"
-i"IMediator.h"
-i"IProxy.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/IMediator.h
-c000000004AE7807000000000000009EE
-t1256685680
-s2542
-i"INotification.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/IModel.h
-c000000004AE78070000000000000057C
-t1256685680
-s1404
-i"IProxy.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/INotification.h
-c000000004AE780700000000000000636
-t1256685680
-s1590
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/INotifier.h
-c000000004AE7807000000000000005F8
-t1256685680
-s1528
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/IObserver.h
-c000000004AE780700000000000000896
-t1256685680
-s2198
-i"INotification.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/IProxy.h
-c000000004AE7807000000000000004F9
-t1256685680
-s1273
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/IView.h
-c000000004AE780700000000000000EB9
-t1256685680
-s3769
-i"INotification.h"
-i"IMediator.h"
-i"IObserver.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/Mediator.h
-c000000004AE780700000000000000362
-t1256685680
-s866
-i<Foundation/Foundation.h>
-i"IMediator.h"
-i"Notifier.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/Notifier.h
-c000000004AE780700000000000000514
-t1256685680
-s1300
-i<Foundation/Foundation.h>
-i"INotifier.h"
-i"IFacade.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/Proxy.h
-c000000004AE7807000000000000005C6
-t1256685680
-s1478
-i<Foundation/Foundation.h>
-i"IProxy.h"
-i"Notifier.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/headers/SimpleCommand.h
-c000000004AE780700000000000000280
-t1256685680
-s640
-i<Foundation/Foundation.h>
-i"INotification.h"
-i"Notifier.h"
-i"ICommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.h
-c000000004AE7807000000000000003B5
-t1256685680
-s949
-i<UIKit/UIKit.h>
-i"Facade.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m
-c000000004AE7807000000000000004F0
-t1256685680
-s1264
-i"ApplicationFacade.h"
-i"StartupCommand.h"
-i"CreateUserCommand.h"
-i"UpdateUserCommand.h"
-i"GetUsersCommand.h"
-i"DeleteUserCommand.h"
-i"GetUserRolesCommand.h"
-i"UpdateUserRolesCommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.h
-c000000004AE780700000000000000123
-t1256685680
-s291
-i"SimpleCommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.m
-c000000004AE7807000000000000002AF
-t1256685680
-s687
-i"CreateUserCommand.h"
-i"ApplicationFacade.h"
-i"UserProxy.h"
-i"UserVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.h
-c000000004AE780700000000000000123
-t1256685680
-s291
-i"SimpleCommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.m
-c000000004AE780700000000000000204
-t1256685680
-s516
-i"DeleteUserCommand.h"
-i"UserProxy.h"
-i"UserVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.h
-c000000004AE780700000000000000127
-t1256685680
-s295
-i"SimpleCommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.m
-c000000004AE780700000000000000252
-t1256685680
-s594
-i"GetUserRolesCommand.h"
-i"UserRolesProxy.h"
-i"ApplicationFacade.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.h
-c000000004AE780700000000000000120
-t1256685680
-s288
-i"SimpleCommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.m
-c000000004AE780700000000000000207
-t1256685680
-s519
-i"GetUsersCommand.h"
-i"ApplicationFacade.h"
-i"UserProxy.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.h
-c000000004AE780700000000000000134
-t1256685680
-s308
-i<UIKit/UIKit.h>
-i"SimpleCommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.m
-c000000004AE7807000000000000003E4
-t1256685680
-s996
-i"StartupCommand.h"
-i"EmployeeAdmin.h"
-i"ApplicationFacade.h"
-i"UserListMediator.h"
-i"UserProxy.h"
-i"UserFormMediator.h"
-i"EmployeeAdminMediator.h"
-i"UserRolesProxy.h"
-i"UserRolesMediator.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.h
-c000000004AE780700000000000000123
-t1256685680
-s291
-i"SimpleCommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.m
-c000000004AE7807000000000000002AF
-t1256685680
-s687
-i"UpdateUserCommand.h"
-i"ApplicationFacade.h"
-i"UserProxy.h"
-i"UserVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.h
-c000000004AE78070000000000000012D
-t1256685680
-s301
-i"SimpleCommand.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.m
-c000000004AE78070000000000000024C
-t1256685680
-s588
-i"UpdateUserRolesCommand.h"
-i"UserRolesProxy.h"
-i"ApplicationFacade.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.h
-c000000004AE780700000000000000162
-t1256685680
-s354
-i<UIKit/UIKit.h>
-i"Proxy.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.m
-c000000004AE780700000000000000644
-t1256685680
-s1604
-i"UserProxy.h"
-i"UserVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.h
-c000000004AE780700000000000000184
-t1256685680
-s388
-i"Proxy.h"
-i"UserRolesVO.h"
-i"UserVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.m
-c000000004AE780700000000000000610
-t1256685680
-s1552
-i"UserRolesProxy.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.h
-c000000004AE78070000000000000010D
-t1256685680
-s269
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.m
-c000000004AE78070000000000000022A
-t1256685680
-s554
-i"UserRolesEnum.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.h
-c000000004AE7807000000000000001EA
-t1256685680
-s490
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.m
-c000000004AE78070000000000000029F
-t1256685680
-s671
-i"UserRolesVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.h
-c000000004AE7807000000000000002F1
-t1256685680
-s753
-i<UIKit/UIKit.h>
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.m
-c000000004AE78070000000000000050C
-t1256685680
-s1292
-i"UserVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.h
-c000000004AE780700000000000000120
-t1256685680
-s288
-i"Mediator.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.m
-c000000004AE780700000000000000526
-t1256685680
-s1318
-i"EmployeeAdminMediator.h"
-i"EmployeeAdmin.h"
-i"ApplicationFacade.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.h
-c000000004AE780700000000000000181
-t1256685680
-s385
-i<UIKit/UIKit.h>
-i"Mediator.h"
-i"UserForm.h"
-i"ApplicationFacade.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.m
-c000000004AE7807000000000000005B1
-t1256685680
-s1457
-i"UserFormMediator.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.h
-c000000004AE780700000000000000180
-t1256685680
-s384
-i<UIKit/UIKit.h>
-i"Mediator.h"
-i"UserList.h"
-i"ApplicationFacade.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m
-c000000004AE78070000000000000048C
-t1256685680
-s1164
-i"UserListMediator.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.h
-c000000004AE780700000000000000142
-t1256685680
-s322
-i"Mediator.h"
-i"UserRoles.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m
-c000000004AE780700000000000000475
-t1256685680
-s1141
-i"UserRolesMediator.h"
-i"ApplicationFacade.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.h
-c000000004AE780700000000000000339
-t1256685680
-s825
-i<UIKit/UIKit.h>
-i"UserList.h"
-i"UserForm.h"
-i"UserRoles.h"
-i"UserRolesVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.m
-c000000004AE7807000000000000005A7
-t1256685680
-s1447
-i"EmployeeAdmin.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.h
-c000000004AE78070000000000000045E
-t1256685680
-s1118
-i<UIKit/UIKit.h>
-i"UserVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m
-c000000004AE7807000000000000010A7
-t1256685680
-s4263
-i"UserForm.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.h
-c000000004AE7807000000000000002CE
-t1256685680
-s718
-i<UIKit/UIKit.h>
-i"UserVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m
-c000000004AE7807000000000000008FB
-t1256685680
-s2299
-i"UserList.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.h
-c000000004AE7807000000000000002FE
-t1256685680
-s766
-i<UIKit/UIKit.h>
-i"UserRolesVO.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m
-c000000004AE780700000000000000AC8
-t1256685680
-s2760
-i"UserRoles.h"
-i"UserRolesEnum.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/UISpecDemoAppDelegate.h
-c000000004AE78070000000000000013E
-t1256685680
-s318
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/UISpecDemoAppDelegate.m
-c000000004AE78070000000000000020F
-t1256685680
-s527
-i"UISpecDemoAppDelegate.h"
-i"ApplicationFacade.h"
-i"EmployeeAdmin.h"
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/MainWindow.xib
-c000000004AE780700000000000001D0A
-t1256685680
-s7434
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/UISpecDemo_Prefix.pch
-c000000004AE7807000000000000000BD
-t1256685680
-s189
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app
-t1256739045
-s238
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app.dSYM
-t1256739044
-s102
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/Info.plist
-t1256736431
-s574
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/MainWindow.nib
-t1256736431
-s1348
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/PkgInfo
-t1256736431
-s8
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpec.bundle
-t1256736431
-s102
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo
-t1256739044
-s208556
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/ApplicationFacade.o
-t1256739042
-s11212
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/CreateUserCommand.o
-t1256739042
-s8136
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DeleteUserCommand.o
-t1256739042
-s7568
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DescribeEmployeeAdmin.o
-t1256739042
-s25652
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdmin.o
-t1256739043
-s43648
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdminMediator.o
-t1256739043
-s35196
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUserRolesCommand.o
-t1256739042
-s7552
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUsersCommand.o
-t1256739042
-s7396
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/SpecMain.o
-t1256739042
-s6220
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/StartupCommand.o
-t1256739042
-s33940
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UISpecDemo.LinkFileList
-c000000004AE846AE0000000000000DA5
-t1256736430
-s3493
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UISpecDemoAppDelegate.o
-t1256739042
-s40764
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserCommand.o
-t1256739042
-s8136
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserRolesCommand.o
-t1256739043
-s7552
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserForm.o
-t1256739043
-s49868
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserFormMediator.o
-t1256739044
-s36468
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserList.o
-t1256739043
-s39912
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserListMediator.o
-t1256739043
-s35480
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserProxy.o
-t1256739043
-s13628
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRoles.o
-t1256739043
-s41560
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesEnum.o
-t1256739042
-s7460
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesMediator.o
-t1256739044
-s33712
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesProxy.o
-t1256739043
-s12784
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesVO.o
-t1256739043
-s10336
-
-N/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserVO.o
-t1256739043
-s15336
-
-N/var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch.gch
-t1256739041
-s12957072
-
-N/var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-fxpzfzobzfscbrbwercziymfkqiv/UISpecDemo_Prefix.pch.gch
-t1256736432
-s12957072
-
-NInfo.plist
-c000000004AE780700000000000000386
-t1256685680
-s902
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies278431934#278431934#0(0"0(0#1#0"4300885448#0"0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/ApplicationFacade.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.339129
-e278431842.494351
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/ApplicationFacade.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@148"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m278431842#278431842#0(0"0(0#0#140"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m4300885448#2370"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/ApplicationFacade.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/CreateUserCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.494462
-e278431842.606403
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/CreateUserCommand.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@159"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.m278431842#278431842#0(0"0(0#0#151"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.m4300885448#2381"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/CreateUserCommand.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DeleteUserCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.561967
-e278431842.662353
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DeleteUserCommand.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@159"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.m278431842#278431842#0(0"0(0#0#151"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.m4300885448#2381"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/DeleteUserCommand.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DeleteUserCommand.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DescribeEmployeeAdmin.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.333283
-e278431842.561851
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DescribeEmployeeAdmin.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin beforeAll]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:8: warning: 'UIBug' may not respond to '+bugAtPoint:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:8: warning: (Messages without a matching method signature
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:8: warning: will be assumed to return 'id' and accept
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:8: warning: '...' as arguments.)
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin addTestUser]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:21: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:22: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:23: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:24: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:25: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:26: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin deleteTestUser]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:30: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:30: warning: 'UIQuery' may not respond to '-delete'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldShowListOfDefaultUsers]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:34: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:35: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:36: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:39: warning: 'UIQuery' may not respond to '-dataSource'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:39: warning: incompatible Objective-C types 'struct UIQuery *', expected 'struct UITableView *' when passing argument 1 of 'tableView:numberOfRowsInSection:' from distinct Objective-C type
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldNotAddANewUserWithInvalidData]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:45: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldAddAndDeleteAUser]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:54: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:57: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldUpdateUserProfile]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:62: warning: 'UIFilter' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:64: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:65: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:66: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:68: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:69: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:70: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:70: warning: 'UIExpectation' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:71: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:71: warning: 'UIExpectation' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:73: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:74: warning: 'UIQuery' may not respond to '-placeholder:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:75: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldUpdateUserRoles]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:81: warning: 'UIFilter' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:82: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:84: warning: 'UIQuery' may not respond to '-scrollDown:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:86: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:87: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:87: warning: 'UIExpectation' may not respond to '-selected'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:90: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:91: warning: 'UIQuery' may not respond to '-text:'
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:91: warning: 'UIExpectation' may not respond to '-accessoryType:'
-lSLF07#2@85"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278431842#278431842#0(6812"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin beforeAll]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:8: warning: 'UIBug' may not respond to '+bugAtPoint:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:8: warning: (Messages without a matching method signature/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:8: warning: will be assumed to return 'id' and accept/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:8: warning: '...' as arguments.)/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin addTestUser]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:21: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:22: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:23: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:24: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:25: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:26: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin deleteTestUser]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:30: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:30: warning: 'UIQuery' may not respond to '-delete'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldShowListOfDefaultUsers]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:34: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:35: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:36: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:39: warning: 'UIQuery' may not respond to '-dataSource'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:39: warning: incompatible Objective-C types 'struct UIQuery *', expected 'struct UITableView *' when passing argument 1 of 'tableView:numberOfRowsInSection:' from distinct Objective-C type/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldNotAddANewUserWithInvalidData]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:45: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldAddAndDeleteAUser]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:54: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:57: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldUpdateUserProfile]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:62: warning: 'UIFilter' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:64: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:65: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:66: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:68: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:69: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:70: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:70: warning: 'UIExpectation' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:71: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:71: warning: 'UIExpectation' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:73: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:74: warning: 'UIQuery' may not respond to '-placeholder:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:75: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m: In function '-[DescribeEmployeeAdmin itShouldUpdateUserRoles]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:81: warning: 'UIFilter' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:82: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:84: warning: 'UIQuery' may not respond to '-scrollDown:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:86: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:87: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:87: warning: 'UIExpectation' may not respond to '-selected'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:90: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:91: warning: 'UIQuery' may not respond to '-text:'/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m:91: warning: 'UIExpectation' may not respond to '-accessoryType:'40(22@41"'UIBug' may not respond to '+bugAtPoint:'278431842#129#132#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#8#0#8#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)278431842#261#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#8#0#8#0#0"0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#771#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#21#0#21#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#907#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#22#0#22#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#1043#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#23#0#23#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#1179#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#24#0#24#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#1315#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#25#0#25#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#1451#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#26#0#26#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#1714#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#30#0#30#0#26"'*' may not respond to '*'0(22@38"'UIQuery' may not respond to '-delete'278431842#1843#130#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#30#0#30#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#2123#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#34#0#34#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#2252#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#35#0#35#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#2381#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#36#0#36#0#26"'*' may not respond to '*'0(22@42"'UIQuery' may not respond to '-dataSource'278431842#2510#134#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#39#0#39#0#26"'*' may not respond to '*'0(22@175"Incompatible Objective-C types 'struct UIQuery *', expected 'struct UITableView *' when passing argument 1 of 'tableView:numberOfRowsInSection:' from distinct Objective-C type278431842#2644#267#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#39#0#39#0#0"0(22@37"'UIQuery' may not respond to '-text:'278431842#3068#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#45#0#45#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#3342#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#54#0#54#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#3471#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#57#0#57#0#26"'*' may not respond to '*'0(22@38"'UIFilter' may not respond to '-text:'278431842#3745#130#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#62#0#62#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#3875#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#64#0#64#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#4011#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#65#0#65#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#4147#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#66#0#66#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#4276#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#68#0#68#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#4405#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#69#0#69#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#4534#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#70#0#70#0#26"'*' may not respond to '*'0(22@43"'UIExpectation' may not respond to '-text:'278431842#4670#135#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#70#0#70#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#4805#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#71#0#71#0#26"'*' may not respond to '*'0(22@43"'UIExpectation' may not respond to '-text:'278431842#4941#135#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#71#0#71#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#5076#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#73#0#73#0#26"'*' may not respond to '*'0(22@44"'UIQuery' may not respond to '-placeholder:'278431842#5212#136#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#74#0#74#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#5348#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#75#0#75#0#26"'*' may not respond to '*'0(22@38"'UIFilter' may not respond to '-text:'278431842#5620#130#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#81#0#81#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#5750#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#82#0#82#0#26"'*' may not respond to '*'0(22@43"'UIQuery' may not respond to '-scrollDown:'278431842#5879#135#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#84#0#84#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#6014#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#86#0#86#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#6143#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#87#0#87#0#26"'*' may not respond to '*'0(22@46"'UIExpectation' may not respond to '-selected'278431842#6272#138#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#87#0#87#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#6410#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#90#0#90#0#26"'*' may not respond to '*'0(22@37"'UIQuery' may not respond to '-text:'278431842#6539#129#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#91#0#91#0#26"'*' may not respond to '*'0(22@52"'UIExpectation' may not respond to '-accessoryType:'278431842#6668#144#0(6@77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m278378480#91#0#91#0#26"'*' may not respond to '*'0(0#0#77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m4300885448#2311"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/DescribeEmployeeAdmin.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/DescribeEmployeeAdmin.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdmin.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.346079
-e278431843.538397
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdmin.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@160"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.m278431843#278431843#0(0"0(0#0#152"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.m4300885448#2378"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/EmployeeAdmin.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdmin.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdminMediator.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.769948
-e278431843.884309
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdminMediator.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@157"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.m278431843#278431843#0(0"0(0#0#149"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.m4300885448#2383"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/EmployeeAdminMediator.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/EmployeeAdminMediator.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUserRolesCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.606517
-e278431842.701170
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUserRolesCommand.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@161"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.m278431842#278431842#0(0"0(0#0#153"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.m4300885448#2385"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUserRolesCommand.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUserRolesCommand.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUsersCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.662473
-e278431842.789557
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUsersCommand.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@157"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.m278431842#278431843#0(0"0(0#0#149"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.m4300885448#2377"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/GetUsersCommand.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/GetUsersCommand.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/SpecMain.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/../SpecMain.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.138872
-e278431842.339017
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/SpecMain.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/../SpecMain.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/../SpecMain.m278431842#278431842#0(0"0(0#0#67"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/../SpecMain.m4300885448#2288"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/../SpecMain.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/SpecMain.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/StartupCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.701285
-e278431842.881287
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/StartupCommand.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@156"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.m278431842#278431843#0(0"0(0#0#148"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.m4300885448#2375"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/StartupCommand.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/StartupCommand.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UISpecDemoAppDelegate.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/UISpecDemoAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.140469
-e278431842.333174
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UISpecDemoAppDelegate.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/UISpecDemoAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@85"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/UISpecDemoAppDelegate.m278431842#278431842#0(0"0(0#0#77"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/UISpecDemoAppDelegate.m4300885448#2311"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/UISpecDemoAppDelegate.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UISpecDemoAppDelegate.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.789676
-e278431842.901161
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserCommand.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@159"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.m278431842#278431843#0(0"0(0#0#151"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.m4300885448#2381"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserCommand.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserCommand.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserRolesCommand.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.881401
-e278431843.029465
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserRolesCommand.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@164"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.m278431842#278431843#0(0"0(0#0#156"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.m4300885448#2391"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/UpdateUserRolesCommand.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UpdateUserRolesCommand.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserForm.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.378672
-e278431843.687093
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserForm.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m: In function '-[UserForm tableView:cellForRowAtIndexPath:]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m:38: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)
-lSLF07#2@155"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m278431843#278431843#0(565"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m: In function '-[UserForm tableView:cellForRowAtIndexPath:]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m:38: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)1(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)278431843#209#356#0(6@147"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m278378480#38#0#38#0#33"'*' is deprecated (declared at *)0(0#0#147"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m4300885448#2368"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserForm.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserForm.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserFormMediator.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.868793
-e278431844.018180
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserFormMediator.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@152"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.m278431843#278431844#0(0"0(0#0#144"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.m4300885448#2373"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserFormMediator.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserFormMediator.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserList.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.538507
-e278431843.769832
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserList.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m: In function '-[UserList tableView:cellForRowAtIndexPath:]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m:54: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)
-lSLF07#2@155"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m278431843#278431843#0(565"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m: In function '-[UserList tableView:cellForRowAtIndexPath:]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m:54: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)1(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)278431843#209#356#0(6@147"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m278378480#54#0#54#0#33"'*' is deprecated (declared at *)0(0#0#147"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m4300885448#2368"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserList.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserList.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserListMediator.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.884424
-e278431844.001121
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserListMediator.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@152"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m278431843#278431844#0(0"0(0#0#144"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m4300885448#2373"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserListMediator.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserListMediator.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserProxy.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.998791
-e278431843.140717
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserProxy.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@146"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.m278431842#278431843#0(0"0(0#0#138"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.m4300885448#2360"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserProxy.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserProxy.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRoles.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.687310
-e278431843.868687
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRoles.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m: In function '-[UserRoles tableView:cellForRowAtIndexPath:]':
-o/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m:49: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)
-lSLF07#2@156"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m278431843#278431843#0(568"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m: In function '-[UserRoles tableView:cellForRowAtIndexPath:]':/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m:49: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)1(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:199)278431843#211#357#0(6@148"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m278378480#49#0#49#0#33"'*' is deprecated (declared at *)0(0#0#148"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m4300885448#2370"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/components/UserRoles.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRoles.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesEnum.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431842.901277
-e278431842.998667
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesEnum.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@155"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.m278431842#278431843#0(0"0(0#0#147"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.m4300885448#2373"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/enum/UserRolesEnum.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesEnum.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesMediator.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431844.002125
-e278431844.099136
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesMediator.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@153"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m278431844#278431844#0(0"0(0#0#145"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m4300885448#2375"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/view/UserRolesMediator.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesMediator.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesProxy.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.029578
-e278431843.155555
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesProxy.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@151"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.m278431843#278431843#0(0"0(0#0#143"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.m4300885448#2370"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/UserRolesProxy.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesProxy.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesVO.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.140824
-e278431843.378558
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesVO.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@151"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.m278431843#278431843#0(0"0(0#0#143"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.m4300885448#2367"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserRolesVO.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserRolesVO.o0#
-
-CCompileC build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserVO.o /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431843.155676
-e278431843.345897
-r1
-xCompileC
-xbuild/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserVO.o
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@146"Compile /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.m278431843#278431843#0(0"0(0#0#138"/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.m4300885448#2357"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -include /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/model/vo/UserVO.m -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UserVO.o0#
-
-CCompileXIB /Users/blake/Projects/uispec/xcode/UISpecDemo/MainWindow.xib
-s278429231.025333
-e278429231.371356
-r1
-xCompileXIB
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib278429231#278429231#0(0"0(0#0#60"/Users/blake/Projects/uispec/xcode/UISpecDemo/MainWindow.xib4300885448#651"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/MainWindow.nib /Users/blake/Projects/uispec/xcode/UISpecDemo/MainWindow.xib0#
-
-CCpResource build/Debug-iphonesimulator/UISpecDemo.app/UISpec.bundle ../../src/UISpec.bundle
-s278429231.026757
-e278429231.040708
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/UISpecDemo.app/UISpec.bundle
-x../../src/UISpec.bundle
-lSLF07#2@28"Copy ../../src/UISpec.bundle278429231#278429231#0(0"0(0#0#69"/Users/blake/Projects/uispec/xcode/UISpecDemo/../../src/UISpec.bundle4300885448#638"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/blake/Projects/uispec/xcode/UISpecDemo/../../src/UISpec.bundle /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app0#
-
-CGenerateDSYMFile /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app.dSYM /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo
-s278431844.794952
-e278431845.020615
-r1
-xGenerateDSYMFile
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app.dSYM
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo
-lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/UISpecDemo.app.dSYM build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo278431844#278431845#0(0"0(0#0#99"/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo4300885448#560"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/usr/bin/dsymutil /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app.dSYM0#
-
-CLd /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo normal i386
-s278431844.099230
-e278431844.794480
-r1
-xLd
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo
-xnormal
-xi386
-lSLF07#2@104"Link /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo278431844#278431844#0(0"0(0#0#0"4300885448#1414"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -L/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -L/Users/blake/Projects/uispec/xcode/UISpecDemo/../UISpec/build/Debug-iphoneos -L/Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -filelist /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/Objects-normal/i386/UISpecDemo.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics /Users/blake/Projects/uispec/xcode/UISpec/build/Debug-iphonesimulator/UISpec_Simulator.a /Users/blake/Projects/uispec/xcode/UISpecDemo/Classes/EmployeeAdmin/lib/PureMVC/PureMVC_ObjectiveC_1_1.a -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/UISpecDemo0#
-
-CProcessInfoPlistFile /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/Info.plist Info.plist
-s278429231.004050
-e278429231.025220
-r1
-xProcessInfoPlistFile
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/Info.plist
-xInfo.plist
-lSLF07#2@18"Process Info.plist278429231#278429231#0(0"0(0#0#56"/Users/blake/Projects/uispec/xcode/UISpecDemo/Info.plist4300885448#645"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    builtin-infoPlistUtility Info.plist -genpkginfo /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app/Info.plist0#
-
-CProcessPCH /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch.gch UISpecDemo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s278431840.704354
-e278431842.138630
-r1
-xProcessPCH
-x/var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch.gch
-xUISpecDemo_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile UISpecDemo_Prefix.pch278431840#278431842#0(0"0(0#0#67"/Users/blake/Projects/uispec/xcode/UISpecDemo/UISpecDemo_Prefix.pch4300885448#2151"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../../src -I../../src/components -I../../src/dsl -I../../src/UISpec.bundle -I../../src/utils -I../../src/UISpec.bundle/images -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -c /Users/blake/Projects/uispec/xcode/UISpecDemo/UISpecDemo_Prefix.pch -o /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-eqvtciafwgzwrqftkgnbtvvedadq/UISpecDemo_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-fxpzfzobzfscbrbwercziymfkqiv/UISpecDemo_Prefix.pch.gch UISpecDemo_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s278429231.371475
-e278429232.331340
-r1
-xProcessPCH
-x/var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-fxpzfzobzfscbrbwercziymfkqiv/UISpecDemo_Prefix.pch.gch
-xUISpecDemo_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile UISpecDemo_Prefix.pch278429231#278429232#0(0"0(0#0#67"/Users/blake/Projects/uispec/xcode/UISpecDemo/UISpecDemo_Prefix.pch4300885448#2035"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-generated-files.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-own-target-headers.hmap -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-all-target-headers.hmap -iquote /Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/UISpecDemo-project-headers.hmap -F/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/include -I../UISpec -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources/i386 -I/Users/blake/Projects/uispec/xcode/UISpecDemo/build/UISpecDemo.build/Debug-iphonesimulator/UISpecDemo.build/DerivedSources -c /Users/blake/Projects/uispec/xcode/UISpecDemo/UISpecDemo_Prefix.pch -o /var/folders/lY/lYmOf6DMG5ioPjr9njNDok+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/UISpecDemo_Prefix-fxpzfzobzfscbrbwercziymfkqiv/UISpecDemo_Prefix.pch.gch0#
-
-CTouch /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app
-s278431845.020760
-e278431845.077569
-r1
-xTouch
-x/Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app
-lSLF07#2@94"Touch /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app278431845#278431845#0(0"0(0#0#0"4300885448#442"    cd /Users/blake/Projects/uispec/xcode/UISpecDemo    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin"    /usr/bin/touch -c /Users/blake/Projects/uispec/xcode/UISpecDemo/build/Debug-iphonesimulator/UISpecDemo.app0#
-

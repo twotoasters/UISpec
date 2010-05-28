@@ -21,7 +21,7 @@
 }
 
 -(void)itShouldTouchAButtonByTitle {
-	[[app.button currentTitle:@"Rounded"] flash].touch;
+	[[app.button.label text:@"Rounded"] flash].touch;
 }
 
 -(void)itShouldBeTouchableByIndex {

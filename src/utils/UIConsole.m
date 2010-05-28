@@ -46,7 +46,6 @@
 
 -(void)go {
 	$(scriptField.text);
-	scriptField.text = @"";
 }
 
 -(void)exit {
