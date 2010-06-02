@@ -104,6 +104,18 @@ static UILog *logger = nil;
 	[logger afterSpec:spec];
 }
 
++(NSDictionary *)specsAndExamples {
+	NSArray *specClasses = [self specClasses];
+	NSMutableDictionary *specsAndExamples = [NSMutableDictionary dictionaryWithCapacity:[specClasses count]];
+	for (Class specClass in specClasses) {
+		NSArray *examples = [self examplesForSpecClass:specClass];
+		if ([examples count]) {
+			[specsAndExamples addObject:examples forKey:NSStringFromClass(specClass)];
+		}
+	}
+	return specsAndExamples;
+}
+
 +(NSArray *)examplesForSpecClass:(Class *)specClass {
 	NSMutableArray *array = [NSMutableArray array];
 	unsigned int methodCount;

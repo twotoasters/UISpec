@@ -16,6 +16,7 @@
 +(void)runSpec:(NSString *)specName afterDelay:(int)seconds;
 +(void)runSpec:(NSString *)specName example:(NSString *)exampleName afterDelay:(int)seconds;
 +(void)setLog:(UILog *)log;
++(NSDictionary *)specsAndExamples;
 
 @end
 
