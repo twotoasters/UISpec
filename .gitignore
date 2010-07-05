@@ -1,0 +1,7 @@
+*.mode1v3
+*.pbxuser
+.DS_Store
+xcode/UISpec/build/*
+xcode/UISpecDemo/build/*
+xcode/UISpec/build/*
+xcode/UICatalogDemo/build/*
