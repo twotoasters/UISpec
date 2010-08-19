@@ -396,10 +396,10 @@
 		
 		[touch.view touchesEnded:touches withEvent:eventDown];
 		
-		[eventDown release];
-		[eventUp release];
-		[touches release];
-		[touch release];
+//		[eventDown release];
+//		[eventUp release];
+//		[touches release];
+//		[touch release];
 		[self wait:.5];
 	}
 	return [UIQuery withViews:views className:className];
