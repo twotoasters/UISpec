@@ -46,6 +46,9 @@ UIQuery * $(NSMutableString *script, ...);
 +(id)withApplication;
 +(void)show:(NSArray *)views;
 
+// Return the real UIView targetted by this query (the first view in the views array)
+-(UIView*)targetView;
+
 @end
 
 @interface UIView (UIQuery) 
