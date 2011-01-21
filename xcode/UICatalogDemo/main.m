@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	[UISpec runSpecsAfterDelay:2];
-	//[UISpec runSpec:@"DescribeButtons" afterDelay:2];
+	//[UISpec runSpec:@"DescribeTextFields" afterDelay:2];
 	
     int retVal = UIApplicationMain(argc, argv, nil, nil);
     [pool release];

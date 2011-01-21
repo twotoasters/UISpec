@@ -19,7 +19,16 @@
 
 @implementation UIQuery
 
-@synthesize views, className, redoer, timeout;
+@synthesize with;
+@synthesize should;
+@synthesize parent, child, descendant, find;
+@synthesize touch, flash, show, path, inspect;
+@synthesize timeout;
+@synthesize views;
+@synthesize className;
+@synthesize redoer;
+@synthesize first, last, all, redo;
+@synthesize exists;
 
 +(id)withApplication {
 	return [self withViews:[NSMutableArray arrayWithObject:[UIApplication sharedApplication]] className:NSStringFromClass([UIApplication class])];

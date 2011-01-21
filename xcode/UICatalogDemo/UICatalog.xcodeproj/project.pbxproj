@@ -13,6 +13,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2F51F20A10EED09600FBCA7C /* DescribeWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F51F20910EED09600FBCA7C /* DescribeWebView.m */; };
+		40C7CCAA12E9ECFD003FF22C /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7CCA712E9ECFA003FF22C /* libUISpec.a */; };
+		40C7CE5312EA1810003FF22C /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40C7CE5212EA1810003FF22C /* UISpec.bundle */; };
 		530986800DE753E300CC7C10 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5309867F0DE753E300CC7C10 /* blueButton.png */; };
 		5316140F0DDCC3480085B0B5 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5316140D0DDCC3480085B0B5 /* TransitionViewController.m */; };
 		531992A70DCBAE7300530CD7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531992A30DCBAE7300530CD7 /* MainWindow.xib */; };
@@ -63,8 +65,6 @@
 		53FEDF700E8065BF001CAA6B /* ToolbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53FEDF6E0E8065BF001CAA6B /* ToolbarViewController.xib */; };
 		53FEDF7C0E80670E001CAA6B /* AlertsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53FEDF7A0E80670E001CAA6B /* AlertsViewController.xib */; };
 		53FEDF930E8067FD001CAA6B /* TransitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53FEDF910E8067FD001CAA6B /* TransitionViewController.xib */; };
-		C78EDFD210A4D30A00E5E5D8 /* UISpec_Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C78EDF8E10A4D0ED00E5E5D8 /* UISpec_Simulator.a */; };
-		C78EDFFB10A4D43100E5E5D8 /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C78EDFFA10A4D43100E5E5D8 /* UISpec.bundle */; };
 		C794055F10F6B2120071522D /* DescribeTextFields.m in Sources */ = {isa = PBXBuildFile; fileRef = C794055E10F6B2120071522D /* DescribeTextFields.m */; };
 		C7C60A3E10B377C200CC59E0 /* DescribeButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C60A3D10B377C200CC59E0 /* DescribeButtons.m */; };
 		C7C90DED10B469ED004111A3 /* DescribeControls.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C90DEC10B469ED004111A3 /* DescribeControls.m */; };
@@ -72,33 +72,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C78EDF8D10A4D0ED00E5E5D8 /* PBXContainerItemProxy */ = {
+		40C7CCA612E9ECFA003FF22C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C78EDF8710A4D0ED00E5E5D8 /* UISpec.xcodeproj */;
+			containerPortal = 40C7CC9E12E9ECFA003FF22C /* UISpec.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C76EB5D20F74586B00EF8398;
-			remoteInfo = UISpec_Simulator;
+			remoteInfo = UISpec;
 		};
-		C78EDF8F10A4D0ED00E5E5D8 /* PBXContainerItemProxy */ = {
+		40C7CCA812E9ECFA003FF22C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C78EDF8710A4D0ED00E5E5D8 /* UISpec.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C76EB5DA0F7458C100EF8398;
-			remoteInfo = UISpec_Device;
-		};
-		C78EDFCD10A4D2DD00E5E5D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C78EDF8710A4D0ED00E5E5D8 /* UISpec.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C76EB5D10F74586B00EF8398;
-			remoteInfo = UISpec_Simulator;
-		};
-		C7EFA91A10D082B000166C28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C78EDF8710A4D0ED00E5E5D8 /* UISpec.xcodeproj */;
+			containerPortal = 40C7CC9E12E9ECFA003FF22C /* UISpec.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C7D4F29310BDA39C00B00019;
 			remoteInfo = Specs;
+		};
+		40C7CCAB12E9ED17003FF22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C7CC9E12E9ECFA003FF22C /* UISpec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C76EB5D10F74586B00EF8398;
+			remoteInfo = UISpec;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -111,6 +104,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F51F20810EED09600FBCA7C /* DescribeWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeWebView.h; sourceTree = "<group>"; };
 		2F51F20910EED09600FBCA7C /* DescribeWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeWebView.m; sourceTree = "<group>"; };
+		40C7CC9E12E9ECFA003FF22C /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
+		40C7CE5212EA1810003FF22C /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../../src/UISpec.bundle; sourceTree = SOURCE_ROOT; };
 		5309867F0DE753E300CC7C10 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 		5316140D0DDCC3480085B0B5 /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
 		5316140E0DDCC3480085B0B5 /* TransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
@@ -181,8 +176,6 @@
 		53FEDF7B0E80670E001CAA6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AlertsViewController.xib; sourceTree = "<group>"; };
 		53FEDF920E8067FD001CAA6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TransitionViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C78EDF8710A4D0ED00E5E5D8 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
-		C78EDFFA10A4D43100E5E5D8 /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../../bin/UISpec/UISpec.bundle; sourceTree = SOURCE_ROOT; };
 		C794055D10F6B2120071522D /* DescribeTextFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeTextFields.h; sourceTree = "<group>"; };
 		C794055E10F6B2120071522D /* DescribeTextFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeTextFields.m; sourceTree = "<group>"; };
 		C7C60A3C10B377C200CC59E0 /* DescribeButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeButtons.h; sourceTree = "<group>"; };
@@ -202,7 +195,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
-				C78EDFD210A4D30A00E5E5D8 /* UISpec_Simulator.a in Frameworks */,
+				40C7CCAA12E9ECFD003FF22C /* libUISpec.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +241,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C78EDFFA10A4D43100E5E5D8 /* UISpec.bundle */,
+				40C7CE5212EA1810003FF22C /* UISpec.bundle */,
 				531992A30DCBAE7300530CD7 /* MainWindow.xib */,
 				537E84BB0E804F600029CFC7 /* ButtonsViewController.xib */,
 				537E84F60E8050F00029CFC7 /* ControlsViewController.xib */,
@@ -271,13 +264,22 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C78EDF8710A4D0ED00E5E5D8 /* UISpec.xcodeproj */,
+				40C7CC9E12E9ECFA003FF22C /* UISpec.xcodeproj */,
 				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1DC4B2650D05D9C8003A8154 /* CoreFoundation.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40C7CC9F12E9ECFA003FF22C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CCA712E9ECFA003FF22C /* libUISpec.a */,
+				40C7CCA912E9ECFA003FF22C /* Specs.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5303E5CF0D6B54CE00549676 /* Picker */ = {
@@ -351,16 +353,6 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		C78EDF8810A4D0ED00E5E5D8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C78EDF8E10A4D0ED00E5E5D8 /* UISpec_Simulator.a */,
-				C78EDF9010A4D0ED00E5E5D8 /* UISpec_Device.a */,
-				C7EFA91B10D082B000166C28 /* Specs.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C7FD8FF110B321E80088AD09 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,7 +384,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C78EDFCE10A4D2DD00E5E5D8 /* PBXTargetDependency */,
+				40C7CCAC12E9ED17003FF22C /* PBXTargetDependency */,
 			);
 			name = UICatalog;
 			productName = foo;
@@ -406,6 +398,7 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UICatalog" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -418,8 +411,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C78EDF8810A4D0ED00E5E5D8 /* Products */;
-					ProjectRef = C78EDF8710A4D0ED00E5E5D8 /* UISpec.xcodeproj */;
+					ProductGroup = 40C7CC9F12E9ECFA003FF22C /* Products */;
+					ProjectRef = 40C7CC9E12E9ECFA003FF22C /* UISpec.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -430,25 +423,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C78EDF8E10A4D0ED00E5E5D8 /* UISpec_Simulator.a */ = {
+		40C7CCA712E9ECFA003FF22C /* libUISpec.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = UISpec_Simulator.a;
-			remoteRef = C78EDF8D10A4D0ED00E5E5D8 /* PBXContainerItemProxy */;
+			path = libUISpec.a;
+			remoteRef = 40C7CCA612E9ECFA003FF22C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C78EDF9010A4D0ED00E5E5D8 /* UISpec_Device.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = UISpec_Device.a;
-			remoteRef = C78EDF8F10A4D0ED00E5E5D8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C7EFA91B10D082B000166C28 /* Specs.app */ = {
+		40C7CCA912E9ECFA003FF22C /* Specs.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = Specs.app;
-			remoteRef = C7EFA91A10D082B000166C28 /* PBXContainerItemProxy */;
+			remoteRef = 40C7CCA812E9ECFA003FF22C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -492,7 +478,7 @@
 				53FEDF700E8065BF001CAA6B /* ToolbarViewController.xib in Resources */,
 				53FEDF7C0E80670E001CAA6B /* AlertsViewController.xib in Resources */,
 				53FEDF930E8067FD001CAA6B /* TransitionViewController.xib in Resources */,
-				C78EDFFB10A4D43100E5E5D8 /* UISpec.bundle in Resources */,
+				40C7CE5312EA1810003FF22C /* UISpec.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,10 +517,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C78EDFCE10A4D2DD00E5E5D8 /* PBXTargetDependency */ = {
+		40C7CCAC12E9ED17003FF22C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = UISpec_Simulator;
-			targetProxy = C78EDFCD10A4D2DD00E5E5D8 /* PBXContainerItemProxy */;
+			name = UISpec;
+			targetProxy = 40C7CCAB12E9ED17003FF22C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -658,7 +644,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -669,11 +655,15 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../../bin/UISpec/Headers/**";
+				HEADER_SEARCH_PATHS = "../../headers/**";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = UICatalog;
-				SDKROOT = iphoneos3.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -681,7 +671,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -689,11 +679,15 @@
 				GCC_PREFIX_HEADER = Prefix.pch;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../../bin/UISpec/Headers/**";
+				HEADER_SEARCH_PATHS = "../../headers/**";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = UICatalog;
-				SDKROOT = iphoneos3.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

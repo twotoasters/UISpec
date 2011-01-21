@@ -13,8 +13,8 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		C7407B181019258700E5392C /* PureMVC_ObjectiveC_1_1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7407B171019258700E5392C /* PureMVC_ObjectiveC_1_1.a */; };
-		C76EB6930F745DEA00EF8398 /* UISpec_Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EB68C0F745D5F00EF8398 /* UISpec_Simulator.a */; };
+		40C7CD8612EA0D68003FF22C /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7CD8312EA0D63003FF22C /* libUISpec.a */; };
+		40C7CE3012EA15A6003FF22C /* libPureMVC_ObjectiveC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7CE2F12EA159B003FF22C /* libPureMVC_ObjectiveC.a */; };
 		C76EB6ED0F745EE900EF8398 /* DescribeEmployeeAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6980F745EE800EF8398 /* DescribeEmployeeAdmin.m */; };
 		C76EB6EF0F745EE900EF8398 /* ApplicationFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6BB0F745EE800EF8398 /* ApplicationFacade.m */; };
 		C76EB6F00F745EE900EF8398 /* CreateUserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C76EB6BE0F745EE800EF8398 /* CreateUserCommand.m */; };
@@ -41,33 +41,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C76EB68B0F745D5F00EF8398 /* PBXContainerItemProxy */ = {
+		40C7CD8212EA0D63003FF22C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
+			containerPortal = 40C7CD7D12EA0D63003FF22C /* UISpec.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C76EB5D20F74586B00EF8398;
-			remoteInfo = UISpec_Simulator;
+			remoteInfo = UISpec;
 		};
-		C76EB68D0F745D5F00EF8398 /* PBXContainerItemProxy */ = {
+		40C7CD8412EA0D63003FF22C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C76EB5DA0F7458C100EF8398;
-			remoteInfo = UISpec_Device;
-		};
-		C76EB7160F75412E00EF8398 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C76EB5D10F74586B00EF8398;
-			remoteInfo = UISpec_Simulator;
-		};
-		C7D4F29710BDA39D00B00019 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
+			containerPortal = 40C7CD7D12EA0D63003FF22C /* UISpec.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C7D4F29310BDA39C00B00019;
 			remoteInfo = Specs;
+		};
+		40C7CD8712EA0D8F003FF22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C7CD7D12EA0D63003FF22C /* UISpec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C76EB5D10F74586B00EF8398;
+			remoteInfo = UISpec;
+		};
+		40C7CE2E12EA159B003FF22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C7CE2712EA159B003FF22C /* PureMVC_ObjectiveC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = PureMVC_ObjectiveC;
+		};
+		40C7CE3112EA15B5003FF22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C7CE2712EA159B003FF22C /* PureMVC_ObjectiveC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = PureMVC_ObjectiveC;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -81,32 +88,11 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* SpecMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecMain.m; path = ../SpecMain.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* UISpecDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpecDemo_Prefix.pch; sourceTree = "<group>"; };
+		40C7CD7D12EA0D63003FF22C /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
+		40C7CE2712EA159B003FF22C /* PureMVC_ObjectiveC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PureMVC_ObjectiveC.xcodeproj; path = ../PureMVC_ObjectiveC/PureMVC_ObjectiveC.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7407B171019258700E5392C /* PureMVC_ObjectiveC_1_1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = PureMVC_ObjectiveC_1_1.a; path = Classes/EmployeeAdmin/lib/PureMVC/PureMVC_ObjectiveC_1_1.a; sourceTree = SOURCE_ROOT; };
-		C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
 		C76EB6970F745EE800EF8398 /* DescribeEmployeeAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DescribeEmployeeAdmin.h; path = Classes/DescribeEmployeeAdmin.h; sourceTree = SOURCE_ROOT; };
 		C76EB6980F745EE800EF8398 /* DescribeEmployeeAdmin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DescribeEmployeeAdmin.m; path = Classes/DescribeEmployeeAdmin.m; sourceTree = SOURCE_ROOT; };
-		C76EB69D0F745EE800EF8398 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Controller.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Controller.h; sourceTree = SOURCE_ROOT; };
-		C76EB69E0F745EE800EF8398 /* Facade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Facade.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Facade.h; sourceTree = SOURCE_ROOT; };
-		C76EB69F0F745EE800EF8398 /* ICommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICommand.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/ICommand.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A00F745EE800EF8398 /* IController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IController.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IController.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A10F745EE800EF8398 /* IFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFacade.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IFacade.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A20F745EE800EF8398 /* IMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMediator.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IMediator.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A30F745EE800EF8398 /* IModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IModel.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IModel.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A40F745EE800EF8398 /* INotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INotification.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/INotification.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A50F745EE800EF8398 /* INotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INotifier.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/INotifier.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A60F745EE800EF8398 /* IObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IObserver.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IObserver.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A70F745EE800EF8398 /* IProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IProxy.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IProxy.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A80F745EE800EF8398 /* IView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IView.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/IView.h; sourceTree = SOURCE_ROOT; };
-		C76EB6A90F745EE800EF8398 /* MacroCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroCommand.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/MacroCommand.h; sourceTree = SOURCE_ROOT; };
-		C76EB6AA0F745EE800EF8398 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mediator.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Mediator.h; sourceTree = SOURCE_ROOT; };
-		C76EB6AB0F745EE800EF8398 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Model.h; sourceTree = SOURCE_ROOT; };
-		C76EB6AC0F745EE800EF8398 /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notification.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Notification.h; sourceTree = SOURCE_ROOT; };
-		C76EB6AD0F745EE800EF8398 /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notifier.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Notifier.h; sourceTree = SOURCE_ROOT; };
-		C76EB6AE0F745EE800EF8398 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Observer.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Observer.h; sourceTree = SOURCE_ROOT; };
-		C76EB6AF0F745EE800EF8398 /* Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Proxy.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/Proxy.h; sourceTree = SOURCE_ROOT; };
-		C76EB6B00F745EE800EF8398 /* SimpleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleCommand.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/SimpleCommand.h; sourceTree = SOURCE_ROOT; };
-		C76EB6B10F745EE800EF8398 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = View.h; path = Classes/EmployeeAdmin/lib/PureMVC/headers/View.h; sourceTree = SOURCE_ROOT; };
 		C76EB6BA0F745EE800EF8398 /* ApplicationFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationFacade.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.h; sourceTree = SOURCE_ROOT; };
 		C76EB6BB0F745EE800EF8398 /* ApplicationFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationFacade.m; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/ApplicationFacade.m; sourceTree = SOURCE_ROOT; };
 		C76EB6BD0F745EE800EF8398 /* CreateUserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateUserCommand.h; path = Classes/EmployeeAdmin/src/org/puremvc/objectivec/demos/uikit/employeeadmin/controller/CreateUserCommand.h; sourceTree = SOURCE_ROOT; };
@@ -160,8 +146,8 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				C76EB6930F745DEA00EF8398 /* UISpec_Simulator.a in Frameworks */,
-				C7407B181019258700E5392C /* PureMVC_ObjectiveC_1_1.a in Frameworks */,
+				40C7CD8612EA0D68003FF22C /* libUISpec.a in Frameworks */,
+				40C7CE3012EA15A6003FF22C /* libPureMVC_ObjectiveC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +208,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */,
+				40C7CD7D12EA0D63003FF22C /* UISpec.xcodeproj */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -230,12 +216,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C76EB6860F745D5F00EF8398 /* Products */ = {
+		40C7CD7E12EA0D63003FF22C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C76EB68C0F745D5F00EF8398 /* UISpec_Simulator.a */,
-				C76EB68E0F745D5F00EF8398 /* UISpec_Device.a */,
-				C7D4F29810BDA39D00B00019 /* Specs.app */,
+				40C7CD8312EA0D63003FF22C /* libUISpec.a */,
+				40C7CD8512EA0D63003FF22C /* Specs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40C7CE2812EA159B003FF22C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CE2F12EA159B003FF22C /* libPureMVC_ObjectiveC.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,59 +236,11 @@
 		C76EB6990F745EE800EF8398 /* EmployeeAdmin */ = {
 			isa = PBXGroup;
 			children = (
-				C76EB69A0F745EE800EF8398 /* lib */,
+				40C7CE2712EA159B003FF22C /* PureMVC_ObjectiveC.xcodeproj */,
 				C76EB6B30F745EE800EF8398 /* src */,
 			);
 			name = EmployeeAdmin;
 			path = Classes/EmployeeAdmin;
-			sourceTree = SOURCE_ROOT;
-		};
-		C76EB69A0F745EE800EF8398 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				C76EB69B0F745EE800EF8398 /* PureMVC */,
-			);
-			name = lib;
-			path = Classes/EmployeeAdmin/lib;
-			sourceTree = SOURCE_ROOT;
-		};
-		C76EB69B0F745EE800EF8398 /* PureMVC */ = {
-			isa = PBXGroup;
-			children = (
-				C7407B171019258700E5392C /* PureMVC_ObjectiveC_1_1.a */,
-				C76EB69C0F745EE800EF8398 /* headers */,
-			);
-			name = PureMVC;
-			path = Classes/EmployeeAdmin/lib/PureMVC;
-			sourceTree = SOURCE_ROOT;
-		};
-		C76EB69C0F745EE800EF8398 /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				C76EB69D0F745EE800EF8398 /* Controller.h */,
-				C76EB69E0F745EE800EF8398 /* Facade.h */,
-				C76EB69F0F745EE800EF8398 /* ICommand.h */,
-				C76EB6A00F745EE800EF8398 /* IController.h */,
-				C76EB6A10F745EE800EF8398 /* IFacade.h */,
-				C76EB6A20F745EE800EF8398 /* IMediator.h */,
-				C76EB6A30F745EE800EF8398 /* IModel.h */,
-				C76EB6A40F745EE800EF8398 /* INotification.h */,
-				C76EB6A50F745EE800EF8398 /* INotifier.h */,
-				C76EB6A60F745EE800EF8398 /* IObserver.h */,
-				C76EB6A70F745EE800EF8398 /* IProxy.h */,
-				C76EB6A80F745EE800EF8398 /* IView.h */,
-				C76EB6A90F745EE800EF8398 /* MacroCommand.h */,
-				C76EB6AA0F745EE800EF8398 /* Mediator.h */,
-				C76EB6AB0F745EE800EF8398 /* Model.h */,
-				C76EB6AC0F745EE800EF8398 /* Notification.h */,
-				C76EB6AD0F745EE800EF8398 /* Notifier.h */,
-				C76EB6AE0F745EE800EF8398 /* Observer.h */,
-				C76EB6AF0F745EE800EF8398 /* Proxy.h */,
-				C76EB6B00F745EE800EF8398 /* SimpleCommand.h */,
-				C76EB6B10F745EE800EF8398 /* View.h */,
-			);
-			name = headers;
-			path = Classes/EmployeeAdmin/lib/PureMVC/headers;
 			sourceTree = SOURCE_ROOT;
 		};
 		C76EB6B30F745EE800EF8398 /* src */ = {
@@ -470,7 +415,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				C76EB7170F75412E00EF8398 /* PBXTargetDependency */,
+				40C7CD8812EA0D8F003FF22C /* PBXTargetDependency */,
+				40C7CE3212EA15B5003FF22C /* PBXTargetDependency */,
 			);
 			name = UISpecDemo;
 			productName = UISpecDemo;
@@ -484,13 +430,24 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UISpecDemo" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C76EB6860F745D5F00EF8398 /* Products */;
-					ProjectRef = C76EB6850F745D5F00EF8398 /* UISpec.xcodeproj */;
+					ProductGroup = 40C7CE2812EA159B003FF22C /* Products */;
+					ProjectRef = 40C7CE2712EA159B003FF22C /* PureMVC_ObjectiveC.xcodeproj */;
+				},
+				{
+					ProductGroup = 40C7CD7E12EA0D63003FF22C /* Products */;
+					ProjectRef = 40C7CD7D12EA0D63003FF22C /* UISpec.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -501,25 +458,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C76EB68C0F745D5F00EF8398 /* UISpec_Simulator.a */ = {
+		40C7CD8312EA0D63003FF22C /* libUISpec.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = UISpec_Simulator.a;
-			remoteRef = C76EB68B0F745D5F00EF8398 /* PBXContainerItemProxy */;
+			path = libUISpec.a;
+			remoteRef = 40C7CD8212EA0D63003FF22C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C76EB68E0F745D5F00EF8398 /* UISpec_Device.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = UISpec_Device.a;
-			remoteRef = C76EB68D0F745D5F00EF8398 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C7D4F29810BDA39D00B00019 /* Specs.app */ = {
+		40C7CD8512EA0D63003FF22C /* Specs.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = Specs.app;
-			remoteRef = C7D4F29710BDA39D00B00019 /* PBXContainerItemProxy */;
+			remoteRef = 40C7CD8412EA0D63003FF22C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40C7CE2F12EA159B003FF22C /* libPureMVC_ObjectiveC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPureMVC_ObjectiveC.a;
+			remoteRef = 40C7CE2E12EA159B003FF22C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -571,10 +528,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C76EB7170F75412E00EF8398 /* PBXTargetDependency */ = {
+		40C7CD8812EA0D8F003FF22C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = UISpec_Simulator;
-			targetProxy = C76EB7160F75412E00EF8398 /* PBXContainerItemProxy */;
+			name = UISpec;
+			targetProxy = 40C7CD8712EA0D8F003FF22C /* PBXContainerItemProxy */;
+		};
+		40C7CE3212EA15B5003FF22C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureMVC_ObjectiveC;
+			targetProxy = 40C7CE3112EA15B5003FF22C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -589,15 +551,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UISpecDemo_Prefix.pch;
 				GCC_VERSION = 4.2;
-				HEADER_SEARCH_PATHS = "../../bin/UISpec/Headers/**";
+				HEADER_SEARCH_PATHS = (
+					"../PureMVC_ObjectiveC/headers/**",
+					"../../headers/**",
+				);
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../UISpec/build/Debug-iphoneos\"",
 					"\"$(SRCROOT)/Classes/EmployeeAdmin/lib/PureMVC\"",
 				);
 				PRODUCT_NAME = UISpecDemo;
-				SDKROOT = iphonesimulator3.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -608,14 +574,19 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UISpecDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "../../bin/UISpec/Headers/**";
+				HEADER_SEARCH_PATHS = (
+					"../PureMVC_ObjectiveC/headers/**",
+					"../../headers/**",
+				);
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../UISpec/build/Debug-iphoneos\"",
 					"\"$(SRCROOT)/Classes/EmployeeAdmin/lib/PureMVC\"",
 				);
 				PRODUCT_NAME = UISpecDemo;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

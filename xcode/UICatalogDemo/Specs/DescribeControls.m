@@ -17,20 +17,20 @@
 -(void)itShouldToggleASwitch {
 	UISwitch *aSwitch = app.Switch.flash;
 	[expectThat(aSwitch.on) should:be(NO)];
-	aSwitch.touch;
+	aSwitch.on = YES;
 	[expectThat(aSwitch.on) should:be(YES)];
-	aSwitch.touch;
+	aSwitch.on = NO;
 	[expectThat(aSwitch.on) should:be(NO)];
 }
 
 -(void)itShouldMoveAStandardSlider {
 	//We use index 1 because a UISwitch is actually a UISlider too
-	[self moveSlider:[app.slider index:1].flash];	
+	[self moveSlider:[app.slider index:0].flash];	
 }
 
 -(void)itShouldMoveACustomizedSlider {
 	//We use index 2 because a UISwitch is actually a UISlider too
-	[self moveSlider:[app.slider index:2].flash];
+	[self moveSlider:[app.slider index:1].flash];
 }
 
 -(void)moveSlider:(UISlider *)slider {
