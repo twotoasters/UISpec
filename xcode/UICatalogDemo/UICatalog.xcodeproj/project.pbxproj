@@ -13,7 +13,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2F51F20A10EED09600FBCA7C /* DescribeWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F51F20910EED09600FBCA7C /* DescribeWebView.m */; };
-		40C7CCAA12E9ECFD003FF22C /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7CCA712E9ECFA003FF22C /* libUISpec.a */; };
+		40C3C5E012EA2A1600260D28 /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C7CCA712E9ECFA003FF22C /* libUISpec.a */; };
 		40C7CE5312EA1810003FF22C /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40C7CE5212EA1810003FF22C /* UISpec.bundle */; };
 		530986800DE753E300CC7C10 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5309867F0DE753E300CC7C10 /* blueButton.png */; };
 		5316140F0DDCC3480085B0B5 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5316140D0DDCC3480085B0B5 /* TransitionViewController.m */; };
@@ -195,7 +195,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
-				40C7CCAA12E9ECFD003FF22C /* libUISpec.a in Frameworks */,
+				40C3C5E012EA2A1600260D28 /* libUISpec.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
