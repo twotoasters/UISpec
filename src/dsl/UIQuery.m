@@ -87,6 +87,10 @@
 	return self;
 }
 
+-(UIView*)targetView {
+	return [views objectAtIndex:0];
+}
+
 -(NSArray *)targetViews {
 	return (views.count == 0) ? [NSArray array] : [NSArray arrayWithObject:[views objectAtIndex:0]];
 }
@@ -405,10 +409,10 @@
 		
 		[touch.view touchesEnded:touches withEvent:eventDown];
 		
-		[eventDown release];
-		[eventUp release];
-		[touches release];
-		[touch release];
+    [eventDown release];
+    [eventUp release];
+    [touches release];
+    [touch release];
 		[self wait:.5];
 	}
 	return [UIQuery withViews:views className:className];
