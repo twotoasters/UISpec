@@ -87,10 +87,6 @@
 	return self;
 }
 
--(UIView*)targetView {
-	return [views objectAtIndex:0];
-}
-
 -(NSArray *)targetViews {
 	return (views.count == 0) ? [NSArray array] : [NSArray arrayWithObject:[views objectAtIndex:0]];
 }
