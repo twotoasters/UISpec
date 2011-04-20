@@ -4,7 +4,10 @@
 #import "UIQuery.h"
 #import "UIBug.h"
 
-@implementation MyTextField : UITextField
+@interface MyTextField : UITextField 
+@end
+
+@implementation MyTextField
 
 -(BOOL)becomeFirstResponder {
 	[super becomeFirstResponder];
@@ -17,7 +20,8 @@
 @implementation UIConsole
 
 - (id)init {
-    if (self = [super initWithFrame:CGRectMake(0,20,320,16)]) {
+    self = [super initWithFrame:CGRectMake(0,20,320,16)];
+    if (self) {
 		self.backgroundColor = [UIColor whiteColor];
         scriptField = [[MyTextField alloc] initWithFrame:CGRectMake(0, 0, 265, 16)];
 		scriptField.autocorrectionType = UITextAutocorrectionTypeNo;
