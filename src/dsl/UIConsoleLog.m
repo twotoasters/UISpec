@@ -3,6 +3,18 @@
 
 @implementation UIConsoleLog
 
+@synthesize exitOnFinish = _exitOnFinish;
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        _exitOnFinish = NO;
+    }
+    
+    return self;
+}
+
+
 -(void)onStart {
 	errors = [[NSMutableArray array] retain];
 	start = [[NSDate date] retain];
@@ -70,6 +82,12 @@
 	
 	[log appendFormat:@"\n\n%i examples %d failures", count, errors.count];
 	NSLog(log);
+    
+    if (self.exitOnFinish) {        
+        int exitStatus = [errors count] > 0 ? EXIT_FAILURE : EXIT_SUCCESS;
+        NSLog(@"Exiting with status code: %d", exitStatus);
+        exit(exitStatus);
+    }
 }
 
 @end
