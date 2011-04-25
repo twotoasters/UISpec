@@ -8,33 +8,11 @@
 @synthesize callCache;
 
 -(id)initWithTarget:(id)_target {
-	if (self = [super initWithTarget:_target]) {
+    self = [super initWithTarget:_target];
+	if (self) {
 		self.callCache = [[[CallCache alloc] init] autorelease];
 	}
 	return self;
-}
-
-- (void)forwardInvocation:(NSInvocation *)anInvocation {
-	NSString *returnType = [NSString stringWithFormat:@"%s", [[anInvocation methodSignature] methodReturnType]];
-	if (![returnType isEqualToString:@"v"]) {
-		NSMutableArray *invocationsForSelector = [callCache get:NSStringFromSelector([anInvocation selector])];
-		if (invocationsForSelector == nil) {
-			invocationsForSelector = [NSMutableArray array];
-			[callCache set:invocationsForSelector for:NSStringFromSelector([anInvocation selector])];
-		}
-		
-		NSInvocation *cachedInvocation = [self invocationInArray:invocationsForSelector withMatchingArgValues:anInvocation];
-		if (cachedInvocation != nil) {
-			id cachedResult = nil;
-			[cachedInvocation getReturnValue:&cachedResult];
-			[anInvocation setReturnValue:&cachedResult];
-		} else {
-			[anInvocation invokeWithTarget:target];
-			[invocationsForSelector addObject:anInvocation];
-		}
-	} else {
-		[super forwardInvocation:anInvocation];
-	}
 }
 
 +(NSInvocation *)invocationInArray:(NSArray *)array withMatchingArgValues:(NSInvocation *)invocation {
@@ -58,6 +36,29 @@
 		}
 	}
 	return nil;
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+	NSString *returnType = [NSString stringWithFormat:@"%s", [[anInvocation methodSignature] methodReturnType]];
+	if (![returnType isEqualToString:@"v"]) {
+		NSMutableArray *invocationsForSelector = [callCache get:NSStringFromSelector([anInvocation selector])];
+		if (invocationsForSelector == nil) {
+			invocationsForSelector = [NSMutableArray array];
+			[callCache set:invocationsForSelector for:NSStringFromSelector([anInvocation selector])];
+		}
+		
+		NSInvocation *cachedInvocation = [self invocationInArray:invocationsForSelector withMatchingArgValues:anInvocation];
+		if (cachedInvocation != nil) {
+			id cachedResult = nil;
+			[cachedInvocation getReturnValue:&cachedResult];
+			[anInvocation setReturnValue:&cachedResult];
+		} else {
+			[anInvocation invokeWithTarget:target];
+			[invocationsForSelector addObject:anInvocation];
+		}
+	} else {
+		[super forwardInvocation:anInvocation];
+	}
 }
 
 -(NSString *)description {
