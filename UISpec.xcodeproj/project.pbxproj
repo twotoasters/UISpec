@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		256259E113731AC70001623E /* UIQuerySearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259A513731AC70001623E /* UIQuerySearchBar.h */; };
+		256259E213731AC70001623E /* UIQuerySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259A613731AC70001623E /* UIQuerySearchBar.m */; };
+		256259E313731AC70001623E /* UIQuerySegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259A713731AC70001623E /* UIQuerySegmentedControl.h */; };
+		256259E413731AC70001623E /* UIQuerySegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259A813731AC70001623E /* UIQuerySegmentedControl.m */; };
+		256259E513731AC70001623E /* UIQueryTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259A913731AC70001623E /* UIQueryTabBar.h */; };
+		256259E613731AC70001623E /* UIQueryTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259AA13731AC70001623E /* UIQueryTabBar.m */; };
+		256259E713731AC70001623E /* UIQueryTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259AB13731AC70001623E /* UIQueryTableView.h */; };
+		256259E813731AC70001623E /* UIQueryTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259AC13731AC70001623E /* UIQueryTableView.m */; };
+		256259E913731AC70001623E /* UIQueryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259AD13731AC70001623E /* UIQueryTableViewCell.h */; };
+		256259EA13731AC70001623E /* UIQueryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259AE13731AC70001623E /* UIQueryTableViewCell.m */; };
+		256259EB13731AC70001623E /* UIQueryWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259AF13731AC70001623E /* UIQueryWebView.h */; };
+		256259EC13731AC70001623E /* UIQueryWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259B013731AC70001623E /* UIQueryWebView.m */; };
+		256259ED13731AC70001623E /* Recordable.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259B213731AC70001623E /* Recordable.h */; };
+		256259EE13731AC70001623E /* Recordable.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259B313731AC70001623E /* Recordable.m */; };
+		256259EF13731AC70001623E /* UIChildren.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259B413731AC70001623E /* UIChildren.h */; };
+		256259F013731AC70001623E /* UIChildren.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259B513731AC70001623E /* UIChildren.m */; };
+		256259F113731AC70001623E /* UIConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259B613731AC70001623E /* UIConsoleLog.h */; };
+		256259F213731AC70001623E /* UIConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259B713731AC70001623E /* UIConsoleLog.m */; };
+		256259F313731AC70001623E /* UIDescendants.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259B813731AC70001623E /* UIDescendants.h */; };
+		256259F413731AC70001623E /* UIDescendants.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259B913731AC70001623E /* UIDescendants.m */; };
+		256259F513731AC70001623E /* UIExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259BA13731AC70001623E /* UIExpectation.h */; };
+		256259F613731AC70001623E /* UIExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259BB13731AC70001623E /* UIExpectation.m */; };
+		256259F713731AC70001623E /* UIFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259BC13731AC70001623E /* UIFilter.h */; };
+		256259F813731AC70001623E /* UIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259BD13731AC70001623E /* UIFilter.m */; };
+		256259F913731AC70001623E /* UILog.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259BE13731AC70001623E /* UILog.h */; };
+		256259FA13731AC70001623E /* UIMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259BF13731AC70001623E /* UIMatcher.h */; };
+		256259FB13731AC70001623E /* UIMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259C013731AC70001623E /* UIMatcher.m */; };
+		256259FC13731AC70001623E /* UIParents.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259C113731AC70001623E /* UIParents.h */; };
+		256259FD13731AC70001623E /* UIParents.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259C213731AC70001623E /* UIParents.m */; };
+		256259FE13731AC70001623E /* UIQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259C313731AC70001623E /* UIQuery.h */; };
+		256259FF13731AC70001623E /* UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259C413731AC70001623E /* UIQuery.m */; };
+		25625A0013731AC70001623E /* UIQueryAll.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259C513731AC70001623E /* UIQueryAll.h */; };
+		25625A0113731AC70001623E /* UIQueryAll.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259C613731AC70001623E /* UIQueryAll.m */; };
+		25625A0213731AC70001623E /* UIQueryExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259C713731AC70001623E /* UIQueryExpectation.h */; };
+		25625A0313731AC70001623E /* UIQueryExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259C813731AC70001623E /* UIQueryExpectation.m */; };
+		25625A0413731AC70001623E /* UIRedoer.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259C913731AC70001623E /* UIRedoer.h */; };
+		25625A0513731AC70001623E /* UIRedoer.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259CA13731AC70001623E /* UIRedoer.m */; };
+		25625A0613731AC70001623E /* ViewFilterSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259CB13731AC70001623E /* ViewFilterSwizzler.h */; };
+		25625A0713731AC70001623E /* ViewFilterSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259CC13731AC70001623E /* ViewFilterSwizzler.m */; };
+		25625A0813731AC70001623E /* UISpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259CE13731AC70001623E /* UISpec.h */; };
+		25625A0913731AC70001623E /* UISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259CF13731AC70001623E /* UISpec.m */; };
+		25625A0A13731AC70001623E /* CallCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259D113731AC70001623E /* CallCache.h */; };
+		25625A0B13731AC70001623E /* CallCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259D213731AC70001623E /* CallCache.m */; };
+		25625A0C13731AC70001623E /* NSNumberCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259D313731AC70001623E /* NSNumberCreator.h */; };
+		25625A0D13731AC70001623E /* NSNumberCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259D413731AC70001623E /* NSNumberCreator.m */; };
+		25625A0E13731AC70001623E /* ReturnCacher.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259D513731AC70001623E /* ReturnCacher.h */; };
+		25625A0F13731AC70001623E /* ReturnCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259D613731AC70001623E /* ReturnCacher.m */; };
+		25625A1013731AC70001623E /* UIBug.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259D713731AC70001623E /* UIBug.h */; };
+		25625A1113731AC70001623E /* UIBug.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259D813731AC70001623E /* UIBug.m */; };
+		25625A1213731AC70001623E /* UIConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259D913731AC70001623E /* UIConsole.h */; };
+		25625A1313731AC70001623E /* UIConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259DA13731AC70001623E /* UIConsole.m */; };
+		25625A1413731AC70001623E /* UIInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259DB13731AC70001623E /* UIInspector.h */; };
+		25625A1513731AC70001623E /* UIInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259DC13731AC70001623E /* UIInspector.m */; };
+		25625A1613731AC70001623E /* UIProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259DD13731AC70001623E /* UIProxy.h */; };
+		25625A1713731AC70001623E /* UIProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259DE13731AC70001623E /* UIProxy.m */; };
+		25625A1813731AC70001623E /* WaitUntilIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = 256259DF13731AC70001623E /* WaitUntilIdle.h */; };
+		25625A1913731AC70001623E /* WaitUntilIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = 256259E013731AC70001623E /* WaitUntilIdle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2562598F13731A8E0001623E /* libUISpec.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUISpec.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		256259A513731AC70001623E /* UIQuerySearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQuerySearchBar.h; sourceTree = "<group>"; };
+		256259A613731AC70001623E /* UIQuerySearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQuerySearchBar.m; sourceTree = "<group>"; };
+		256259A713731AC70001623E /* UIQuerySegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQuerySegmentedControl.h; sourceTree = "<group>"; };
+		256259A813731AC70001623E /* UIQuerySegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQuerySegmentedControl.m; sourceTree = "<group>"; };
+		256259A913731AC70001623E /* UIQueryTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryTabBar.h; sourceTree = "<group>"; };
+		256259AA13731AC70001623E /* UIQueryTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryTabBar.m; sourceTree = "<group>"; };
+		256259AB13731AC70001623E /* UIQueryTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryTableView.h; sourceTree = "<group>"; };
+		256259AC13731AC70001623E /* UIQueryTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryTableView.m; sourceTree = "<group>"; };
+		256259AD13731AC70001623E /* UIQueryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryTableViewCell.h; sourceTree = "<group>"; };
+		256259AE13731AC70001623E /* UIQueryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryTableViewCell.m; sourceTree = "<group>"; };
+		256259AF13731AC70001623E /* UIQueryWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryWebView.h; sourceTree = "<group>"; };
+		256259B013731AC70001623E /* UIQueryWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryWebView.m; sourceTree = "<group>"; };
+		256259B213731AC70001623E /* Recordable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recordable.h; sourceTree = "<group>"; };
+		256259B313731AC70001623E /* Recordable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recordable.m; sourceTree = "<group>"; };
+		256259B413731AC70001623E /* UIChildren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIChildren.h; sourceTree = "<group>"; };
+		256259B513731AC70001623E /* UIChildren.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIChildren.m; sourceTree = "<group>"; };
+		256259B613731AC70001623E /* UIConsoleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConsoleLog.h; sourceTree = "<group>"; };
+		256259B713731AC70001623E /* UIConsoleLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConsoleLog.m; sourceTree = "<group>"; };
+		256259B813731AC70001623E /* UIDescendants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDescendants.h; sourceTree = "<group>"; };
+		256259B913731AC70001623E /* UIDescendants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDescendants.m; sourceTree = "<group>"; };
+		256259BA13731AC70001623E /* UIExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExpectation.h; sourceTree = "<group>"; };
+		256259BB13731AC70001623E /* UIExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExpectation.m; sourceTree = "<group>"; };
+		256259BC13731AC70001623E /* UIFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFilter.h; sourceTree = "<group>"; };
+		256259BD13731AC70001623E /* UIFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFilter.m; sourceTree = "<group>"; };
+		256259BE13731AC70001623E /* UILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILog.h; sourceTree = "<group>"; };
+		256259BF13731AC70001623E /* UIMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMatcher.h; sourceTree = "<group>"; };
+		256259C013731AC70001623E /* UIMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMatcher.m; sourceTree = "<group>"; };
+		256259C113731AC70001623E /* UIParents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIParents.h; sourceTree = "<group>"; };
+		256259C213731AC70001623E /* UIParents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIParents.m; sourceTree = "<group>"; };
+		256259C313731AC70001623E /* UIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQuery.h; sourceTree = "<group>"; };
+		256259C413731AC70001623E /* UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQuery.m; sourceTree = "<group>"; };
+		256259C513731AC70001623E /* UIQueryAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryAll.h; sourceTree = "<group>"; };
+		256259C613731AC70001623E /* UIQueryAll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryAll.m; sourceTree = "<group>"; };
+		256259C713731AC70001623E /* UIQueryExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIQueryExpectation.h; sourceTree = "<group>"; };
+		256259C813731AC70001623E /* UIQueryExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIQueryExpectation.m; sourceTree = "<group>"; };
+		256259C913731AC70001623E /* UIRedoer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRedoer.h; sourceTree = "<group>"; };
+		256259CA13731AC70001623E /* UIRedoer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRedoer.m; sourceTree = "<group>"; };
+		256259CB13731AC70001623E /* ViewFilterSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFilterSwizzler.h; sourceTree = "<group>"; };
+		256259CC13731AC70001623E /* ViewFilterSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFilterSwizzler.m; sourceTree = "<group>"; };
+		256259CD13731AC70001623E /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UISpec.bundle; sourceTree = "<group>"; };
+		256259CE13731AC70001623E /* UISpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpec.h; sourceTree = "<group>"; };
+		256259CF13731AC70001623E /* UISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISpec.m; sourceTree = "<group>"; };
+		256259D113731AC70001623E /* CallCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallCache.h; sourceTree = "<group>"; };
+		256259D213731AC70001623E /* CallCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallCache.m; sourceTree = "<group>"; };
+		256259D313731AC70001623E /* NSNumberCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberCreator.h; sourceTree = "<group>"; };
+		256259D413731AC70001623E /* NSNumberCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNumberCreator.m; sourceTree = "<group>"; };
+		256259D513731AC70001623E /* ReturnCacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnCacher.h; sourceTree = "<group>"; };
+		256259D613731AC70001623E /* ReturnCacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnCacher.m; sourceTree = "<group>"; };
+		256259D713731AC70001623E /* UIBug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBug.h; sourceTree = "<group>"; };
+		256259D813731AC70001623E /* UIBug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBug.m; sourceTree = "<group>"; };
+		256259D913731AC70001623E /* UIConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConsole.h; sourceTree = "<group>"; };
+		256259DA13731AC70001623E /* UIConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIConsole.m; sourceTree = "<group>"; };
+		256259DB13731AC70001623E /* UIInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInspector.h; sourceTree = "<group>"; };
+		256259DC13731AC70001623E /* UIInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIInspector.m; sourceTree = "<group>"; };
+		256259DD13731AC70001623E /* UIProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProxy.h; sourceTree = "<group>"; };
+		256259DE13731AC70001623E /* UIProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProxy.m; sourceTree = "<group>"; };
+		256259DF13731AC70001623E /* WaitUntilIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitUntilIdle.h; sourceTree = "<group>"; };
+		256259E013731AC70001623E /* WaitUntilIdle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitUntilIdle.m; sourceTree = "<group>"; };
+		25625A1A13731BDA0001623E /* UISpec-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISpec-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2562598C13731A8E0001623E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2562598413731A8E0001623E = {
+			isa = PBXGroup;
+			children = (
+				256259A313731AC70001623E /* src */,
+				2562599013731A8E0001623E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2562599013731A8E0001623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2562598F13731A8E0001623E /* libUISpec.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		256259A313731AC70001623E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				25625A1A13731BDA0001623E /* UISpec-Prefix.pch */,
+				256259A413731AC70001623E /* components */,
+				256259B113731AC70001623E /* dsl */,
+				256259CD13731AC70001623E /* UISpec.bundle */,
+				256259CE13731AC70001623E /* UISpec.h */,
+				256259CF13731AC70001623E /* UISpec.m */,
+				256259D013731AC70001623E /* utils */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		256259A413731AC70001623E /* components */ = {
+			isa = PBXGroup;
+			children = (
+				256259A513731AC70001623E /* UIQuerySearchBar.h */,
+				256259A613731AC70001623E /* UIQuerySearchBar.m */,
+				256259A713731AC70001623E /* UIQuerySegmentedControl.h */,
+				256259A813731AC70001623E /* UIQuerySegmentedControl.m */,
+				256259A913731AC70001623E /* UIQueryTabBar.h */,
+				256259AA13731AC70001623E /* UIQueryTabBar.m */,
+				256259AB13731AC70001623E /* UIQueryTableView.h */,
+				256259AC13731AC70001623E /* UIQueryTableView.m */,
+				256259AD13731AC70001623E /* UIQueryTableViewCell.h */,
+				256259AE13731AC70001623E /* UIQueryTableViewCell.m */,
+				256259AF13731AC70001623E /* UIQueryWebView.h */,
+				256259B013731AC70001623E /* UIQueryWebView.m */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		256259B113731AC70001623E /* dsl */ = {
+			isa = PBXGroup;
+			children = (
+				256259B213731AC70001623E /* Recordable.h */,
+				256259B313731AC70001623E /* Recordable.m */,
+				256259B413731AC70001623E /* UIChildren.h */,
+				256259B513731AC70001623E /* UIChildren.m */,
+				256259B613731AC70001623E /* UIConsoleLog.h */,
+				256259B713731AC70001623E /* UIConsoleLog.m */,
+				256259B813731AC70001623E /* UIDescendants.h */,
+				256259B913731AC70001623E /* UIDescendants.m */,
+				256259BA13731AC70001623E /* UIExpectation.h */,
+				256259BB13731AC70001623E /* UIExpectation.m */,
+				256259BC13731AC70001623E /* UIFilter.h */,
+				256259BD13731AC70001623E /* UIFilter.m */,
+				256259BE13731AC70001623E /* UILog.h */,
+				256259BF13731AC70001623E /* UIMatcher.h */,
+				256259C013731AC70001623E /* UIMatcher.m */,
+				256259C113731AC70001623E /* UIParents.h */,
+				256259C213731AC70001623E /* UIParents.m */,
+				256259C313731AC70001623E /* UIQuery.h */,
+				256259C413731AC70001623E /* UIQuery.m */,
+				256259C513731AC70001623E /* UIQueryAll.h */,
+				256259C613731AC70001623E /* UIQueryAll.m */,
+				256259C713731AC70001623E /* UIQueryExpectation.h */,
+				256259C813731AC70001623E /* UIQueryExpectation.m */,
+				256259C913731AC70001623E /* UIRedoer.h */,
+				256259CA13731AC70001623E /* UIRedoer.m */,
+				256259CB13731AC70001623E /* ViewFilterSwizzler.h */,
+				256259CC13731AC70001623E /* ViewFilterSwizzler.m */,
+			);
+			path = dsl;
+			sourceTree = "<group>";
+		};
+		256259D013731AC70001623E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				256259D113731AC70001623E /* CallCache.h */,
+				256259D213731AC70001623E /* CallCache.m */,
+				256259D313731AC70001623E /* NSNumberCreator.h */,
+				256259D413731AC70001623E /* NSNumberCreator.m */,
+				256259D513731AC70001623E /* ReturnCacher.h */,
+				256259D613731AC70001623E /* ReturnCacher.m */,
+				256259D713731AC70001623E /* UIBug.h */,
+				256259D813731AC70001623E /* UIBug.m */,
+				256259D913731AC70001623E /* UIConsole.h */,
+				256259DA13731AC70001623E /* UIConsole.m */,
+				256259DB13731AC70001623E /* UIInspector.h */,
+				256259DC13731AC70001623E /* UIInspector.m */,
+				256259DD13731AC70001623E /* UIProxy.h */,
+				256259DE13731AC70001623E /* UIProxy.m */,
+				256259DF13731AC70001623E /* WaitUntilIdle.h */,
+				256259E013731AC70001623E /* WaitUntilIdle.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2562598D13731A8E0001623E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256259E113731AC70001623E /* UIQuerySearchBar.h in Headers */,
+				256259E313731AC70001623E /* UIQuerySegmentedControl.h in Headers */,
+				256259E513731AC70001623E /* UIQueryTabBar.h in Headers */,
+				256259E713731AC70001623E /* UIQueryTableView.h in Headers */,
+				256259E913731AC70001623E /* UIQueryTableViewCell.h in Headers */,
+				256259EB13731AC70001623E /* UIQueryWebView.h in Headers */,
+				256259ED13731AC70001623E /* Recordable.h in Headers */,
+				256259EF13731AC70001623E /* UIChildren.h in Headers */,
+				256259F113731AC70001623E /* UIConsoleLog.h in Headers */,
+				256259F313731AC70001623E /* UIDescendants.h in Headers */,
+				256259F513731AC70001623E /* UIExpectation.h in Headers */,
+				256259F713731AC70001623E /* UIFilter.h in Headers */,
+				256259F913731AC70001623E /* UILog.h in Headers */,
+				256259FA13731AC70001623E /* UIMatcher.h in Headers */,
+				256259FC13731AC70001623E /* UIParents.h in Headers */,
+				256259FE13731AC70001623E /* UIQuery.h in Headers */,
+				25625A0013731AC70001623E /* UIQueryAll.h in Headers */,
+				25625A0213731AC70001623E /* UIQueryExpectation.h in Headers */,
+				25625A0413731AC70001623E /* UIRedoer.h in Headers */,
+				25625A0613731AC70001623E /* ViewFilterSwizzler.h in Headers */,
+				25625A0813731AC70001623E /* UISpec.h in Headers */,
+				25625A0A13731AC70001623E /* CallCache.h in Headers */,
+				25625A0C13731AC70001623E /* NSNumberCreator.h in Headers */,
+				25625A0E13731AC70001623E /* ReturnCacher.h in Headers */,
+				25625A1013731AC70001623E /* UIBug.h in Headers */,
+				25625A1213731AC70001623E /* UIConsole.h in Headers */,
+				25625A1413731AC70001623E /* UIInspector.h in Headers */,
+				25625A1613731AC70001623E /* UIProxy.h in Headers */,
+				25625A1813731AC70001623E /* WaitUntilIdle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2562598E13731A8E0001623E /* UISpec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2562599913731A8E0001623E /* Build configuration list for PBXNativeTarget "UISpec" */;
+			buildPhases = (
+				2562598B13731A8E0001623E /* Sources */,
+				2562598C13731A8E0001623E /* Frameworks */,
+				2562598D13731A8E0001623E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UISpec;
+			productName = UISpec;
+			productReference = 2562598F13731A8E0001623E /* libUISpec.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2562598613731A8E0001623E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2562598913731A8E0001623E /* Build configuration list for PBXProject "UISpec" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2562598413731A8E0001623E;
+			productRefGroup = 2562599013731A8E0001623E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2562598E13731A8E0001623E /* UISpec */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2562598B13731A8E0001623E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256259E213731AC70001623E /* UIQuerySearchBar.m in Sources */,
+				256259E413731AC70001623E /* UIQuerySegmentedControl.m in Sources */,
+				256259E613731AC70001623E /* UIQueryTabBar.m in Sources */,
+				256259E813731AC70001623E /* UIQueryTableView.m in Sources */,
+				256259EA13731AC70001623E /* UIQueryTableViewCell.m in Sources */,
+				256259EC13731AC70001623E /* UIQueryWebView.m in Sources */,
+				256259EE13731AC70001623E /* Recordable.m in Sources */,
+				256259F013731AC70001623E /* UIChildren.m in Sources */,
+				256259F213731AC70001623E /* UIConsoleLog.m in Sources */,
+				256259F413731AC70001623E /* UIDescendants.m in Sources */,
+				256259F613731AC70001623E /* UIExpectation.m in Sources */,
+				256259F813731AC70001623E /* UIFilter.m in Sources */,
+				256259FB13731AC70001623E /* UIMatcher.m in Sources */,
+				256259FD13731AC70001623E /* UIParents.m in Sources */,
+				256259FF13731AC70001623E /* UIQuery.m in Sources */,
+				25625A0113731AC70001623E /* UIQueryAll.m in Sources */,
+				25625A0313731AC70001623E /* UIQueryExpectation.m in Sources */,
+				25625A0513731AC70001623E /* UIRedoer.m in Sources */,
+				25625A0713731AC70001623E /* ViewFilterSwizzler.m in Sources */,
+				25625A0913731AC70001623E /* UISpec.m in Sources */,
+				25625A0B13731AC70001623E /* CallCache.m in Sources */,
+				25625A0D13731AC70001623E /* NSNumberCreator.m in Sources */,
+				25625A0F13731AC70001623E /* ReturnCacher.m in Sources */,
+				25625A1113731AC70001623E /* UIBug.m in Sources */,
+				25625A1313731AC70001623E /* UIConsole.m in Sources */,
+				25625A1513731AC70001623E /* UIInspector.m in Sources */,
+				25625A1713731AC70001623E /* UIProxy.m in Sources */,
+				25625A1913731AC70001623E /* WaitUntilIdle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2562599713731A8E0001623E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2562599813731A8E0001623E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2562599A13731A8E0001623E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/UISpec.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/UISpec-Prefix.pch";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2562599B13731A8E0001623E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/UISpec.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/UISpec-Prefix.pch";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2562598913731A8E0001623E /* Build configuration list for PBXProject "UISpec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2562599713731A8E0001623E /* Debug */,
+				2562599813731A8E0001623E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2562599913731A8E0001623E /* Build configuration list for PBXNativeTarget "UISpec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2562599A13731A8E0001623E /* Debug */,
+				2562599B13731A8E0001623E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2562598613731A8E0001623E /* Project object */;
+}
